@@ -22,14 +22,28 @@
                 <span class="submenu-toggle">▼</span>
             </div>
             <div class="submenu" id="submenu-reporteria" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
-                    📄 Ficha Académica CNA
-                </div>
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
                     📊 Reporte Personalizado
                 </div>
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
                     📅 Proyectos vigentes del claustro
+                </div>
+            </div>
+            
+            <!-- CNA -->
+            <div class="menu-item menu-parent" id="menu-cna" onclick="toggleMenuCNA(event)">
+                🎯 CNA
+                <span class="submenu-toggle">▼</span>
+            </div>
+            <div class="submenu" id="submenu-cna" style="display: none;">
+                <div class="submenu-item" onclick="cambiarPagina('cna-fichas-academicas')">
+                    📄 Fichas Académicas CNA
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('cna-resumen-claustro')">
+                    📊 Resumen Claustro
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
+                    📅 Proyectos
                 </div>
             </div>
             
@@ -46,6 +60,11 @@
                     ✏️ Corrección y Normalización
                 </div>
             </div>
+
+            <!-- POLÍTICAS, REGLAMENTOS Y PROTOCOLOS -->
+            <div class="menu-item" onclick="cambiarPagina('politicas-reglamentos')">
+                📑 Políticas, Reglamentos y Protocolos
+            </div>
         </div>
         
         <div class="main-content">
@@ -58,17 +77,36 @@
                 <div id="profesor-list" class="profesor-list"></div>
             </div>
 
-            <!-- PÁGINA: FICHA ACADÉMICA CNA -->
-            <div id="page-reporteria-ficha-cna" class="page">
+            <!-- PÁGINA: CNA FICHAS ACADÉMICAS -->
+            <div id="page-cna-fichas-academicas" class="page">
                 <div class="header">
-                    <h1>Reportería</h1>
-                    <p>Generación de reportes académicos</p>
+                    <h1>CNA</h1>
+                    <p>Información académica conforme a criterios CNA</p>
+                </div>
+                
+                <div class="cna-criterios">
+                    <h3>Criterios de inclusión CNA</h3>
+                    <div class="cna-criterios-contenido">
+                        <p><strong>1. Publicaciones:</strong></p>
+                        <ul>
+                            <li>Producciones desde 2020</li>
+                            <li>Indexadas</li>
+                        </ul>
+                        <p><strong>2. Proyectos de Investigación:</strong></p>
+                        <ul>
+                            <li>Monto superior a USD 5.000</li>
+                            <li>Fondos internos: FAI, ESE, Universidad de los Andes</li>
+                            <li>Fondos externos: FONDECYT, FONDEF, ANILLOS, MILLENIUM, CORFO</li>
+                            <li>Otros fondos que cumplan: duración mínima de 2 años, mínimo de USD 5.000, evaluación por pares y requisito de cierre con publicaciones indexadas asociadas al proyecto</li>
+                        </ul>
+                        <p><em>Estos criterios se aplican a todo lo que esté en este menú.</em></p>
+                    </div>
                 </div>
                 
                 <div class="reporteria-grid">
                     <div class="reporteria-card">
                         <div class="card-header">
-                            <h2 class="card-title">📄 Ficha Académica CNA</h2>
+                            <h2 class="card-title">📄 Fichas Académicas CNA</h2>
                             <p class="card-subtitle">Selecciona un profesor para visualizar su ficha académica</p>
                         </div>
                         
@@ -95,6 +133,28 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- PÁGINA: CNA RESUMEN CLAUSTRO -->
+            <div id="page-cna-resumen-claustro" class="page">
+                <div class="header">
+                    <h1>CNA - Resumen Claustro</h1>
+                    <p>Resumen de producción del claustro conforme a criterios CNA</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>Contenido en desarrollo</p>
+                </div>
+            </div>
+
+            <!-- PÁGINA: CNA PROYECTOS -->
+            <div id="page-cna-proyectos" class="page">
+                <div class="header">
+                    <h1>CNA - Proyectos</h1>
+                    <p>Proyectos de investigación conforme a criterios CNA</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>Contenido en desarrollo</p>
                 </div>
             </div>
 
@@ -193,6 +253,42 @@
                         
                         <div class="control-body">
                             <div id="normalizacion-container" class="normalizacion-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PÁGINA: POLÍTICAS, REGLAMENTOS Y PROTOCOLOS -->
+            <div id="page-politicas-reglamentos" class="page">
+                <div class="header">
+                    <h1>Políticas, Reglamentos y Protocolos</h1>
+                    <p>Documentos institucionales de referencia</p>
+                </div>
+                
+                <div class="reporteria-grid">
+                    <div class="reporteria-card">
+                        <div class="card-header">
+                            <h2 class="card-title">📑 Documentos institucionales</h2>
+                            <p class="card-subtitle">Políticas, reglamentos y protocolos de la Universidad</p>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div id="documentos-container" class="documentos-tabla">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="background: #667eea; color: white;">
+                                            <th style="padding: 10px; text-align: center; border: 1px solid #667eea;">N°</th>
+                                            <th style="padding: 10px; text-align: left; border: 1px solid #667eea;">Nombre</th>
+                                            <th style="padding: 10px; text-align: center; border: 1px solid #667eea;">Año</th>
+                                            <th style="padding: 10px; text-align: left; border: 1px solid #667eea;">Elaborado por</th>
+                                            <th style="padding: 10px; text-align: center; border: 1px solid #667eea;">Previsualizar</th>
+                                            <th style="padding: 10px; text-align: center; border: 1px solid #667eea;">Descargar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="documentos-tbody">
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
