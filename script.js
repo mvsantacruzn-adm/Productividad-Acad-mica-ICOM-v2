@@ -421,12 +421,52 @@ function traducirTipo(tipo) {
     return t[tipo] || tipo;
 }
 
-// ============================================
-// NAVEGACIÓN Y MENÚ
-// ============================================
-// Lógica delegada a navigation.js
-// (funciones: abrirModal, cerrarModal, cambiarPagina, toggleMenuReporteria, toggleMenuControl)
+function abrirModal(id) {
+    document.getElementById(`modal-${id}`).classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
 
+function cerrarModal(id) {
+    document.getElementById(`modal-${id}`).classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function cambiarPagina(pagina) {
+    document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
+    document.getElementById(`page-${pagina}`).classList.add('active');
+    event.target.classList.add('active');
+}
+
+// Cargar datos al iniciar
+// ============================================
+// FUNCIONES DE MENÚ EXPANDIBLE
+// ============================================
+
+function toggleMenuReporteria(event) {
+    event.stopPropagation();
+    const menuReporteria = document.getElementById("menu-reporteria");
+    const submenuReporteria = document.getElementById("submenu-reporteria");
+    
+    submenuReporteria.style.display = submenuReporteria.style.display === "none" ? "block" : "none";
+    menuReporteria.classList.toggle("active");
+}
+
+function toggleMenuControl(event) {
+    event.stopPropagation();
+    const menuControl = document.getElementById("menu-control");
+    const submenuControl = document.getElementById("submenu-control");
+    
+    submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
+    menuControl.classList.toggle("active");
+}
 cargarDatos();
 
 // ============================================
@@ -628,10 +668,14 @@ function cambiarPaginaMejorado(pagina) {
     document.querySelectorAll('.submenu-item').forEach(el => el.classList.remove('active'));
     
     document.getElementById(`page-${pagina}`).classList.add('active');
-    event.target.classList.add('active');
+    if (event && event.target) {
+        event.target.classList.add('active');
+    }
     
     // Generar contenido si es necesario
-    if (pagina === 'control-validacion') {
+    if (pagina === 'reporteria-datos-profesores') {
+        inicializarFiltrosDatosProfesores();
+    } else if (pagina === 'control-validacion') {
         generarValidacion();
     } else if (pagina === 'control-normalizacion') {
         generarNormalizacion();
@@ -673,9 +717,19 @@ const mapeoTablas = {
 };
 
 function inicializarFiltrosDatosProfesores() {
+    console.log('→ inicializarFiltrosDatosProfesores INICIADO');
+    console.log('  datosBase disponible:', Object.keys(datosBase).length > 0);
+    console.log('  datosProduccion disponible:', Object.keys(datosProduccion).length > 0);
+    
     // Generar checkboxes de profesores
     const listaProfesores = document.getElementById('lista-profesores');
+    if (!listaProfesores) {
+        console.error('❌ No se encontró elemento lista-profesores');
+        return;
+    }
+    
     const profesoresOrdenados = Object.keys(datosBase).sort();
+    console.log('  Profesores a renderizar:', profesoresOrdenados.length);
     
     listaProfesores.innerHTML = profesoresOrdenados.map(nombre => {
         const base = datosBase[nombre];
@@ -687,15 +741,26 @@ function inicializarFiltrosDatosProfesores() {
             </label>
         `;
     }).join('');
+    console.log('  ✓ Checkboxes de profesores renderizados');
     
     // Generar checkboxes de tablas
     const listaTablas = document.getElementById('lista-tablas');
-    listaTablas.innerHTML = Object.entries(mapeoTablas).map(([clave, nombre]) => `
+    if (!listaTablas) {
+        console.error('❌ No se encontró elemento lista-tablas');
+        return;
+    }
+    
+    const tablasAGenerar = Object.entries(mapeoTablas);
+    console.log('  Tablas a renderizar:', tablasAGenerar.length);
+    
+    listaTablas.innerHTML = tablasAGenerar.map(([clave, nombre]) => `
         <label class="checkbox-label">
             <input type="checkbox" data-tabla="${clave}" onchange="actualizarFiltros()">
             ${nombre}
         </label>
     `).join('');
+    console.log('  ✓ Checkboxes de tablas renderizados');
+    console.log('✓ inicializarFiltrosDatosProfesores COMPLETADO');
 }
 
 function toggleTodosProfesores() {
@@ -895,7 +960,9 @@ window.cambiarPagina = function(pagina) {
     document.querySelectorAll('.submenu-item').forEach(el => el.classList.remove('active'));
     
     document.getElementById(`page-${pagina}`).classList.add('active');
-    event.target.classList.add('active');
+    if (event && event.target) {
+        event.target.classList.add('active');
+    }
     
     // Inicializar sección si es necesario
     if (pagina === 'reporteria-datos-profesores') {
@@ -1973,6 +2040,13 @@ function descargarProyectosVigentesExcel() {
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
+
+// Funciones del reporte personalizado
+window.inicializarFiltrosDatosProfesores = inicializarFiltrosDatosProfesores;
+window.toggleTodosProfesores = toggleTodosProfesores;
+window.toggleTodasTablas = toggleTodasTablas;
+window.actualizarFiltros = actualizarFiltros;
+window.generarReporteDatosProfesores = generarReporteDatosProfesores;
 
 console.log('✓ Funciones Proyectos vigentes disponibles globalmente');
 
