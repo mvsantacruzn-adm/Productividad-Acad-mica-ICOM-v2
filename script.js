@@ -54,13 +54,9 @@ async function cargarDatos() {
     }
 }
 
-// Los 4 profesores sin ficha
-const sinFicha = [
-    { nombre: 'Hugo Benedetti', resumen: 'Finanzas. Por completar datos.' },
-    { nombre: 'María José Bosch', resumen: 'Management. Por completar datos.' },
-    { nombre: 'Matias Braun', resumen: 'Finanzas Corporativas. Por completar datos.' },
-    { nombre: 'Natalia Yankovic', resumen: 'Investigación de Operaciones. Por completar datos.' }
-];
+// Los 4 profesores sin ficha (definido en config.js)
+const sinFicha = PROFESORES_SIN_FICHA;
+
 
 function inicializar() {
     const profesoresConDatos = Object.keys(datosBase).map((nombre, idx) => ({
@@ -703,18 +699,9 @@ let filtrosSeleccionados = {
     tablas: []
 };
 
-const mapeoTablas = {
-    'publicaciones_indexadas': 'Publicaciones Indexadas',
-    'publicaciones_no_indexadas': 'Publicaciones No Indexadas',
-    'libros': 'Libros',
-    'capitulos': 'Capítulos de Libro',
-    'proyectos': 'Proyectos de Investigación',
-    'tesis_magister_guia': 'Tesis Magíster (Profesor Guía)',
-    'tesis_magister_coguia': 'Tesis Magíster (Profesor Co-Guía)',
-    'tesis_doctorado_guia': 'Tesis Doctorado (Profesor Guía)',
-    'tesis_doctorado_coguia': 'Tesis Doctorado (Profesor Co-Guía)',
-    'patentes': 'Patentes'
-};
+// Mapeo de tablas académicas (definido en config.js)
+const mapeoTablas = MAPEO_TABLAS;
+
 
 function inicializarFiltrosDatosProfesores() {
     console.log('→ inicializarFiltrosDatosProfesores INICIADO');
