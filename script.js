@@ -421,52 +421,12 @@ function traducirTipo(tipo) {
     return t[tipo] || tipo;
 }
 
-function abrirModal(id) {
-    document.getElementById(`modal-${id}`).classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function cerrarModal(id) {
-    document.getElementById(`modal-${id}`).classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
-
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-}
-
-function cambiarPagina(pagina) {
-    document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
-    document.getElementById(`page-${pagina}`).classList.add('active');
-    event.target.classList.add('active');
-}
-
-// Cargar datos al iniciar
 // ============================================
-// FUNCIONES DE MENÚ EXPANDIBLE
+// NAVEGACIÓN Y MENÚ
 // ============================================
+// Lógica delegada a navigation.js
+// (funciones: abrirModal, cerrarModal, cambiarPagina, toggleMenuReporteria, toggleMenuControl)
 
-function toggleMenuReporteria(event) {
-    event.stopPropagation();
-    const menuReporteria = document.getElementById("menu-reporteria");
-    const submenuReporteria = document.getElementById("submenu-reporteria");
-    
-    submenuReporteria.style.display = submenuReporteria.style.display === "none" ? "block" : "none";
-    menuReporteria.classList.toggle("active");
-}
-
-function toggleMenuControl(event) {
-    event.stopPropagation();
-    const menuControl = document.getElementById("menu-control");
-    const submenuControl = document.getElementById("submenu-control");
-    
-    submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
-    menuControl.classList.toggle("active");
-}
 cargarDatos();
 
 // ============================================
