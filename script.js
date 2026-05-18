@@ -40,6 +40,24 @@ async function cargarDatos() {
 function inicializar() {
     console.log('→ Inicializando dashboard...');
     
+    // Crear modal de profesor si no existe
+    if (!document.getElementById('profesor-modal')) {
+        const modalContainer = document.getElementById('modales-container');
+        if (modalContainer) {
+            const modal = document.createElement('div');
+            modal.id = 'profesor-modal';
+            modal.style.display = 'none';
+            modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; overflow: auto;';
+            modal.innerHTML = `
+                <div style="background: white; margin: 50px auto; padding: 20px; border-radius: 8px; max-width: 90%; max-height: 90%; overflow: auto; width: 80%;">
+                    <button onclick="document.getElementById('profesor-modal').style.display = 'none';" style="float: right; background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+                    <div id="profesor-modal-content"></div>
+                </div>
+            `;
+            modalContainer.appendChild(modal);
+        }
+    }
+    
     const profesoresConDatos = Object.keys(datosBase).map((nombre, idx) => ({
         id: `prof${String(idx + 1).padStart(2, '0')}`,
         nombre: nombre,
@@ -71,8 +89,11 @@ function inicializar() {
 // ============================================
 
 function generarListado(profesores) {
-    const container = document.getElementById('profesores-container');
-    if (!container) return;
+    const container = document.getElementById('profesor-list');
+    if (!container) {
+        console.warn('⚠️ Elemento profesor-list no encontrado');
+        return;
+    }
     
     container.innerHTML = '';
     
@@ -599,6 +620,7 @@ window.cambiarPagina = cambiarPagina;
 window.toggleMenuReporteria = toggleMenuReporteria;
 window.toggleMenuControl = toggleMenuControl;
 window.toggleMenuCNA = toggleMenuCNA;
+window.mostrarModalProfesor = mostrarModalProfesor;
 window.generarFichaCNA = generarFichaCNA;
 window.descargarPDF = descargarPDF;
 window.descargarFichaExcel = descargarFichaExcel;
