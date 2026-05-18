@@ -10,7 +10,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -21,9 +22,10 @@
             "Nombre revista": "Journal of Political Economy",
             "Estado": "Publicado",
             "ISSN": "0022-3808",
-            "Factor de impacto": "9,7 JIF",
             "Link de verificación electrónica": "",
-            "Título": "The ABCs of firm heterogeneity when firms sort into markets: The case of exporters"
+            "Título": "The ABCs of firm heterogeneity when firms sort into markets: The case of exporters",
+            "Indicador": "9,7",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -32,9 +34,10 @@
             "Nombre revista": "Journal of International Economics",
             "Estado": "Publicado",
             "ISSN": "0022-1996",
-            "Factor de impacto": "3,9 JIF",
             "Link de verificación electrónica": "",
-            "Título": "UIP deviations: Insights from event studies"
+            "Título": "UIP deviations: Insights from event studies",
+            "Indicador": "3,9",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -43,9 +46,10 @@
             "Nombre revista": "Estudios Públicos",
             "Estado": "Publicado",
             "ISSN": "0716-1115",
-            "Factor de impacto": "0,2 SJR",
             "Link de verificación electrónica": "",
-            "Título": "Gobernanza de bancos centrales para los desafíos del siglo XXI"
+            "Título": "Gobernanza de bancos centrales para los desafíos del siglo XXI",
+            "Indicador": "0,2",
+            "Indexación": "SJR"
           },
           {
             "N°": "4",
@@ -54,9 +58,10 @@
             "Nombre revista": "American Economic Review: Insights",
             "Estado": "Publicado",
             "ISSN": "2640-205X",
-            "Factor de impacto": "4,7 JIF",
             "Link de verificación electrónica": "",
-            "Título": "The DNA of New Exporters: Spin-Offs and FDI at the Extensive Margin of Trade"
+            "Título": "The DNA of New Exporters: Spin-Offs and FDI at the Extensive Margin of Trade",
+            "Indicador": "4,7",
+            "Indexación": "JIF"
           },
           {
             "N°": "5",
@@ -65,9 +70,10 @@
             "Nombre revista": "Journal of Financial Economics",
             "Estado": "Publicado",
             "ISSN": "0304-405X",
-            "Factor de impacto": "7,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Channels of US Monetary Policy Spillovers to International Bond Markets"
+            "Título": "Channels of US Monetary Policy Spillovers to International Bond Markets",
+            "Indicador": "7,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "6",
@@ -76,9 +82,10 @@
             "Nombre revista": "American Economic Journal: Macroeconomics",
             "Estado": "Publicado",
             "ISSN": "1945-7707",
-            "Factor de impacto": "4,0 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Inventory Management, Product Quality, and Cross-Country Income Differences"
+            "Título": "Inventory Management, Product Quality, and Cross-Country Income Differences",
+            "Indicador": "4",
+            "Indexación": "JIF"
           },
           {
             "N°": "7",
@@ -87,9 +94,10 @@
             "Nombre revista": "American Economic Review",
             "Estado": "Publicado",
             "ISSN": "0002-8282",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "",
-            "Título": "A Balls-and-Bins Model of Trade: Comment"
+            "Título": "A Balls-and-Bins Model of Trade: Comment",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "8",
@@ -98,9 +106,10 @@
             "Nombre revista": "Applied Economics",
             "Estado": "Publicado",
             "ISSN": "0003-6846",
-            "Factor de impacto": "1,9 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Empirical analysis of the Chilean business cycle"
+            "Título": "Empirical analysis of the Chilean business cycle",
+            "Indicador": "1,9",
+            "Indexación": "JIF"
           },
           {
             "N°": "9",
@@ -109,9 +118,10 @@
             "Nombre revista": "Review of International Economics",
             "Estado": "Publicado",
             "ISSN": "0965-7576",
-            "Factor de impacto": "1,4 JIF",
             "Link de verificación electrónica": "",
-            "Título": "China's structural transformation and global imbalances"
+            "Título": "China's structural transformation and global imbalances",
+            "Indicador": "1,4",
+            "Indexación": "JIF"
           },
           {
             "N°": "10",
@@ -120,9 +130,10 @@
             "Nombre revista": "Journal of International Economics",
             "Estado": "Publicado",
             "ISSN": "0022-1996",
-            "Factor de impacto": "2,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Occasional and Perennial Exporters"
+            "Título": "Occasional and Perennial Exporters",
+            "Indicador": "2,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "11",
@@ -131,9 +142,10 @@
             "Nombre revista": "Review of Development Economics",
             "Estado": "Publicado",
             "ISSN": "1467-9361",
-            "Factor de impacto": "0,8 JIF",
             "Link de verificación electrónica": "",
-            "Título": "FDI Liberalization as a Source of Comparative Advantage in China"
+            "Título": "FDI Liberalization as a Source of Comparative Advantage in China",
+            "Indicador": "0,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "12",
@@ -142,9 +154,10 @@
             "Nombre revista": "World Development",
             "Estado": "Publicado",
             "ISSN": "0305-750X",
-            "Factor de impacto": "1,8 JIF",
             "Link de verificación electrónica": "",
-            "Título": "David versus Goliath: The Impact of Chinese Competition on Developing Countries"
+            "Título": "David versus Goliath: The Impact of Chinese Competition on Developing Countries",
+            "Indicador": "1,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "13",
@@ -153,9 +166,10 @@
             "Nombre revista": "Journal of Comparative Economics",
             "Estado": "Publicado",
             "ISSN": "0147-5967",
-            "Factor de impacto": "1,2 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Supporting Inefficient Firms with Capital Subsidies: China and Germany in the 1990s"
+            "Título": "Supporting Inefficient Firms with Capital Subsidies: China and Germany in the 1990s",
+            "Indicador": "1,2",
+            "Indexación": "JIF"
           },
           {
             "N°": "14",
@@ -164,9 +178,10 @@
             "Nombre revista": "Economics of Transition",
             "Estado": "Publicado",
             "ISSN": "0967-0750",
-            "Factor de impacto": "0,7 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Why Does China Protect Its Labour-Intensive Industries More?"
+            "Título": "Why Does China Protect Its Labour-Intensive Industries More?",
+            "Indicador": "0,7",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -511,7 +526,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -522,9 +538,10 @@
             "Nombre revista": "Journal of Law, Economics, and Organization",
             "Estado": "Publicado online (issue 2025)",
             "ISSN": "8756-6222",
-            "Factor de impacto": "1,8 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Ownership Network of Firms and Labor Income"
+            "Título": "Ownership Network of Firms and Labor Income",
+            "Indicador": "1,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -533,9 +550,10 @@
             "Nombre revista": "Journal of International Economics",
             "Estado": "Publicado",
             "ISSN": "0022-1996",
-            "Factor de impacto": "3,9 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Large International Corporate Bonds: Investor Behavior and Firm Responses"
+            "Título": "Large International Corporate Bonds: Investor Behavior and Firm Responses",
+            "Indicador": "3,9",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -544,9 +562,10 @@
             "Nombre revista": "Journal of Corporate Finance",
             "Estado": "Publicado",
             "ISSN": "0929-1199",
-            "Factor de impacto": "6,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "The Internal Labor Markets of Business Groups"
+            "Título": "The Internal Labor Markets of Business Groups",
+            "Indicador": "6,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "4",
@@ -555,9 +574,10 @@
             "Nombre revista": "Journal of Financial Stability",
             "Estado": "Publicado",
             "ISSN": "1572-3089",
-            "Factor de impacto": "5,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Financing Firms in Hibernation during COVID-19"
+            "Título": "Financing Firms in Hibernation during COVID-19",
+            "Indicador": "5,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "5",
@@ -566,9 +586,10 @@
             "Nombre revista": "Journal of Financial Intermediation",
             "Estado": "Publicado",
             "ISSN": "1042-9573",
-            "Factor de impacto": "4,3 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Capital Inflows, Equity Issuance Activity, and Corporate Investment"
+            "Título": "Capital Inflows, Equity Issuance Activity, and Corporate Investment",
+            "Indicador": "4,3",
+            "Indexación": "JIF"
           },
           {
             "N°": "6",
@@ -577,9 +598,10 @@
             "Nombre revista": "Journal of Finance",
             "Estado": "Publicado",
             "ISSN": "0022-1082",
-            "Factor de impacto": "6,0 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Capital Account Liberalization and Aggregate Productivity: The Role of Firm Capital Allocation"
+            "Título": "Capital Account Liberalization and Aggregate Productivity: The Role of Firm Capital Allocation",
+            "Indicador": "6",
+            "Indexación": "JIF"
           },
           {
             "N°": "7",
@@ -588,9 +610,10 @@
             "Nombre revista": "Journal of Financial Economics",
             "Estado": "Publicado",
             "ISSN": "0304-405X",
-            "Factor de impacto": "7,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "How Collateral Laws Shape Lending and Sectoral Activity"
+            "Título": "How Collateral Laws Shape Lending and Sectoral Activity",
+            "Indicador": "7,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "8",
@@ -599,9 +622,10 @@
             "Nombre revista": "Review of Financial Studies",
             "Estado": "Publicado",
             "ISSN": "0893-9454",
-            "Factor de impacto": "5,8 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Enlarging the Contracting Space: Collateral Menus, Access to Credit, and Economic Activity"
+            "Título": "Enlarging the Contracting Space: Collateral Menus, Access to Credit, and Economic Activity",
+            "Indicador": "5,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "9",
@@ -610,9 +634,10 @@
             "Nombre revista": "Journal of Applied Corporate Finance",
             "Estado": "Publicado",
             "ISSN": "N/D",
-            "Factor de impacto": "N/D",
             "Link de verificación electrónica": "",
-            "Título": "Which Creditors’ Rights Reforms Drive Financial Deepening and Economic Development?"
+            "Título": "Which Creditors’ Rights Reforms Drive Financial Deepening and Economic Development?",
+            "Indicador": "N/A",
+            "Indexación": "N/A"
           },
           {
             "N°": "10",
@@ -621,9 +646,10 @@
             "Nombre revista": "Journal of Development Economics",
             "Estado": "Publicado",
             "ISSN": "0304-3878",
-            "Factor de impacto": "2,4 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Age-differentiated Minimum Wages in Developing Countries"
+            "Título": "Age-differentiated Minimum Wages in Developing Countries",
+            "Indicador": "2,4",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -830,7 +856,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -841,9 +868,10 @@
             "Nombre revista": "Journal of Banking and Finance",
             "Estado": "Publicado",
             "ISSN": "0378-4266",
-            "Factor de impacto": "3,8 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-banking-and-finance",
-            "Título": "Guarantees, risk shifting and credit crunches"
+            "Título": "Guarantees, risk shifting and credit crunches",
+            "Indicador": "3,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -852,9 +880,10 @@
             "Nombre revista": "Review of Development Economics",
             "Estado": "Publicado",
             "ISSN": "1363-6669",
-            "Factor de impacto": "2,0 JIF",
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/14679361",
-            "Título": "Factors of production, productivity, institutions, and development: Evidence from Brazil"
+            "Título": "Factors of production, productivity, institutions, and development: Evidence from Brazil",
+            "Indicador": "2",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -863,9 +892,10 @@
             "Nombre revista": "Review of Finance",
             "Estado": "Publicado",
             "ISSN": "1572-3097",
-            "Factor de impacto": "8,4 JIF",
             "Link de verificación electrónica": "https://link.springer.com/journal/11127",
-            "Título": "Optimal Capital Structure with Stock Market Feedback"
+            "Título": "Optimal Capital Structure with Stock Market Feedback",
+            "Indicador": "8,4",
+            "Indexación": "JIF"
           },
           {
             "N°": "4",
@@ -874,9 +904,10 @@
             "Nombre revista": "Games and Economic Behavior",
             "Estado": "Publicado",
             "ISSN": "0899-8256",
-            "Factor de impacto": "1,6 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
-            "Título": "Rollover risk and stress test credibility"
+            "Título": "Rollover risk and stress test credibility",
+            "Indicador": "1,6",
+            "Indexación": "JIF"
           },
           {
             "N°": "5",
@@ -885,9 +916,10 @@
             "Nombre revista": "Journal of Public Economic Theory",
             "Estado": "Publicado",
             "ISSN": "1097-3923",
-            "Factor de impacto": "1,0 JIF",
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10991258",
-            "Título": "Dynamic coordination with timing frictions: Theory and applications"
+            "Título": "Dynamic coordination with timing frictions: Theory and applications",
+            "Indicador": "1",
+            "Indexación": "JIF"
           },
           {
             "N°": "6",
@@ -896,9 +928,10 @@
             "Nombre revista": "Economic Theory",
             "Estado": "Publicado",
             "ISSN": "0938-2259",
-            "Factor de impacto": "1,1 JIF",
             "Link de verificación electrónica": "https://link.springer.com/journal/938",
-            "Título": "Entry and mergers in oligopoly with firm-specific network effects"
+            "Título": "Entry and mergers in oligopoly with firm-specific network effects",
+            "Indicador": "1,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "7",
@@ -907,9 +940,10 @@
             "Nombre revista": "Journal of Mathematical Economics",
             "Estado": "Publicado",
             "ISSN": "0304-4068",
-            "Factor de impacto": "0,7 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-development-economics",
-            "Título": "Dynamic coordination among heterogeneous agents"
+            "Título": "Dynamic coordination among heterogeneous agents",
+            "Indicador": "0,7",
+            "Indexación": "JIF"
           },
           {
             "N°": "8",
@@ -918,9 +952,10 @@
             "Nombre revista": "Journal of Economic Theory",
             "Estado": "Publicado",
             "ISSN": "0022-0531",
-            "Factor de impacto": "1,2 JIF",
             "Link de verificación electrónica": "https://academic.oup.com/jeea",
-            "Título": "QWERTY is efficient"
+            "Título": "QWERTY is efficient",
+            "Indicador": "1,2",
+            "Indexación": "JIF"
           },
           {
             "N°": "9",
@@ -929,9 +964,10 @@
             "Nombre revista": "Análise Econômica",
             "Estado": "Publicado",
             "ISSN": "0102-2148",
-            "Factor de impacto": "0,18 SJR",
             "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=21100223806&tip=sid",
-            "Título": "A eleição de Dilma em 2010 e seus determinantes: evidências empíricas do Programa Bolsa Família"
+            "Título": "A eleição de Dilma em 2010 e seus determinantes: evidências empíricas do Programa Bolsa Família",
+            "Indicador": "0,18",
+            "Indexación": "SJR"
           }
         ]
       },
@@ -1034,7 +1070,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -1045,9 +1082,10 @@
             "Nombre revista": "Oxford Open Economics",
             "Estado": "Publicación (early access)",
             "ISSN": "2752-572X",
-            "Factor de impacto": "N/A",
             "Link de verificación electrónica": "",
-            "Título": "Inequality and market power in Latin America and the Caribbean"
+            "Título": "Inequality and market power in Latin America and the Caribbean",
+            "Indicador": "N/A",
+            "Indexación": "N/A"
           },
           {
             "N°": "2",
@@ -1056,9 +1094,10 @@
             "Nombre revista": "American Economic Review: Insights",
             "Estado": "Publicado",
             "ISSN": "2640-205X",
-            "Factor de impacto": "4,7 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Proximity to the frontier, markups, and the response of innovation to foreign competition: Evidence from matched production-innovation surveys in Chile"
+            "Título": "Proximity to the frontier, markups, and the response of innovation to foreign competition: Evidence from matched production-innovation surveys in Chile",
+            "Indicador": "4,7",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -1067,9 +1106,10 @@
             "Nombre revista": "Resources Policy",
             "Estado": "Publicado",
             "ISSN": "0301-4207",
-            "Factor de impacto": "5,4 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Commodity price shocks and poverty reduction in Chile"
+            "Título": "Commodity price shocks and poverty reduction in Chile",
+            "Indicador": "5,4",
+            "Indexación": "JIF"
           },
           {
             "N°": "4",
@@ -1078,9 +1118,10 @@
             "Nombre revista": "Revista de Estudios Públicos (CEP)",
             "Estado": "Publicado",
             "ISSN": "0716-1115",
-            "Factor de impacto": "0,2 SJR",
             "Link de verificación electrónica": "",
-            "Título": "Empresas de crecimiento acelerado y productividad: evidencia microeconómica para Chile"
+            "Título": "Empresas de crecimiento acelerado y productividad: evidencia microeconómica para Chile",
+            "Indicador": "0,2",
+            "Indexación": "SJR"
           },
           {
             "N°": "5",
@@ -1089,9 +1130,10 @@
             "Nombre revista": "Journal of Political Economy",
             "Estado": "Publicado",
             "ISSN": "0022-3808",
-            "Factor de impacto": "7,0 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Exporting and plant-level efficiency gains: It’s in the measure"
+            "Título": "Exporting and plant-level efficiency gains: It’s in the measure",
+            "Indicador": "7",
+            "Indexación": "JIF"
           },
           {
             "N°": "6",
@@ -1100,9 +1142,10 @@
             "Nombre revista": "Journal of Comparative Economics",
             "Estado": "Publicado",
             "ISSN": "0147-5967",
-            "Factor de impacto": "2,1 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Constitutional rights and education: An international comparative study"
+            "Título": "Constitutional rights and education: An international comparative study",
+            "Indicador": "2,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "7",
@@ -1111,9 +1154,10 @@
             "Nombre revista": "Revista de Estudios Públicos (CEP)",
             "Estado": "Publicado",
             "ISSN": "0716-1115",
-            "Factor de impacto": "0,15 SJR",
             "Link de verificación electrónica": "",
-            "Título": "Educación y derechos constitucionales"
+            "Título": "Educación y derechos constitucionales",
+            "Indicador": "0,15",
+            "Indexación": "SJR"
           },
           {
             "N°": "8",
@@ -1122,9 +1166,10 @@
             "Nombre revista": "Trimestre Económico",
             "Estado": "Publicado",
             "ISSN": "0041-3011",
-            "Factor de impacto": "0,2 SJR",
             "Link de verificación electrónica": "",
-            "Título": "En busca de un buen marco de referencia predictivo para la inflación en Chile"
+            "Título": "En busca de un buen marco de referencia predictivo para la inflación en Chile",
+            "Indicador": "0,2",
+            "Indexación": "SJR"
           },
           {
             "N°": "9",
@@ -1133,9 +1178,10 @@
             "Nombre revista": "World Development",
             "Estado": "Publicado",
             "ISSN": "0305-750X",
-            "Factor de impacto": "3,7 JIF",
             "Link de verificación electrónica": "",
-            "Título": "R&D and Productivity: A Two Way Avenue?"
+            "Título": "R&D and Productivity: A Two Way Avenue?",
+            "Indicador": "3,7",
+            "Indexación": "JIF"
           },
           {
             "N°": "10",
@@ -1144,9 +1190,10 @@
             "Nombre revista": "Trimestre Económico",
             "Estado": "Publicado",
             "ISSN": "0041-3011",
-            "Factor de impacto": "0,15 SJR",
             "Link de verificación electrónica": "",
-            "Título": "Productividad, innovación y exportaciones en la industria manufacturera chilena"
+            "Título": "Productividad, innovación y exportaciones en la industria manufacturera chilena",
+            "Indicador": "0,15",
+            "Indexación": "SJR"
           }
         ]
       },
@@ -1276,7 +1323,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -1287,9 +1335,10 @@
             "Nombre revista": "American Economic Review",
             "Estado": "Forthcoming / Accepted",
             "ISSN": "0002-8282",
-            "Factor de impacto": "9,4 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Elite Universities and the Intergenerational Transmission of Human and Social Capital"
+            "Título": "Elite Universities and the Intergenerational Transmission of Human and Social Capital",
+            "Indicador": "9,4",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -1298,9 +1347,10 @@
             "Nombre revista": "Journal of Labor Economics",
             "Estado": "Publicado",
             "ISSN": "0734-306X",
-            "Factor de impacto": "6,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Recidivism and Neighborhood Institutions: Evidence from the Rise of the Evangelical Church in Chile"
+            "Título": "Recidivism and Neighborhood Institutions: Evidence from the Rise of the Evangelical Church in Chile",
+            "Indicador": "6,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -1309,9 +1359,10 @@
             "Nombre revista": "Economics of Education Review",
             "Estado": "Publicado",
             "ISSN": "0272-7757",
-            "Factor de impacto": "3,0 SJR",
             "Link de verificación electrónica": "",
-            "Título": "Teacher value-added and gender gaps in educational outcomes"
+            "Título": "Teacher value-added and gender gaps in educational outcomes",
+            "Indicador": "3",
+            "Indexación": "SJR"
           },
           {
             "N°": "4",
@@ -1320,9 +1371,10 @@
             "Nombre revista": "American Economic Journal: Applied Economics",
             "Estado": "Publicado",
             "ISSN": "1945-7782",
-            "Factor de impacto": "5,2 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Neighbors’ Effects on University Enrollment"
+            "Título": "Neighbors’ Effects on University Enrollment",
+            "Indicador": "5,2",
+            "Indexación": "JIF"
           },
           {
             "N°": "5",
@@ -1331,9 +1383,10 @@
             "Nombre revista": "Economics of Education Review",
             "Estado": "Publicado",
             "ISSN": "0272-7757",
-            "Factor de impacto": "2,7 SJR",
             "Link de verificación electrónica": "",
-            "Título": "It's time to learn: School institutions and returns to instruction time"
+            "Título": "It's time to learn: School institutions and returns to instruction time",
+            "Indicador": "2,7",
+            "Indexación": "SJR"
           },
           {
             "N°": "6",
@@ -1342,9 +1395,10 @@
             "Nombre revista": "Quarterly Journal of Economics",
             "Estado": "Publicado",
             "ISSN": "0033-5533",
-            "Factor de impacto": "11,0 JIF",
             "Link de verificación electrónica": "",
-            "Título": "O Brother, Where Start Thou? Sibling Spillovers on College and Major Choice in Four Countries"
+            "Título": "O Brother, Where Start Thou? Sibling Spillovers on College and Major Choice in Four Countries",
+            "Indicador": "11",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -1481,7 +1535,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -1492,9 +1547,10 @@
             "Nombre revista": "Industrial and Organizational Psychology",
             "Estado": "Publicado",
             "ISSN": "1754-9426",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/industrial-and-organizational-psychology",
-            "Título": "The Role of Developmental Reviewing and the Pursuit of Good Science"
+            "Título": "The Role of Developmental Reviewing and the Pursuit of Good Science",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -1503,9 +1559,10 @@
             "Nombre revista": "Journal of Occupational and Organizational Psychology",
             "Estado": "Publicado",
             "ISSN": "0963-1798",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "https://bpspsychub.onlinelibrary.wiley.com/journal/20448325",
-            "Título": "Job Autonomy as a Double-Edged Sword: Good for Work Performance, But Bad for Psychological Detachment"
+            "Título": "Job Autonomy as a Double-Edged Sword: Good for Work Performance, But Bad for Psychological Detachment",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -1514,9 +1571,10 @@
             "Nombre revista": "Negotiation and Conflict Management Research",
             "Estado": "Publicado",
             "ISSN": "1750-4708",
-            "Factor de impacto": "1,1 JIF",
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/17504716",
-            "Título": "Disagreeing with Employees’ Constructive Disagreement: On Giving (Non-)Specific Explanations for Rejecting Employees’ Voiced Suggestions"
+            "Título": "Disagreeing with Employees’ Constructive Disagreement: On Giving (Non-)Specific Explanations for Rejecting Employees’ Voiced Suggestions",
+            "Indicador": "1,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "4",
@@ -1525,9 +1583,10 @@
             "Nombre revista": "Scientific Reports",
             "Estado": "Publicado",
             "ISSN": "2045-2322",
-            "Factor de impacto": "4,1 JIF",
             "Link de verificación electrónica": "https://www.nature.com/srep/",
-            "Título": "Endorsing voice behavior can be as devastating as rejecting it when the endorsement is laced with a hint of anger"
+            "Título": "Endorsing voice behavior can be as devastating as rejecting it when the endorsement is laced with a hint of anger",
+            "Indicador": "4,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "5",
@@ -1536,9 +1595,10 @@
             "Nombre revista": "Journal of Occupational and Organizational Psychology",
             "Estado": "Publicado",
             "ISSN": "0963-1798",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "https://bpspsychub.onlinelibrary.wiley.com/journal/20448325",
-            "Título": "Turning Down Employee Voice with Humor: A Mixed Blessing for Employee Voice Resilience?"
+            "Título": "Turning Down Employee Voice with Humor: A Mixed Blessing for Employee Voice Resilience?",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "6",
@@ -1547,9 +1607,10 @@
             "Nombre revista": "Journal of Managerial Psychology",
             "Estado": "Publicado",
             "ISSN": "0268-3946",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "https://www.emerald.com/insight/publication/issn/0268-3946",
-            "Título": "Employees’ Attitudinal Reactions to Supervisors’ Weekly Taking Charge Behavior"
+            "Título": "Employees’ Attitudinal Reactions to Supervisors’ Weekly Taking Charge Behavior",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "7",
@@ -1558,9 +1619,10 @@
             "Nombre revista": "Organizational Behavior and Human Decision Processes",
             "Estado": "Publicado",
             "ISSN": "0749-5978",
-            "Factor de impacto": "6,1 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes",
-            "Título": "A Chorus of Different Tongues: Foreign Language Fluency and Informal Influence in Multinational Teams"
+            "Título": "A Chorus of Different Tongues: Foreign Language Fluency and Informal Influence in Multinational Teams",
+            "Indicador": "6,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "8",
@@ -1569,9 +1631,10 @@
             "Nombre revista": "Acta Psychologica",
             "Estado": "Publicado",
             "ISSN": "0001-6918",
-            "Factor de impacto": "2,1 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/acta-psychologica",
-            "Título": "The language of blame: Exploring the effects of non-native accents on post-accident blame attributions"
+            "Título": "The language of blame: Exploring the effects of non-native accents on post-accident blame attributions",
+            "Indicador": "2,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "9",
@@ -1580,9 +1643,10 @@
             "Nombre revista": "Applied Psychology",
             "Estado": "Publicado",
             "ISSN": "0003-066X",
-            "Factor de impacto": "4,1 JIF",
             "Link de verificación electrónica": "https://www.apa.org/pubs/journals/amp",
-            "Título": "Supervisors’ Achievement Goal Orientations and Employees’ Mindfulness"
+            "Título": "Supervisors’ Achievement Goal Orientations and Employees’ Mindfulness",
+            "Indicador": "4,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "10",
@@ -1591,9 +1655,10 @@
             "Nombre revista": "Journal of Occupational and Organizational Psychology",
             "Estado": "Publicado",
             "ISSN": "0963-1798",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "https://bpspsychub.onlinelibrary.wiley.com/journal/20448325",
-            "Título": "When discordant work selves yield workplace creativity"
+            "Título": "When discordant work selves yield workplace creativity",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "11",
@@ -1602,9 +1667,10 @@
             "Nombre revista": "International Journal of Conflict Management",
             "Estado": "Publicado",
             "ISSN": "1044-4068",
-            "Factor de impacto": "2,1 JIF",
             "Link de verificación electrónica": "https://www.emerald.com/insight/publication/issn/1044-4068",
-            "Título": "When anger and happiness generate concessions"
+            "Título": "When anger and happiness generate concessions",
+            "Indicador": "2,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "12",
@@ -1613,9 +1679,10 @@
             "Nombre revista": "Applied Psychology",
             "Estado": "Publicado",
             "ISSN": "0003-066X",
-            "Factor de impacto": "3,8",
             "Link de verificación electrónica": "https://www.apa.org/pubs/journals/amp",
-            "Título": "Leader-subordinate congruence in power distance values and voice behavior"
+            "Título": "Leader-subordinate congruence in power distance values and voice behavior",
+            "Indicador": "3,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "13",
@@ -1624,9 +1691,10 @@
             "Nombre revista": "Journal of Organizational Behavior",
             "Estado": "Publicado",
             "ISSN": "0894-3796",
-            "Factor de impacto": "5",
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10991379",
-            "Título": "Introducing changes at work: How voice behavior relates to management innovation"
+            "Título": "Introducing changes at work: How voice behavior relates to management innovation",
+            "Indicador": "5",
+            "Indexación": "JIF"
           },
           {
             "N°": "14",
@@ -1635,9 +1703,10 @@
             "Nombre revista": "Journal of Business Research",
             "Estado": "Publicado",
             "ISSN": "0148-2963",
-            "Factor de impacto": "5,2",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research",
-            "Título": "Dispositional and situational differences in motives to engage in citizenship behavior"
+            "Título": "Dispositional and situational differences in motives to engage in citizenship behavior",
+            "Indicador": "5,2",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -1971,7 +2040,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -1982,9 +2052,10 @@
             "Nombre revista": "Management Science",
             "Estado": "Publicado",
             "ISSN": "0025-1909",
-            "Factor de impacto": "7,5 JIF",
             "Link de verificación electrónica": "https://pubsonline.informs.org/journal/mnsc",
-            "Título": "Does Employing Skilled Immigrants Enhance Competitive Performance? Evidence from European Football Clubs"
+            "Título": "Does Employing Skilled Immigrants Enhance Competitive Performance? Evidence from European Football Clubs",
+            "Indicador": "7,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -1993,9 +2064,10 @@
             "Nombre revista": "Nature Communications",
             "Estado": "Publicado",
             "ISSN": "2041-1723",
-            "Factor de impacto": "16,6 JIF",
             "Link de verificación electrónica": "https://journals.sagepub.com/home/joc",
-            "Título": "Changes in social norms during the early stages of the COVID-19 pandemic across 43 countries"
+            "Título": "Changes in social norms during the early stages of the COVID-19 pandemic across 43 countries",
+            "Indicador": "16,6",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -2004,9 +2076,10 @@
             "Nombre revista": "International Business Review",
             "Estado": "Publicado",
             "ISSN": "0969-5931",
-            "Factor de impacto": "8,1 JIF",
             "Link de verificación electrónica": "https://www.journals.elsevier.com/international-business-review",
-            "Título": "The impact of experience on the agglomeration of cross-border investments within a region: the case of private equity in emerging markets"
+            "Título": "The impact of experience on the agglomeration of cross-border investments within a region: the case of private equity in emerging markets",
+            "Indicador": "8,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "4",
@@ -2015,9 +2088,10 @@
             "Nombre revista": "Journal of World Business",
             "Estado": "Publicado",
             "ISSN": "1090-9516",
-            "Factor de impacto": "5,7 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-world-business",
-            "Título": "The interplay between home and host country institutions in an emerging market context: Private equity in Latin America"
+            "Título": "The interplay between home and host country institutions in an emerging market context: Private equity in Latin America",
+            "Indicador": "5,7",
+            "Indexación": "JIF"
           },
           {
             "N°": "5",
@@ -2026,9 +2100,10 @@
             "Nombre revista": "Journal of International Business Studies",
             "Estado": "Publicado",
             "ISSN": "0047-2506",
-            "Factor de impacto": "7,7 JIF",
             "Link de verificación electrónica": "https://link.springer.com/journal/41267",
-            "Título": "The interplay of national distances and regional networks: Private equity investments in emerging markets"
+            "Título": "The interplay of national distances and regional networks: Private equity investments in emerging markets",
+            "Indicador": "7,7",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -2203,7 +2278,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -2214,9 +2290,10 @@
             "Nombre revista": "Management Science",
             "Estado": "Publicado",
             "ISSN": "0025-1909",
-            "Factor de impacto": "4,9 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Short of capital: Stock Market Implications of Short Sellers’ Losses"
+            "Título": "Short of capital: Stock Market Implications of Short Sellers’ Losses",
+            "Indicador": "4,9",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2225,9 +2302,10 @@
             "Nombre revista": "Journal of Banking and Finance",
             "Estado": "Publicado",
             "ISSN": "0378-4266",
-            "Factor de impacto": "3,9 JIF",
             "Link de verificación electrónica": "",
-            "Título": "The Value of Growth: Changes in Profitability and Future Stock Returns"
+            "Título": "The Value of Growth: Changes in Profitability and Future Stock Returns",
+            "Indicador": "3,9",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2236,9 +2314,10 @@
             "Nombre revista": "Journal of Financial and Quantitative Analysis",
             "Estado": "Publicado",
             "ISSN": "0022-1090",
-            "Factor de impacto": "5,5 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Out of Sync: Dispersed Short Selling and the Correction of Mispricing"
+            "Título": "Out of Sync: Dispersed Short Selling and the Correction of Mispricing",
+            "Indicador": "5,5",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2247,9 +2326,10 @@
             "Nombre revista": "Journal of Financial Intermediation",
             "Estado": "Publicado",
             "ISSN": "1042-9573",
-            "Factor de impacto": "5,2 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Carrot and Stick: A Role for Benchmark-Adjusted Compensation in Active Fund Management"
+            "Título": "Carrot and Stick: A Role for Benchmark-Adjusted Compensation in Active Fund Management",
+            "Indicador": "5,2",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2258,9 +2338,10 @@
             "Nombre revista": "Review of Financial Studies",
             "Estado": "Publicado",
             "ISSN": "0893-9454",
-            "Factor de impacto": "5,8 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Riding the Bubble with Convex Incentives"
+            "Título": "Riding the Bubble with Convex Incentives",
+            "Indicador": "5,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2269,9 +2350,10 @@
             "Nombre revista": "Journal of Banking and Finance",
             "Estado": "Publicado",
             "ISSN": "0378-4266",
-            "Factor de impacto": "4,1 JIF",
             "Link de verificación electrónica": "",
-            "Título": "The Invisible Hand of Internal Markets in Mutual Fund Families"
+            "Título": "The Invisible Hand of Internal Markets in Mutual Fund Families",
+            "Indicador": "4,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2280,9 +2362,10 @@
             "Nombre revista": "Journal of Banking and Finance",
             "Estado": "Publicado",
             "ISSN": "0378-4266",
-            "Factor de impacto": "3,8 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Starting on the Wrong Foot: Seasonality in Mutual Fund Performance"
+            "Título": "Starting on the Wrong Foot: Seasonality in Mutual Fund Performance",
+            "Indicador": "3,8",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -2445,7 +2528,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -2456,9 +2540,10 @@
             "Nombre revista": "Games and Economic Behavior",
             "Estado": "Publicado",
             "ISSN": "0899-8256",
-            "Factor de impacto": "1,8 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
-            "Título": "Competitive limit of competing auctions"
+            "Título": "Competitive limit of competing auctions",
+            "Indicador": "1,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2467,9 +2552,10 @@
             "Nombre revista": "American Journal of Political Science",
             "Estado": "Publicado",
             "ISSN": "0092-5853",
-            "Factor de impacto": "4,3 JIF",
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/american-journal-of-political-science",
-            "Título": "Learning by lobbying"
+            "Título": "Learning by lobbying",
+            "Indicador": "4,3",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2478,9 +2564,10 @@
             "Nombre revista": "Economic Theory",
             "Estado": "Publicado",
             "ISSN": "0938-2259",
-            "Factor de impacto": "1,6 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/economic-theory",
-            "Título": "Information exchange through secret vertical contracts"
+            "Título": "Information exchange through secret vertical contracts",
+            "Indicador": "1,6",
+            "Indexación": "JIF"
           },
           {
             "N°": "N/D",
@@ -2489,9 +2576,10 @@
             "Nombre revista": "Quarterly Journal of Political Science",
             "Estado": "Publicado",
             "ISSN": "1554-0626",
-            "Factor de impacto": "1,5 JIF",
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/quarterly-journal-of-political-science",
-            "Título": "International Cooperation, Information Transmission, and Delegation"
+            "Título": "International Cooperation, Information Transmission, and Delegation",
+            "Indicador": "1,5",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -2641,7 +2729,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -2652,9 +2741,10 @@
             "Nombre revista": "Review of Economic Studies",
             "Estado": "Publicado",
             "ISSN": "0034-6527",
-            "Factor de impacto": "7,0 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Colluding against Environmental Regulation"
+            "Título": "Colluding against Environmental Regulation",
+            "Indicador": "7",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -2663,9 +2753,10 @@
             "Nombre revista": "Marketing Science",
             "Estado": "Publicado",
             "ISSN": "0732-2399",
-            "Factor de impacto": "5,1 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Beyond Consumer Switching: Supply Responses to Food Packaging & Advertising Regulations"
+            "Título": "Beyond Consumer Switching: Supply Responses to Food Packaging & Advertising Regulations",
+            "Indicador": "5,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -2674,9 +2765,10 @@
             "Nombre revista": "AEA Papers and Proceedings",
             "Estado": "Publicado",
             "ISSN": "2574-0768",
-            "Factor de impacto": "1,1 SJR",
             "Link de verificación electrónica": "",
-            "Título": "Countervailing Market Power and Consumer Surplus: An Empirical Examination"
+            "Título": "Countervailing Market Power and Consumer Surplus: An Empirical Examination",
+            "Indicador": "1,1",
+            "Indexación": "SJR"
           },
           {
             "N°": "4",
@@ -2685,9 +2777,10 @@
             "Nombre revista": "RAND Journal of Economics",
             "Estado": "Publicado",
             "ISSN": "0741-6261",
-            "Factor de impacto": "1,99 JIF",
             "Link de verificación electrónica": "",
-            "Título": "Trade associations and collusion among many agents: evidence from physicians"
+            "Título": "Trade associations and collusion among many agents: evidence from physicians",
+            "Indicador": "1,99",
+            "Indexación": "JIF"
           }
         ]
       },
@@ -2877,7 +2970,8 @@
           "Nombre revista",
           "Estado",
           "ISSN",
-          "Factor de impacto",
+          "Indicador",
+          "Indexación",
           "Link de verificación electrónica"
         ],
         "filas": [
@@ -2888,9 +2982,10 @@
             "Nombre revista": "Labour Economics",
             "Estado": "Publicado",
             "ISSN": "0927-5371",
-            "Factor de impacto": "3,1 JIF",
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/labour-economics",
-            "Título": "Is private education worth it? Evidence from school-to-work transitions in Chile"
+            "Título": "Is private education worth it? Evidence from school-to-work transitions in Chile",
+            "Indicador": "3,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "2",
@@ -2899,9 +2994,10 @@
             "Nombre revista": "Journal of Labor Economics",
             "Estado": "Publicado",
             "ISSN": "0734-306X",
-            "Factor de impacto": "7,1 JIF",
             "Link de verificación electrónica": "https://www.journals.uchicago.edu/journals/jole/about",
-            "Título": "Understanding the Effects of Workfare Policies on Child Human Capital"
+            "Título": "Understanding the Effects of Workfare Policies on Child Human Capital",
+            "Indicador": "7,1",
+            "Indexación": "JIF"
           },
           {
             "N°": "3",
@@ -2910,9 +3006,10 @@
             "Nombre revista": "European Psychiatry",
             "Estado": "Publicado - Artículo Conferencia",
             "ISSN": "0924-9338",
-            "Factor de impacto": "7,8 JIF",
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/european-psychiatry",
-            "Título": "Clinical Correlates of Cardiac Conduction in Bipolar Disorder"
+            "Título": "Clinical Correlates of Cardiac Conduction in Bipolar Disorder",
+            "Indicador": "7,8",
+            "Indexación": "JIF"
           },
           {
             "N°": "4",
@@ -2921,9 +3018,10 @@
             "Nombre revista": "Journal of Applied Econometrics",
             "Estado": "Publicado",
             "ISSN": "0883-7252",
-            "Factor de impacto": "4,1 JIF",
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10991255",
-            "Título": "Dynamic treatment effects of job training"
+            "Título": "Dynamic treatment effects of job training",
+            "Indicador": "4,1",
+            "Indexación": "JIF"
           }
         ]
       },
