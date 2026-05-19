@@ -919,10 +919,16 @@ window.cambiarPagina = function(pagina) {
     // Inicializar sección si es necesario
     if (pagina === 'reporteria-datos-profesores') {
         inicializarFiltrosDatosProfesores();
+    } else if (pagina === 'cna-resumen-claustro') {
+        generarResumenClaustro();
     } else if (pagina === 'control-validacion') {
-        generarValidacion();
+        if (Object.keys(datosProduccion).length > 0) {
+            generarValidacion();
+        }
     } else if (pagina === 'control-normalizacion') {
-        generarNormalizacion();
+        if (Object.keys(datosProduccion).length > 0) {
+            generarNormalizacion();
+        }
     }
 };
 
@@ -2019,9 +2025,10 @@ function generarResumenClaustro() {
         });
     }
     
-    // 3. PROYECTOS VIGENTES
+    // 3. PROYECTOS VIGENTES (10-jun-2026 <= término <= 30-dic-2040)
     let proyectos_vigentes = 0;
-    const hoy = new Date();
+    const fecha_inicio_vigencia = new Date(2026, 5, 10); // 10-jun-2026
+    const fecha_fin_vigencia = new Date(2040, 11, 30); // 30-dic-2040
     for (const prof in datosProduccion) {
         const secciones = datosProduccion[prof].secciones || {};
         const filas = secciones.proyectos?.filas || [];
@@ -2039,7 +2046,7 @@ function generarResumenClaustro() {
                         if (mes) {
                             const año = parseInt(`20${año_str}`);
                             const fecha_termino = new Date(año, mes - 1, 1);
-                            if (fecha_termino > hoy) {
+                            if (fecha_termino >= fecha_inicio_vigencia && fecha_termino <= fecha_fin_vigencia) {
                                 proyectos_vigentes++;
                             }
                         }
