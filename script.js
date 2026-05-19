@@ -970,6 +970,10 @@ function cambiarPaginaMejorada(pagina) {
         if (typeof inicializarFiltrosDatosProfesores === 'function') {
             inicializarFiltrosDatosProfesores();
         }
+    } else if (pagina === 'cna-resumen-claustro') {
+        if (typeof generarResumenClaustro === 'function') {
+            generarResumenClaustro();
+        }
     } else if (pagina === 'control-validacion') {
         if (MODO_ADMIN && typeof generarValidacion === 'function') {
             generarValidacion();
@@ -1990,8 +1994,178 @@ function descargarProyectosVigentesExcel() {
 }
 
 // Hacer funciones disponibles globalmente
+// ============================================
+// CNA RESUMEN CLAUSTRO
+// ============================================
+
+function generarResumenClaustro() {
+    const contenedor = document.getElementById('cna-resumen-contenido');
+    if (!contenedor) return;
+    
+    // 1. ACADÉMICOS CLAUSTRO
+    const academicos_claustro = Object.keys(datosBase).filter(prof => datosBase[prof].vinculo === 'Claustro').length;
+    
+    // 2. PUBLICACIONES INDEXADAS 2020+
+    let pub_indexadas_2020 = 0;
+    for (const prof in datosProduccion) {
+        const secciones = datosProduccion[prof].secciones || {};
+        const filas = secciones.publicaciones_indexadas?.filas || [];
+        filas.forEach(fila => {
+            try {
+                if (parseInt(fila['Año']) >= 2020) {
+                    pub_indexadas_2020++;
+                }
+            } catch (e) {}
+        });
+    }
+    
+    // 3. PROYECTOS VIGENTES
+    let proyectos_vigentes = 0;
+    const hoy = new Date();
+    for (const prof in datosProduccion) {
+        const secciones = datosProduccion[prof].secciones || {};
+        const filas = secciones.proyectos?.filas || [];
+        filas.forEach(fila => {
+            try {
+                const termino = fila['Término'] || '';
+                if (termino) {
+                    const partes = termino.split('-');
+                    if (partes.length === 2) {
+                        const mes_str = partes[0].toLowerCase();
+                        const año_str = partes[1];
+                        const meses = {'ene': 1, 'feb': 2, 'mar': 3, 'abr': 4, 'may': 5, 'jun': 6,
+                                       'jul': 7, 'ago': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dic': 12};
+                        const mes = meses[mes_str];
+                        if (mes) {
+                            const año = parseInt(`20${año_str}`);
+                            const fecha_termino = new Date(año, mes - 1, 1);
+                            if (fecha_termino > hoy) {
+                                proyectos_vigentes++;
+                            }
+                        }
+                    }
+                }
+            } catch (e) {}
+        });
+    }
+    
+    // 4. TESIS MAGISTER 2020+
+    let tesis_magister_2020 = 0;
+    for (const prof in datosProduccion) {
+        const secciones = datosProduccion[prof].secciones || {};
+        ['tesis_magister_guia', 'tesis_magister_coguia'].forEach(tipo => {
+            const filas = secciones[tipo]?.filas || [];
+            filas.forEach(fila => {
+                try {
+                    if (parseInt(fila['Año']) >= 2020) {
+                        tesis_magister_2020++;
+                    }
+                } catch (e) {}
+            });
+        });
+    }
+    
+    // 5. TESIS DOCTORADO 2020+
+    let tesis_doctorado_2020 = 0;
+    for (const prof in datosProduccion) {
+        const secciones = datosProduccion[prof].secciones || {};
+        ['tesis_doctorado_guia', 'tesis_doctorado_coguia'].forEach(tipo => {
+            const filas = secciones[tipo]?.filas || [];
+            filas.forEach(fila => {
+                try {
+                    if (parseInt(fila['Año']) >= 2020) {
+                        tesis_doctorado_2020++;
+                    }
+                } catch (e) {}
+            });
+        });
+    }
+    
+    // 6. LIBROS 2020+
+    let libros_2020 = 0;
+    for (const prof in datosProduccion) {
+        const secciones = datosProduccion[prof].secciones || {};
+        const filas = secciones.libros?.filas || [];
+        filas.forEach(fila => {
+            try {
+                if (parseInt(fila['Año']) >= 2020) {
+                    libros_2020++;
+                }
+            } catch (e) {}
+        });
+    }
+    
+    // 7. CAPÍTULOS 2020+
+    let capitulos_2020 = 0;
+    for (const prof in datosProduccion) {
+        const secciones = datosProduccion[prof].secciones || {};
+        const filas = secciones.capitulos?.filas || [];
+        filas.forEach(fila => {
+            try {
+                if (parseInt(fila['Año']) >= 2020) {
+                    capitulos_2020++;
+                }
+            } catch (e) {}
+        });
+    }
+    
+    // GENERAR HTML DE TABLA
+    const html = `
+        <div class="reporteria-card">
+            <div class="card-header">
+                <h2 class="card-title">Indicadores de Productividad Académica</h2>
+                <p class="card-subtitle">Año 2020 en adelante</p>
+            </div>
+            <div class="table-container">
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd; font-weight: bold;">KPI</th>
+                            <th style="padding: 12px; text-align: right; border: 1px solid #ddd; font-weight: bold;">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: white;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Académicos Claustro</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${academicos_claustro}</td>
+                        </tr>
+                        <tr style="background: #f8f8f8;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Publicaciones Indexadas 2020+</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${pub_indexadas_2020}</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Proyectos Vigentes</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${proyectos_vigentes}</td>
+                        </tr>
+                        <tr style="background: #f8f8f8;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Tesis Magíster Dirigidas 2020+</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${tesis_magister_2020}</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Tesis Doctorado Dirigidas 2020+</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${tesis_doctorado_2020}</td>
+                        </tr>
+                        <tr style="background: #f8f8f8;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Libros 2020+</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${libros_2020}</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">Capítulos 2020+</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${capitulos_2020}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    contenedor.innerHTML = html;
+    console.log('✓ Resumen Claustro CNA generado correctamente');
+}
+
+// Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
+window.generarResumenClaustro = generarResumenClaustro;
 
-console.log('✓ Funciones Proyectos vigentes disponibles globalmente');
-
+console.log('✓ Funciones disponibles globalmente');
