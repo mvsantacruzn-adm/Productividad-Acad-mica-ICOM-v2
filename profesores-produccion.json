@@ -3313,42 +3313,6 @@
                         "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=19700201103&tip=sid"
                     }
                 ]
-            },
-            "publicaciones_no_indexadas": {
-                "headers": [],
-                "filas": []
-            },
-            "libros": {
-                "headers": [],
-                "filas": []
-            },
-            "capitulos": {
-                "headers": [],
-                "filas": []
-            },
-            "proyectos": {
-                "headers": [],
-                "filas": []
-            },
-            "tesis_magister_guia": {
-                "headers": [],
-                "filas": []
-            },
-            "tesis_magister_coguia": {
-                "headers": [],
-                "filas": []
-            },
-            "tesis_doctorado_guia": {
-                "headers": [],
-                "filas": []
-            },
-            "tesis_doctorado_coguia": {
-                "headers": [],
-                "filas": []
-            },
-            "patentes": {
-                "headers": [],
-                "filas": []
             }
         }
     }
