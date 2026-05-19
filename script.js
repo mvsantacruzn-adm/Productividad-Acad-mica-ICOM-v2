@@ -249,8 +249,9 @@ function construirFichaCNA(nombreProfesor, base, produccion) {
             // Ordenar por año descendente y reenumerar
             const filasOrdenadas = ordenarPorAnoYRenumerar(filasFiltradas, seccion.headers);
             
-            // Agregar tabla
-            html += construirTabla(titulosOficiales[tipo], seccion.headers, filasOrdenadas);
+            // Agregar tabla (pasar true para proyectos para ocultar CLP y TC)
+            const esProyectos = tipo === 'proyectos';
+            html += construirTabla(titulosOficiales[tipo], seccion.headers, filasOrdenadas, esProyectos);
         }
     }
     
@@ -264,39 +265,45 @@ function construirFichaCNA(nombreProfesor, base, produccion) {
     return html;
 }
 
-function construirTabla(titulo, headers, filas) {
+function construirTabla(titulo, headers, filas, esProyectos = false) {
     if (!filas || filas.length === 0) return '';
     
+    // Columnas a ocultar en tabla de proyectos para PDF
+    const columnasOcultas = esProyectos ? ['CLP', 'TC'] : [];
+    
+    // Filtrar headers para tabla de proyectos
+    const headersVisibles = headers.filter(h => !columnasOcultas.includes(h));
+    
     let html = `
-        <h3 style="font-size: 11px; font-weight: bold; color: #333; margin-top: 18px; margin-bottom: 8px;">${titulo}</h3>
-        <table class="ficha-table" style="width: 100%; border-collapse: collapse; margin-bottom: 18px; border: 1px solid #ddd; font-size: 10px;">
+        <h3 style="font-size: 11px; font-weight: bold; color: #333; margin-top: 18px; margin-bottom: 8px; page-break-after: avoid;">${titulo}</h3>
+        <table class="ficha-table" style="width: 100%; border-collapse: collapse; margin-bottom: 18px; border: 1px solid #ddd; font-size: 10px; page-break-inside: auto; table-layout: auto;">
             <thead>
                 <tr style="background: #f0f0f0;">
     `;
     
     // Crear headers con N° al inicio si no existe
-    const headersConNumero = !headers.includes('N°') ? ['N°', ...headers] : headers;
+    const headersConNumero = !headersVisibles.includes('N°') ? ['N°', ...headersVisibles] : headersVisibles;
     
     headersConNumero.forEach(header => {
-        html += `<th style="padding: 6px; text-align: left; font-weight: bold; border: 1px solid #ddd; background: #f0f0f0; color: black;">${header}</th>`;
+        html += `<th style="padding: 5px; text-align: left; font-weight: bold; border: 1px solid #ddd; background: #f0f0f0; color: black; word-break: break-word;">${header}</th>`;
     });
     
     html += `</tr></thead><tbody>`;
     
     filas.forEach((fila, idx) => {
-        html += `<tr>`;
+        html += `<tr style="page-break-inside: avoid;">`;
         
         // Agregar número si no existe
-        if (!headers.includes('N°')) {
-            html += `<td style="padding: 6px; border: 1px solid #ddd; background: #fafafa;">${idx + 1}</td>`;
+        if (!headersVisibles.includes('N°')) {
+            html += `<td style="padding: 5px; border: 1px solid #ddd; background: #fafafa;">${idx + 1}</td>`;
         }
         
         headersConNumero.forEach(header => {
             if (header !== 'N°') {
                 const valor = fila[header] || 'N/D';
-                html += `<td style="padding: 6px; border: 1px solid #ddd;">${valor}</td>`;
+                html += `<td style="padding: 5px; border: 1px solid #ddd; word-break: break-word; overflow-wrap: break-word;">${valor}</td>`;
             } else if (header === 'N°') {
-                html += `<td style="padding: 6px; border: 1px solid #ddd; background: #fafafa;">${fila['N°'] || idx + 1}</td>`;
+                html += `<td style="padding: 5px; border: 1px solid #ddd; background: #fafafa;">${fila['N°'] || idx + 1}</td>`;
             }
         });
         
@@ -317,15 +324,57 @@ function descargarPDF() {
     const element = document.getElementById('ficha-pdf-content');
     const nombreArchivo = `Ficha_CNA_${profesorActualFicha.replace(/\s+/g, '_')}.pdf`;
     
+    // Crear copia temporal con estilos optimizados para PDF
+    const copia = element.cloneNode(true);
+    copia.style.width = '210mm'; // A4 portrait width minus margins
+    
+    // Aplicar estilos CSS para PDF
+    const style = document.createElement('style');
+    style.textContent = `
+        #ficha-pdf-content { 
+            background: white; 
+            padding: 12mm;
+            margin: 0;
+        }
+        #ficha-pdf-content table {
+            page-break-inside: auto;
+            table-layout: auto;
+        }
+        #ficha-pdf-content tr {
+            page-break-inside: avoid;
+        }
+        #ficha-pdf-content th, #ficha-pdf-content td {
+            word-break: break-word;
+            overflow-wrap: break-word;
+            padding: 4px 5px !important;
+            font-size: 9px !important;
+        }
+        #ficha-pdf-content h3 {
+            page-break-after: avoid;
+        }
+    `;
+    copia.appendChild(style);
+    
     const opt = {
-        margin: 8,
+        margin: [8, 8, 8, 8],
         filename: nombreArchivo,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        image: { type: 'jpeg', quality: 0.95 },
+        html2canvas: { 
+            scale: 3, 
+            useCORS: true,
+            letterRendering: true,
+            allowTaint: false
+        },
+        jsPDF: { 
+            unit: 'mm', 
+            format: 'a4', 
+            orientation: 'portrait',
+            compress: true
+        }
     };
     
-    html2pdf().set(opt).from(element).save();
+    // Usar elemento temporal para PDF
+    html2pdf().set(opt).from(copia).save();
 }
 
 function generarModales(profesores) {
@@ -467,16 +516,6 @@ function toggleMenuControl(event) {
     submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
     menuControl.classList.toggle("active");
 }
-
-function toggleMenuCNA(event) {
-    event.stopPropagation();
-    const menuCNA = document.getElementById("menu-cna");
-    const submenuCNA = document.getElementById("submenu-cna");
-    
-    submenuCNA.style.display = submenuCNA.style.display === "none" ? "block" : "none";
-    menuCNA.classList.toggle("active");
-}
-
 cargarDatos();
 
 // ============================================
@@ -2023,7 +2062,6 @@ function descargarProyectosVigentesExcel() {
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
-window.toggleMenuCNA = toggleMenuCNA;
 
 console.log('✓ Funciones Proyectos vigentes disponibles globalmente');
 
