@@ -3313,6 +3313,282 @@
                         "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=19700201103&tip=sid"
                     }
                 ]
+            },
+            "publicaciones_no_indexadas": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Nombre revista",
+                    "Estado",
+                    "ISSN"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "",
+                        "Año": "2006",
+                        "Título": "¿Pueden predecir las encuestas políticas el resultado de una elección?",
+                        "Nombre revista": "Informe Macroeconómico Universidad de los Andes",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "2",
+                        "Autor(es)": "",
+                        "Año": "2004",
+                        "Título": "Global entrepreneurship monitor GEM Chile",
+                        "Nombre revista": "ESE Escuela de Negocios, Universidad de los Andes",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "3",
+                        "Autor(es)": "",
+                        "Año": "2022",
+                        "Título": "Develando la coexistencia de múltiples clivajes en la opinión pública chilena",
+                        "Nombre revista": "Revista de Sociología",
+                        "Estado": "Publicado",
+                        "ISSN": "0719-529X"
+                    }
+                ]
+            },
+            "libros": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Lugar",
+                    "Editorial"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Medina, M. & Kimber, D.",
+                        "Año": "2025",
+                        "Título": "Media engagement: Connecting with audiences in media markets",
+                        "Lugar": "Reino Unido (Londres)",
+                        "Editorial": "Taylor and Francis"
+                    }
+                ]
+            },
+            "capitulos": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Lugar",
+                    "Editorial"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Leiva, R. & Kimber, D.",
+                        "Año": "2025",
+                        "Título": "Relación entre el teléfono inteligente y el rendimiento académico: El caso de los escolares chilenos / La crianza, cuidado y educación de niños, niñas y adolescentes",
+                        "Lugar": "España (Valencia)",
+                        "Editorial": "Tirant lo Blanch"
+                    },
+                    {
+                        "N°": "2",
+                        "Autor(es)": "Kimber, D. & Leiva, R.",
+                        "Año": "2024",
+                        "Título": "Chile: Exploring the media landscape in the digital age / Media Compass: A Companion to International Media Landscapes",
+                        "Lugar": "Reino Unido (Londres)",
+                        "Editorial": "Routledge"
+                    },
+                    {
+                        "N°": "3",
+                        "Autor(es)": "Bosch, M.J., Kimber, D. & Leiva, R.",
+                        "Año": "2020",
+                        "Título": "The use of conjoint analysis in revealing preferences for hiring: The gender bias effect / The New Ideal Worker: Organizations between Work-Life Balance, Women and Leadership",
+                        "Lugar": "Estados Unidos (Hoboken, Nueva Jersey)",
+                        "Editorial": "John Wiley & Sons"
+                    },
+                    {
+                        "N°": "4",
+                        "Autor(es)": "Leiva, R. & Kimber, D.",
+                        "Año": "2019",
+                        "Título": "Economic indicators affecting the media reputation of a country: The case of Chile (1990-2015) / Global Aspects of Reputation and Strategic Management",
+                        "Lugar": "Alemania (Berlín)",
+                        "Editorial": "Springer"
+                    },
+                    {
+                        "N°": "5",
+                        "Autor(es)": "Liberman, L. & Kimber, D.",
+                        "Año": "2019",
+                        "Título": "Exploring the relationship between international service performance and personal characteristics in the Latin American context / Contemporary Influences on International Business in Latin-America",
+                        "Lugar": "Reino Unido (Bingley)",
+                        "Editorial": "Emerald Group Publishing"
+                    },
+                    {
+                        "N°": "6",
+                        "Autor(es)": "Liberman, L., Kimber, D. & Pinto, J.",
+                        "Año": "2019",
+                        "Título": "Examining the influence of self-efficacy, optimism and curiosity on the performance of international locals / Contemporary Influences on International Business in Latin-America",
+                        "Lugar": "Suiza (Cham)",
+                        "Editorial": "Palgrave Macmillan"
+                    },
+                    {
+                        "N°": "7",
+                        "Autor(es)": "Benavides, C., Errázuriz, M.I., Kimber, D., Santa María, I. & Van Weezel, A.",
+                        "Año": "2009",
+                        "Título": "Chilean media landscape / The Handbook of Spanish Language Media",
+                        "Lugar": "Suiza (Cham)",
+                        "Editorial": "Palgrave Macmillan"
+                    }
+                ]
+            },
+            "proyectos": {
+                "headers": [
+                    "N°",
+                    "Título",
+                    "Año",
+                    "Inicio",
+                    "Término",
+                    "Duración",
+                    "Fuente de financiamiento",
+                    "Nombre del Concurso",
+                    "Tipo de financiamiento",
+                    "Rol",
+                    "Código proyecto",
+                    "USD",
+                    "CLP",
+                    "TC",
+                    "Observaciones"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Título": "Relación Entre Calidad Percibida Del Contenido Y El Engagement Del Consumidor En La Industria Del Streaming: Efectos En Satisfacción, Recomendación Y Lealtad",
+                        "Año": "2025",
+                        "Inicio": "abr-25",
+                        "Término": "mar-28",
+                        "Duración": "3",
+                        "Fuente de financiamiento": "ANID",
+                        "Nombre del Concurso": "FONDECYT Iniciación",
+                        "Tipo de financiamiento": "Externo - Nacional",
+                        "Rol": "Investigador Responsable (PI)",
+                        "Código proyecto": "11251115",
+                        "USD": "60027",
+                        "CLP": "54024000",
+                        "TC": "900",
+                        "Observaciones": ""
+                    },
+                    {
+                        "N°": "2",
+                        "Título": "Usos Y Gratificaciones De Los Celulares Entre Los Menores Chilenos",
+                        "Año": "2015",
+                        "Inicio": "dic-15",
+                        "Término": "dic-17",
+                        "Duración": "2",
+                        "Fuente de financiamiento": "Universidad de los Andes",
+                        "Nombre del Concurso": "FAI ATP",
+                        "Tipo de financiamiento": "Interno Uandes",
+                        "Rol": "Co-Investigador",
+                        "Código proyecto": "INV-AT-2015-01",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": ""
+                    },
+                    {
+                        "N°": "3",
+                        "Título": "Cross-cultural Selling and Performance: The mediator effect of Adaptive Selling Behavior in the relationship between Cultural Intelligence and Performance",
+                        "Año": "2013",
+                        "Inicio": "ago-23",
+                        "Término": "ago-24",
+                        "Duración": "1",
+                        "Fuente de financiamiento": "Universidad de los Andes",
+                        "Nombre del Concurso": "FAI Iniciación",
+                        "Tipo de financiamiento": "Interno Uandes",
+                        "Rol": "Investigador Principal",
+                        "Código proyecto": "INV-IN-2013-04",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": ""
+                    }
+                ]
+            },
+            "tesis_magister_guia": {
+                "headers": [
+                    "N°",
+                    "Año",
+                    "Autor(es)",
+                    "Título",
+                    "Nombre del programa",
+                    "Institución"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Año": "2021",
+                        "Autor(es)": "Andrés del Río",
+                        "Título": "Una aproximación individual al Emprendimiento",
+                        "Nombre del programa": "Magíster en Marketing & Data Analytics",
+                        "Institución": "Universidad de los Andes"
+                    },
+                    {
+                        "N°": "2",
+                        "Año": "2020",
+                        "Autor(es)": "Ximena Vial",
+                        "Título": "El involucramiento con un producto como factor determinante en la intención de uso del M-Commerce",
+                        "Nombre del programa": "Magíster en Marketing & Data Analytics",
+                        "Institución": "Universidad de los Andes"
+                    },
+                    {
+                        "N°": "3",
+                        "Año": "2020",
+                        "Autor(es)": "Lukas Mayenberger",
+                        "Título": "Comunidades de Marca Online y Elección de Universidad: El Caso de Instagram",
+                        "Nombre del programa": "Magíster en Marketing & Data Analytics",
+                        "Institución": "Universidad de los Andes"
+                    },
+                    {
+                        "N°": "4",
+                        "Año": "2020",
+                        "Autor(es)": "Dominga Medina",
+                        "Título": "Motivaciones para ver contenido audiovisual online: Estudio comparativo entre Colombia, Chile y España",
+                        "Nombre del programa": "Magíster en Marketing & Data Analytics",
+                        "Institución": "Universidad de los Andes"
+                    },
+                    {
+                        "N°": "5",
+                        "Año": "2019",
+                        "Autor(es)": "Francisca Ulloa",
+                        "Título": "The Impact of Social Media on Brand Engagement of Generation Z",
+                        "Nombre del programa": "Magíster en Marketing & Data Analytics",
+                        "Institución": "Universidad de los Andes"
+                    },
+                    {
+                        "N°": "6",
+                        "Año": "2016",
+                        "Autor(es)": "Germaine Marchant",
+                        "Título": "Coherencia posicionamiento canal-programa y línea editorial, como estrategia de éxito",
+                        "Nombre del programa": "Magíster en Marketing & Data Analytics",
+                        "Institución": "Universidad de los Andes"
+                    }
+                ]
+            },
+            "tesis_magister_coguia": {
+                "headers": [],
+                "filas": []
+            },
+            "tesis_doctorado_guia": {
+                "headers": [],
+                "filas": []
+            },
+            "tesis_doctorado_coguia": {
+                "headers": [],
+                "filas": []
+            },
+            "patentes": {
+                "headers": [],
+                "filas": []
             }
         }
     }
