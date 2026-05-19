@@ -54,9 +54,13 @@ async function cargarDatos() {
     }
 }
 
-// Los 4 profesores sin ficha (definido en config.js)
-const sinFicha = PROFESORES_SIN_FICHA;
-
+// Los 4 profesores sin ficha
+const sinFicha = [
+    { nombre: 'Hugo Benedetti', resumen: 'Finanzas. Por completar datos.' },
+    { nombre: 'María José Bosch', resumen: 'Management. Por completar datos.' },
+    { nombre: 'Matias Braun', resumen: 'Finanzas Corporativas. Por completar datos.' },
+    { nombre: 'Natalia Yankovic', resumen: 'Investigación de Operaciones. Por completar datos.' }
+];
 
 function inicializar() {
     const profesoresConDatos = Object.keys(datosBase).map((nombre, idx) => ({
@@ -463,6 +467,16 @@ function toggleMenuControl(event) {
     submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
     menuControl.classList.toggle("active");
 }
+
+function toggleMenuCNA(event) {
+    event.stopPropagation();
+    const menuCNA = document.getElementById("menu-cna");
+    const submenuCNA = document.getElementById("submenu-cna");
+    
+    submenuCNA.style.display = submenuCNA.style.display === "none" ? "block" : "none";
+    menuCNA.classList.toggle("active");
+}
+
 cargarDatos();
 
 // ============================================
@@ -664,14 +678,10 @@ function cambiarPaginaMejorado(pagina) {
     document.querySelectorAll('.submenu-item').forEach(el => el.classList.remove('active'));
     
     document.getElementById(`page-${pagina}`).classList.add('active');
-    if (event && event.target) {
-        event.target.classList.add('active');
-    }
+    event.target.classList.add('active');
     
     // Generar contenido si es necesario
-    if (pagina === 'reporteria-datos-profesores') {
-        inicializarFiltrosDatosProfesores();
-    } else if (pagina === 'control-validacion') {
+    if (pagina === 'control-validacion') {
         generarValidacion();
     } else if (pagina === 'control-normalizacion') {
         generarNormalizacion();
@@ -699,24 +709,23 @@ let filtrosSeleccionados = {
     tablas: []
 };
 
-// Mapeo de tablas académicas (definido en config.js)
-const mapeoTablas = MAPEO_TABLAS;
-
+const mapeoTablas = {
+    'publicaciones_indexadas': 'Publicaciones Indexadas',
+    'publicaciones_no_indexadas': 'Publicaciones No Indexadas',
+    'libros': 'Libros',
+    'capitulos': 'Capítulos de Libro',
+    'proyectos': 'Proyectos de Investigación',
+    'tesis_magister_guia': 'Tesis Magíster (Profesor Guía)',
+    'tesis_magister_coguia': 'Tesis Magíster (Profesor Co-Guía)',
+    'tesis_doctorado_guia': 'Tesis Doctorado (Profesor Guía)',
+    'tesis_doctorado_coguia': 'Tesis Doctorado (Profesor Co-Guía)',
+    'patentes': 'Patentes'
+};
 
 function inicializarFiltrosDatosProfesores() {
-    console.log('→ inicializarFiltrosDatosProfesores INICIADO');
-    console.log('  datosBase disponible:', Object.keys(datosBase).length > 0);
-    console.log('  datosProduccion disponible:', Object.keys(datosProduccion).length > 0);
-    
     // Generar checkboxes de profesores
     const listaProfesores = document.getElementById('lista-profesores');
-    if (!listaProfesores) {
-        console.error('❌ No se encontró elemento lista-profesores');
-        return;
-    }
-    
     const profesoresOrdenados = Object.keys(datosBase).sort();
-    console.log('  Profesores a renderizar:', profesoresOrdenados.length);
     
     listaProfesores.innerHTML = profesoresOrdenados.map(nombre => {
         const base = datosBase[nombre];
@@ -728,26 +737,15 @@ function inicializarFiltrosDatosProfesores() {
             </label>
         `;
     }).join('');
-    console.log('  ✓ Checkboxes de profesores renderizados');
     
     // Generar checkboxes de tablas
     const listaTablas = document.getElementById('lista-tablas');
-    if (!listaTablas) {
-        console.error('❌ No se encontró elemento lista-tablas');
-        return;
-    }
-    
-    const tablasAGenerar = Object.entries(mapeoTablas);
-    console.log('  Tablas a renderizar:', tablasAGenerar.length);
-    
-    listaTablas.innerHTML = tablasAGenerar.map(([clave, nombre]) => `
+    listaTablas.innerHTML = Object.entries(mapeoTablas).map(([clave, nombre]) => `
         <label class="checkbox-label">
             <input type="checkbox" data-tabla="${clave}" onchange="actualizarFiltros()">
             ${nombre}
         </label>
     `).join('');
-    console.log('  ✓ Checkboxes de tablas renderizados');
-    console.log('✓ inicializarFiltrosDatosProfesores COMPLETADO');
 }
 
 function toggleTodosProfesores() {
@@ -947,9 +945,7 @@ window.cambiarPagina = function(pagina) {
     document.querySelectorAll('.submenu-item').forEach(el => el.classList.remove('active'));
     
     document.getElementById(`page-${pagina}`).classList.add('active');
-    if (event && event.target) {
-        event.target.classList.add('active');
-    }
+    event.target.classList.add('active');
     
     // Inicializar sección si es necesario
     if (pagina === 'reporteria-datos-profesores') {
@@ -2027,13 +2023,7 @@ function descargarProyectosVigentesExcel() {
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
-
-// Funciones del reporte personalizado
-window.inicializarFiltrosDatosProfesores = inicializarFiltrosDatosProfesores;
-window.toggleTodosProfesores = toggleTodosProfesores;
-window.toggleTodasTablas = toggleTodasTablas;
-window.actualizarFiltros = actualizarFiltros;
-window.generarReporteDatosProfesores = generarReporteDatosProfesores;
+window.toggleMenuCNA = toggleMenuCNA;
 
 console.log('✓ Funciones Proyectos vigentes disponibles globalmente');
 

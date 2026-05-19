@@ -22,14 +22,22 @@
                 <span class="submenu-toggle">▼</span>
             </div>
             <div class="submenu" id="submenu-reporteria" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
-                    📄 Ficha Académica CNA
-                </div>
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
                     📊 Reporte Personalizado
                 </div>
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
-                    📅 Proyectos vigentes del claustro
+            </div>
+            
+            <!-- CNA -->
+            <div class="menu-item menu-parent" id="menu-cna" onclick="toggleMenuCNA(event)">
+                🎯 CNA
+                <span class="submenu-toggle">▼</span>
+            </div>
+            <div class="submenu" id="submenu-cna" style="display: none;">
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
+                    📄 Ficha Académica CNA
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
+                    📅 Proyectos
                 </div>
             </div>
             
@@ -198,6 +206,29 @@
                 </div>
             </div>
 
+            <!-- PÁGINA: CNA PROYECTOS -->
+            <div id="page-cna-proyectos" class="page">
+                <div class="header">
+                    <h1>CNA - Proyectos</h1>
+                    <p>Proyectos de investigación conforme a criterios CNA</p>
+                </div>
+                <div class="reporteria-grid">
+                    <div class="reporteria-card">
+                        <div class="card-header">
+                            <h2 class="card-title">📅 Proyectos</h2>
+                            <p class="card-subtitle">Módulo en desarrollo</p>
+                        </div>
+                        <div class="card-preview">
+                            <div class="preview-content">
+                                <div class="preview-placeholder">
+                                    <p>Próximamente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="page-reporteria-proyectos-vigentes" class="page">
                 <div class="header">
                     <h1>Proyectos vigentes del claustro</h1>
@@ -238,9 +269,7 @@
         // Variable de modo administrador
         const MODO_ADMIN = true;
     </script>
-    <script src="config.js"></script>
     <script src="script.js"></script>
-    <script src="navigation.js"></script>
     <script>
         // Inicialización cuando el documento está listo
         document.addEventListener('DOMContentLoaded', function() {
