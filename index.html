@@ -28,6 +28,9 @@
             <!-- PROYECTOS -->
             <div class="menu-item" onclick="cambiarPagina('cna-proyectos')">📅 Proyectos</div>
             
+            <!-- RESUMEN ACADÉMICO -->
+            <div class="menu-item" onclick="cambiarPagina('resumen-academico')">📈 Resumen Académico</div>
+            
             <!-- CONTROL (SOLO PARA MODO ADMIN) -->
             <div class="menu-item menu-control" style="display: none;" onclick="cambiarPagina('control-validacion')">🔧 Control</div>
         </div>
@@ -243,6 +246,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- PÁGINA: RESUMEN ACADÉMICO -->
+            <div id="page-resumen-academico" class="page">
+                <div class="header">
+                    <h1>Resumen por Académico</h1>
+                    <p>Productividad académica por profesor - 2020 en adelante</p>
+                </div>
+                <div id="resumen-academico-contenido" class="reporteria-grid"></div>
             </div>
         </div>
     </div>

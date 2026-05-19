@@ -938,6 +938,8 @@ window.cambiarPagina = function(pagina) {
         inicializarFiltrosDatosProfesores();
     } else if (pagina === 'cna-resumen-claustro') {
         generarResumenClaustro();
+    } else if (pagina === 'resumen-academico') {
+        generarResumenAcademico();
     } else if (pagina === 'control-validacion') {
         // Ejecutar con pequeño delay para asegurar que datos estén listos
         setTimeout(() => {
@@ -2193,9 +2195,166 @@ function generarResumenClaustro() {
     console.log('✓ Resumen Claustro CNA generado correctamente');
 }
 
+// ============================================
+// RESUMEN POR ACADÉMICO
+// ============================================
+
+function generarResumenAcademico() {
+    const container = document.getElementById('resumen-academico-contenido');
+    
+    // Recopilar datos de todos los profesores
+    const datosResumen = [];
+    
+    for (const nombreProfesor of Object.keys(datosBase)) {
+        const base = datosBase[nombreProfesor];
+        const produccion = datosProduccion[nombreProfesor];
+        
+        // Inicializar conteos
+        let pub_indexadas_2020 = 0;
+        let pub_no_indexadas_2020 = 0;
+        let libros_2020 = 0;
+        let capitulos_2020 = 0;
+        let proyectos_2020 = 0;
+        let tesis_magister_2020 = 0;
+        let tesis_doctorado_2020 = 0;
+        let proyectos_vigentes = [];
+        
+        // Si existe producción, contar
+        if (produccion && produccion.secciones) {
+            // Publicaciones Indexadas 2020+
+            if (produccion.secciones.publicaciones_indexadas && produccion.secciones.publicaciones_indexadas.filas) {
+                pub_indexadas_2020 = produccion.secciones.publicaciones_indexadas.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            
+            // Publicaciones No Indexadas 2020+
+            if (produccion.secciones.publicaciones_no_indexadas && produccion.secciones.publicaciones_no_indexadas.filas) {
+                pub_no_indexadas_2020 = produccion.secciones.publicaciones_no_indexadas.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            
+            // Libros 2020+
+            if (produccion.secciones.libros && produccion.secciones.libros.filas) {
+                libros_2020 = produccion.secciones.libros.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            
+            // Capítulos 2020+
+            if (produccion.secciones.capitulos && produccion.secciones.capitulos.filas) {
+                capitulos_2020 = produccion.secciones.capitulos.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            
+            // Proyectos 2020+ y vigentes
+            if (produccion.secciones.proyectos && produccion.secciones.proyectos.filas) {
+                const fecha_inicio_vigencia = new Date(2026, 5, 10); // 10-jun-2026
+                
+                for (const proyecto of produccion.secciones.proyectos.filas) {
+                    const ano = parseInt(proyecto['Año']) || 0;
+                    if (ano >= 2020) {
+                        proyectos_2020++;
+                        
+                        // Verificar si es vigente
+                        const termine = proyecto['Término'] || '';
+                        if (termine) {
+                            const [mes, anno] = termine.split('-');
+                            const mesMap = {'ene': 0, 'feb': 1, 'mar': 2, 'abr': 3, 'may': 4, 'jun': 5, 'jul': 6, 'ago': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dic': 11};
+                            const mesNum = mesMap[mes.toLowerCase()] || 0;
+                            const annoNum = 2000 + parseInt(anno);
+                            const fecha_termino = new Date(annoNum, mesNum, 1);
+                            
+                            if (fecha_termino >= fecha_inicio_vigencia) {
+                                proyectos_vigentes.push(proyecto);
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // Tesis Magíster 2020+ (Guía + Co-Guía)
+            if (produccion.secciones.tesis_magister_guia && produccion.secciones.tesis_magister_guia.filas) {
+                tesis_magister_2020 += produccion.secciones.tesis_magister_guia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.tesis_magister_coguia && produccion.secciones.tesis_magister_coguia.filas) {
+                tesis_magister_2020 += produccion.secciones.tesis_magister_coguia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            
+            // Tesis Doctorado 2020+ (Guía + Co-Guía)
+            if (produccion.secciones.tesis_doctorado_guia && produccion.secciones.tesis_doctorado_guia.filas) {
+                tesis_doctorado_2020 += produccion.secciones.tesis_doctorado_guia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.tesis_doctorado_coguia && produccion.secciones.tesis_doctorado_coguia.filas) {
+                tesis_doctorado_2020 += produccion.secciones.tesis_doctorado_coguia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+        }
+        
+        datosResumen.push({
+            profesor: nombreProfesor,
+            nombre_visual: base.nombre_visual || nombreProfesor,
+            vinculo: base.vinculo || 'N/D',
+            pub_indexadas_2020: pub_indexadas_2020,
+            pub_no_indexadas_2020: pub_no_indexadas_2020,
+            libros_2020: libros_2020,
+            capitulos_2020: capitulos_2020,
+            proyectos_2020: proyectos_2020,
+            tesis_magister_2020: tesis_magister_2020,
+            tesis_doctorado_2020: tesis_doctorado_2020,
+            proyectos_vigentes_count: proyectos_vigentes.length,
+            tiene_proyectos_vigentes: proyectos_vigentes.length > 0
+        });
+    }
+    
+    // Construir tabla HTML
+    let html = `
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; border: 1px solid #ddd; font-size: 12px;">
+            <thead>
+                <tr style="background: #f0f0f0;">
+                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold;">Profesor</th>
+                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold;">Vínculo</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Pub. Indexadas 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Pub. No Indexadas 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Libros 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Capítulos 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Proyectos 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Tesis Magíster 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Tesis Doctorado 2020+</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+    
+    // Agregar filas
+    for (const fila of datosResumen) {
+        const bgColor = fila.tiene_proyectos_vigentes ? '#FFF9E6' : 'white';
+        const bgAlternate = fila.tiene_proyectos_vigentes ? '#FFFBF0' : '#f8f8f8';
+        
+        html += `
+            <tr style="background: ${bgColor};">
+                <td style="padding: 10px; border: 1px solid #ddd;">${fila.nombre_visual}</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">${fila.vinculo}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.pub_indexadas_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.pub_no_indexadas_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.libros_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.capitulos_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.proyectos_2020}${fila.tiene_proyectos_vigentes ? ` <span style="background: #FFD700; padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 10px;">${fila.proyectos_vigentes_count} vigentes</span>` : ''}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.tesis_magister_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.tesis_doctorado_2020}</td>
+            </tr>
+        `;
+    }
+    
+    html += `
+            </tbody>
+        </table>
+        <div style="font-size: 11px; color: #666; margin-top: 15px;">
+            <p><strong>Nota:</strong> Los colores amarillos indican profesores con proyectos vigentes (término después del 1 de julio de 2026).</p>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+    console.log('✓ Resumen Académico generado correctamente');
+}
+
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
 window.generarResumenClaustro = generarResumenClaustro;
+window.generarResumenAcademico = generarResumenAcademico;
 
 console.log('✓ Funciones disponibles globalmente');
