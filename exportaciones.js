@@ -1,12 +1,13 @@
 // ============================================
-// EXPORTACIONES.JS - Lógica de Exportación PDF
+// EXPORTACIONES.JS - Descarga PDF de Ficha CNA
 // ============================================
-// Maneja la exportación PDF de Ficha Académica CNA
-// Separa la lógica de exportación del código principal
 
 /**
  * Descarga la Ficha Académica CNA como PDF
- * Optimizado para evitar cortes y mejorar formato
+ * Ajustes:
+ * 1. Cada tabla importante en nueva página
+ * 2. Tablas ajustadas al ancho sin cortes
+ * 3. Columnas CLP, TC, Observaciones ocultas en Proyectos
  */
 function descargarPDF() {
     if (!window.profesorActualFicha) {
@@ -20,150 +21,136 @@ function descargarPDF() {
         return;
     }
     
-    // CREAR CLON TEMPORAL PARA PDF
+    // Crear clon para PDF (no toca el original)
     const clonePDF = elementOriginal.cloneNode(true);
     clonePDF.id = 'ficha-pdf-temporal';
-    
-    // Aplicar estilos optimizados para PDF al clon
-    aplicarEstilosPDF(clonePDF);
-    
-    // Ocultar columnas específicas en tabla de Proyectos
-    ocultarColumnasProyectos(clonePDF);
-    
-    // Agregar el clon temporalmente al DOM (necesario para html2canvas)
     document.body.appendChild(clonePDF);
     
-    // Generar PDF desde el clon
-    const nombreArchivo = `Ficha_CNA_${window.profesorActualFicha.replace(/\s+/g, '_')}.pdf`;
-    
-    const opt = {
-        margin: [10, 10, 10, 10],
-        filename: nombreArchivo,
-        image: { type: 'jpeg', quality: 0.95 },
-        html2canvas: { 
-            scale: 3, 
-            useCORS: true,
-            backgroundColor: '#ffffff',
-            letterRendering: true,
-            allowTaint: false
-        },
-        jsPDF: { 
-            unit: 'mm', 
-            format: 'a4', 
-            orientation: 'portrait',
-            compress: true
-        }
-    };
-    
-    html2pdf()
-        .set(opt)
-        .from(clonePDF)
-        .save()
-        .then(() => {
-            // Eliminar el clon temporal después de generar PDF
-            document.body.removeChild(clonePDF);
-        })
-        .catch(error => {
-            console.error('Error al generar PDF:', error);
-            // Eliminar el clon en caso de error
-            if (document.body.contains(clonePDF)) {
-                document.body.removeChild(clonePDF);
+    try {
+        // AJUSTE 1: Forzar nueva página para cada tabla importante
+        forcePageBreaksEnTablas(clonePDF);
+        
+        // AJUSTE 2: Ajustar tablas al ancho disponible
+        ajustarTablasAlAncho(clonePDF);
+        
+        // AJUSTE 3: Ocultar columnas en tabla de Proyectos
+        ocultarColumnasProyectos(clonePDF);
+        
+        // Generar PDF
+        const nombreArchivo = `Ficha_CNA_${window.profesorActualFicha.replace(/\s+/g, '_')}.pdf`;
+        
+        const opt = {
+            margin: [10, 10, 10, 10],
+            filename: nombreArchivo,
+            image: { type: 'jpeg', quality: 0.95 },
+            html2canvas: { 
+                scale: 3, 
+                useCORS: true,
+                backgroundColor: '#ffffff'
+            },
+            jsPDF: { 
+                unit: 'mm', 
+                format: 'a4', 
+                orientation: 'portrait'
             }
-            alert('Error al generar el PDF');
-        });
+        };
+        
+        html2pdf().set(opt).from(clonePDF).save();
+        
+    } finally {
+        // Limpiar clon temporal
+        if (document.body.contains(clonePDF)) {
+            document.body.removeChild(clonePDF);
+        }
+    }
 }
 
 /**
- * Aplica estilos CSS optimizados para PDF al clon
- * @param {HTMLElement} elemento - Elemento a estilizar
+ * AJUSTE 1: Fuerza salto de página antes de cada tabla importante
  */
-function aplicarEstilosPDF(elemento) {
-    // Estilos inline generales
-    elemento.style.width = '210mm';
-    elemento.style.padding = '12mm';
-    elemento.style.margin = '0';
-    elemento.style.backgroundColor = 'white';
-    elemento.style.fontSize = '11px';
+function forcePageBreaksEnTablas(elemento) {
+    const h3s = elemento.querySelectorAll('h3');
     
-    // Aplicar estilos a tablas
+    h3s.forEach((h3, idx) => {
+        // No hacer salto de página en el primer título
+        if (idx === 0) return;
+        
+        // Forzar página nueva antes de cada título (excepto el primero)
+        h3.style.pageBreakBefore = 'always';
+        h3.style.marginTop = '0';
+    });
+    
+    // También forzar page-break-inside avoid en las tablas
     const tablas = elemento.querySelectorAll('table');
     tablas.forEach(tabla => {
-        tabla.style.width = '100%';
-        tabla.style.borderCollapse = 'collapse';
-        tabla.style.tableLayout = 'auto';
-        tabla.style.marginBottom = '12px';
-        tabla.style.pageBreakInside = 'auto';
-    });
-    
-    // Aplicar estilos a headers de tabla
-    const ths = elemento.querySelectorAll('th');
-    ths.forEach(th => {
-        th.style.padding = '4px';
-        th.style.fontSize = '9px';
-        th.style.fontWeight = 'bold';
-        th.style.wordBreak = 'break-word';
-        th.style.overflowWrap = 'break-word';
-        th.style.whiteSpace = 'normal';
-        th.style.lineHeight = '1.2';
-    });
-    
-    // Aplicar estilos a celdas de tabla
-    const tds = elemento.querySelectorAll('td');
-    tds.forEach(td => {
-        td.style.padding = '4px';
-        td.style.fontSize = '9px';
-        td.style.wordBreak = 'break-word';
-        td.style.overflowWrap = 'break-word';
-        td.style.whiteSpace = 'normal';
-        td.style.lineHeight = '1.2';
-    });
-    
-    // Aplicar estilos a filas para evitar cortes
-    const trs = elemento.querySelectorAll('tr');
-    trs.forEach(tr => {
-        tr.style.pageBreakInside = 'avoid';
-    });
-    
-    // Aplicar estilos a títulos de secciones
-    const h3s = elemento.querySelectorAll('h3');
-    h3s.forEach(h3 => {
-        h3.style.pageBreakAfter = 'avoid';
-        h3.style.marginTop = '12px';
-        h3.style.marginBottom = '8px';
-        h3.style.fontSize = '10px';
-    });
-    
-    // Espacios entre tablas
-    const separadores = elemento.querySelectorAll('div[style*="margin-bottom"]');
-    separadores.forEach(sep => {
-        if (sep.style.marginBottom === '10px') {
-            sep.style.marginBottom = '6px';
-        }
+        tabla.style.pageBreakInside = 'avoid';
     });
 }
 
 /**
- * Oculta columnas CLP, TC y Observaciones en la tabla de Proyectos de Investigación
- * @param {HTMLElement} elemento - Elemento que contiene la tabla
+ * AJUSTE 2: Ajusta tablas al ancho disponible
+ */
+function ajustarTablasAlAncho(elemento) {
+    const tablas = elemento.querySelectorAll('table');
+    
+    tablas.forEach(tabla => {
+        // Estilos para ajuste de ancho
+        tabla.style.width = '100%';
+        tabla.style.borderCollapse = 'collapse';
+        tabla.style.tableLayout = 'fixed';  // Distribución uniforme
+        tabla.style.marginBottom = '12px';
+        
+        // Headers
+        const headers = tabla.querySelectorAll('th');
+        headers.forEach(th => {
+            th.style.padding = '3px';
+            th.style.fontSize = '8px';
+            th.style.fontWeight = 'bold';
+            th.style.wordBreak = 'break-word';
+            th.style.overflowWrap = 'break-word';
+            th.style.whiteSpace = 'normal';
+            th.style.lineHeight = '1.1';
+        });
+        
+        // Celdas
+        const celdas = tabla.querySelectorAll('td');
+        celdas.forEach(td => {
+            td.style.padding = '2px';
+            td.style.fontSize = '8px';
+            td.style.wordBreak = 'break-word';
+            td.style.overflowWrap = 'break-word';
+            td.style.whiteSpace = 'normal';
+            td.style.lineHeight = '1.1';
+        });
+        
+        // Filas
+        const filas = tabla.querySelectorAll('tr');
+        filas.forEach(fila => {
+            fila.style.pageBreakInside = 'avoid';
+        });
+    });
+}
+
+/**
+ * AJUSTE 3: Oculta columnas CLP, TC y Observaciones en tabla de Proyectos
  */
 function ocultarColumnasProyectos(elemento) {
-    // Encontrar el título "Proyectos de Investigación"
     const h3s = elemento.querySelectorAll('h3');
     let tablaProyectos = null;
     
+    // Encontrar tabla de Proyectos de Investigación
     for (let h3 of h3s) {
         if (h3.textContent.includes('Proyectos de Investigación')) {
-            // La tabla siguiente al h3 es la tabla de proyectos
             tablaProyectos = h3.nextElementSibling;
             break;
         }
     }
     
     if (!tablaProyectos || tablaProyectos.tagName !== 'TABLE') {
-        return; // No se encontró tabla de proyectos
+        return;
     }
     
-    // Encontrar los índices de las columnas a ocultar
+    // Encontrar índices de columnas a ocultar
     const headers = tablaProyectos.querySelectorAll('th');
     const columnasOcultar = [];
     
@@ -171,11 +158,11 @@ function ocultarColumnasProyectos(elemento) {
         const texto = header.textContent.trim();
         if (texto === 'CLP' || texto === 'TC' || texto === 'Observaciones') {
             columnasOcultar.push(idx);
-            header.style.display = 'none'; // Ocultar header
+            header.style.display = 'none';
         }
     });
     
-    // Ocultar celdas correspondientes en cada fila
+    // Ocultar celdas correspondientes
     const filas = tablaProyectos.querySelectorAll('tbody tr');
     filas.forEach(fila => {
         const celdas = fila.querySelectorAll('td');
@@ -187,7 +174,7 @@ function ocultarColumnasProyectos(elemento) {
     });
 }
 
-// Exponer función globalmente para llamadas desde HTML
+// Exponer función globalmente
 window.descargarPDF = descargarPDF;
 
-console.log('✓ exportaciones.js cargado - PDF mejorado disponible');
+console.log('✓ exportaciones.js cargado');
