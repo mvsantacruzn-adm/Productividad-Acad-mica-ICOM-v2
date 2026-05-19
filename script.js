@@ -467,6 +467,16 @@ function toggleMenuControl(event) {
     submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
     menuControl.classList.toggle("active");
 }
+
+function toggleMenuCNA(event) {
+    event.stopPropagation();
+    const menuCNA = document.getElementById("menu-cna");
+    const submenuCNA = document.getElementById("submenu-cna");
+    
+    submenuCNA.style.display = submenuCNA.style.display === "none" ? "block" : "none";
+    menuCNA.classList.toggle("active");
+}
+
 cargarDatos();
 
 // ============================================
@@ -990,10 +1000,6 @@ function cambiarPaginaMejorada(pagina) {
     if (pagina === 'reporteria-datos-profesores') {
         if (typeof inicializarFiltrosDatosProfesores === 'function') {
             inicializarFiltrosDatosProfesores();
-        }
-    } else if (pagina === 'cna-resumen-claustro') {
-        if (typeof generarResumenClaustroKPI === 'function') {
-            generarResumenClaustroKPI();
         }
     } else if (pagina === 'control-validacion') {
         if (MODO_ADMIN && typeof generarValidacion === 'function') {
@@ -2012,97 +2018,6 @@ function descargarProyectosVigentesExcel() {
         console.error('❌ Error:', error);
         alert('Error: ' + error.message);
     }
-}
-
-// ============================================
-// CNA RESUMEN CLAUSTRO - KPI
-// ============================================
-
-function generarResumenClaustroKPI() {
-    const contenedor = document.getElementById('cna-resumen-kpi');
-    if (!contenedor) return;
-    
-    // 1. Académicos claustro
-    const academicos = Object.keys(datosBase || {}).length;
-    
-    // 2. Publicaciones indexadas 2020+
-    let pubIndexadas = 0;
-    for (const prof of Object.keys(datosBase || {})) {
-        const prod = datosProduccion[prof];
-        if (prod && prod.secciones && prod.secciones.publicaciones_indexadas) {
-            const filas = prod.secciones.publicaciones_indexadas.filas || [];
-            pubIndexadas += filas.filter(f => parseInt(f['Año'] || 0) >= 2020).length;
-        }
-    }
-    
-    // 3. Proyectos externos vigentes
-    let proyectosExternos = 0;
-    const hoy = new Date();
-    for (const prof of Object.keys(datosBase || {})) {
-        const prod = datosProduccion[prof];
-        if (prod && prod.secciones && prod.secciones.proyectos) {
-            const filas = prod.secciones.proyectos.filas || [];
-            proyectosExternos += filas.filter(f => {
-                const tipo = String(f['Tipo de financiamiento'] || '').toUpperCase();
-                const esExterno = tipo.includes('EXTERNO') || tipo.includes('EXTRANJERO');
-                const termino = f['Término'] || f['Período de ejecución'] || '';
-                const vigente = termino ? new Date(termino) >= hoy : false;
-                return esExterno && vigente;
-            }).length;
-        }
-    }
-    
-    // 4. Tesis dirigidas 2020+
-    let tesisDirigidas = 0;
-    const tiposTesis = ['tesis_magister_guia', 'tesis_magister_coguia', 'tesis_doctorado_guia', 'tesis_doctorado_coguia'];
-    for (const prof of Object.keys(datosBase || {})) {
-        const prod = datosProduccion[prof];
-        if (prod && prod.secciones) {
-            for (const tipo of tiposTesis) {
-                const filas = prod.secciones[tipo]?.filas || [];
-                tesisDirigidas += filas.filter(f => parseInt(f['Año'] || 0) >= 2020).length;
-            }
-        }
-    }
-    
-    // Generar HTML de tabla
-    const html = `
-        <div class="reporteria-card">
-            <div class="card-header">
-                <h2 class="card-title">KPI General</h2>
-            </div>
-            <div class="table-container">
-                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
-                    <thead>
-                        <tr style="background: #f0f0f0;">
-                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd; font-weight: bold;">KPI</th>
-                            <th style="padding: 12px; text-align: right; border: 1px solid #ddd; font-weight: bold;">Valor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="background: white;">
-                            <td style="padding: 12px; border: 1px solid #ddd;">Académicos claustro</td>
-                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${academicos}</td>
-                        </tr>
-                        <tr style="background: #f8f8f8;">
-                            <td style="padding: 12px; border: 1px solid #ddd;">Publicaciones indexadas 2020+</td>
-                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${pubIndexadas}</td>
-                        </tr>
-                        <tr style="background: white;">
-                            <td style="padding: 12px; border: 1px solid #ddd;">Proyectos Vigentes</td>
-                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${proyectosExternos}</td>
-                        </tr>
-                        <tr style="background: #f8f8f8;">
-                            <td style="padding: 12px; border: 1px solid #ddd;">Tesis dirigidas</td>
-                            <td style="padding: 12px; border: 1px solid #ddd; text-align: right; font-weight: bold; font-size: 14px;">${tesisDirigidas}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    `;
-    
-    contenedor.innerHTML = html;
 }
 
 // Hacer funciones disponibles globalmente
