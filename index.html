@@ -22,8 +22,14 @@
                 <span class="submenu-toggle">▼</span>
             </div>
             <div class="submenu" id="submenu-reporteria" style="display: none;">
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
+                    📄 Ficha Académica CNA
+                </div>
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
                     📊 Reporte Personalizado
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
+                    📅 Proyectos vigentes del claustro
                 </div>
             </div>
             
@@ -35,6 +41,9 @@
             <div class="submenu" id="submenu-cna" style="display: none;">
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
                     📄 Ficha Académica CNA
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('cna-resumen-claustro')">
+                    📊 Resumen Claustro
                 </div>
                 <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
                     📅 Proyectos
@@ -206,29 +215,6 @@
                 </div>
             </div>
 
-            <!-- PÁGINA: CNA PROYECTOS -->
-            <div id="page-cna-proyectos" class="page">
-                <div class="header">
-                    <h1>CNA - Proyectos</h1>
-                    <p>Proyectos de investigación conforme a criterios CNA</p>
-                </div>
-                <div class="reporteria-grid">
-                    <div class="reporteria-card">
-                        <div class="card-header">
-                            <h2 class="card-title">📅 Proyectos</h2>
-                            <p class="card-subtitle">Módulo en desarrollo</p>
-                        </div>
-                        <div class="card-preview">
-                            <div class="preview-content">
-                                <div class="preview-placeholder">
-                                    <p>Próximamente</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div id="page-reporteria-proyectos-vigentes" class="page">
                 <div class="header">
                     <h1>Proyectos vigentes del claustro</h1>
@@ -253,6 +239,38 @@
                             <div id="proyectos-vigentes-preview" class="preview-content">
                                 <div class="preview-placeholder">
                                     <p>Haz clic en "Generar Reporte" para ver los proyectos vigentes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PÁGINA: CNA RESUMEN CLAUSTRO -->
+            <div id="page-cna-resumen-claustro" class="page">
+                <div class="header">
+                    <h1>Resumen Claustro CNA</h1>
+                    <p>Indicadores de productividad académica del claustro</p>
+                </div>
+                <div id="cna-resumen-contenido" class="reporteria-grid"></div>
+            </div>
+
+            <!-- PÁGINA: CNA PROYECTOS -->
+            <div id="page-cna-proyectos" class="page">
+                <div class="header">
+                    <h1>CNA - Proyectos</h1>
+                    <p>Proyectos de investigación conforme a criterios CNA</p>
+                </div>
+                <div class="reporteria-grid">
+                    <div class="reporteria-card">
+                        <div class="card-header">
+                            <h2 class="card-title">📅 Proyectos</h2>
+                            <p class="card-subtitle">Módulo en desarrollo</p>
+                        </div>
+                        <div class="card-preview">
+                            <div class="preview-content">
+                                <div class="preview-placeholder">
+                                    <p>Próximamente</p>
                                 </div>
                             </div>
                         </div>

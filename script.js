@@ -950,6 +950,8 @@ window.cambiarPagina = function(pagina) {
     // Inicializar sección si es necesario
     if (pagina === 'reporteria-datos-profesores') {
         inicializarFiltrosDatosProfesores();
+    } else if (pagina === 'cna-resumen-claustro') {
+        generarResumenClaustro();
     } else if (pagina === 'control-validacion') {
         generarValidacion();
     } else if (pagina === 'control-normalizacion') {
@@ -2020,10 +2022,307 @@ function descargarProyectosVigentesExcel() {
     }
 }
 
+}
+
+// ============================================
+// CNA RESUMEN CLAUSTRO
+// ============================================
+
+function generarResumenClaustro() {
+    console.log('→ generarResumenClaustro INICIADO');
+    
+    const contenedor = document.getElementById('cna-resumen-contenido');
+    if (!contenedor) return;
+    
+    let html = '';
+    
+    // KPI GENERAL
+    html += generarTablaKPIGeneral();
+    
+    // RESUMEN POR PROFESOR
+    html += generarTablaResumenProfesor();
+    
+    // PROYECTOS ÚLTIMOS 5 AÑOS
+    html += generarTablaProyectos5Años();
+    
+    contenedor.innerHTML = html;
+    console.log('✓ generarResumenClaustro COMPLETADO');
+}
+
+function generarTablaKPIGeneral() {
+    const profesores = Object.keys(datosBase);
+    let pubIndexadas = 0;
+    let proyectosVigentes = 0;
+    let tesisDirigidas = 0;
+    
+    // Contar publicaciones indexadas 2020+
+    for (const prof of profesores) {
+        const prod = datosProduccion[prof];
+        if (prod && prod.secciones && prod.secciones.publicaciones_indexadas) {
+            const filas = prod.secciones.publicaciones_indexadas.filas || [];
+            pubIndexadas += filas.filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+        }
+    }
+    
+    // Contar proyectos vigentes externos
+    const hoy = new Date();
+    for (const prof of profesores) {
+        const prod = datosProduccion[prof];
+        if (prod && prod.secciones && prod.secciones.proyectos) {
+            const filas = prod.secciones.proyectos.filas || [];
+            proyectosVigentes += filas.filter(f => {
+                const esTipoExterno = String(f['Tipo de financiamiento'] || '').toUpperCase().includes('EXTERNO');
+                const esExterno = String(f['Fuente'] || '').toUpperCase().includes('EXTERNO');
+                const tieneTermino = f['Término'] && new Date(f['Término']) >= hoy;
+                return (esTipoExterno || esExterno) && tieneTermino;
+            }).length;
+        }
+    }
+    
+    // Contar tesis dirigidas 2020+
+    const tiposTesis = ['tesis_magister_guia', 'tesis_magister_coguia', 'tesis_doctorado_guia', 'tesis_doctorado_coguia'];
+    for (const prof of profesores) {
+        const prod = datosProduccion[prof];
+        if (prod && prod.secciones) {
+            for (const tipo of tiposTesis) {
+                const filas = prod.secciones[tipo]?.filas || [];
+                tesisDirigidas += filas.filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+            }
+        }
+    }
+    
+    let html = `
+        <div class="reporteria-card">
+            <div class="card-header">
+                <h2 class="card-title">KPI General</h2>
+            </div>
+            <div class="table-container">
+                <table style="width: 100%; border-collapse: collapse; font-size: 12px;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold;">KPI</th>
+                            <th style="padding: 10px; text-align: right; border: 1px solid #ddd; font-weight: bold;">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Académicos claustro</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: right; font-weight: bold;">${profesores.length}</td>
+                        </tr>
+                        <tr style="background: #f8f8f8;">
+                            <td style="padding: 10px; border: 1px solid #ddd;">Publicaciones indexadas 2020+</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: right; font-weight: bold;">${pubIndexadas}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Proyectos Vigentes</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: right; font-weight: bold;">${proyectosVigentes}</td>
+                        </tr>
+                        <tr style="background: #f8f8f8;">
+                            <td style="padding: 10px; border: 1px solid #ddd;">Tesis dirigidas</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: right; font-weight: bold;">${tesisDirigidas}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function generarTablaResumenProfesor() {
+    const profesores = Object.keys(datosBase).sort();
+    const tiposTesisMag = ['tesis_magister_guia', 'tesis_magister_coguia'];
+    const tiposTesisDoc = ['tesis_doctorado_guia', 'tesis_doctorado_coguia'];
+    
+    let html = `
+        <div class="reporteria-card" style="margin-top: 20px;">
+            <div class="card-header">
+                <h2 class="card-title">Resumen por Profesor</h2>
+            </div>
+            <div class="table-container">
+                <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-weight: bold;">Profesor</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Pub. Indexadas</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Proy. Vigentes</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Tesis Mag.</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Tesis Doc.</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Libros</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Capítulos</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    let totales = { pub: 0, proy: 0, tesMag: 0, tesDoc: 0, lib: 0, cap: 0, total: 0 };
+    const hoy = new Date();
+    
+    for (const prof of profesores) {
+        const prod = datosProduccion[prof];
+        let pub = 0, proy = 0, tesMag = 0, tesDoc = 0, lib = 0, cap = 0;
+        
+        if (prod && prod.secciones) {
+            // Publicaciones
+            pub = (prod.secciones.publicaciones_indexadas?.filas || []).filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+            
+            // Proyectos vigentes
+            proy = (prod.secciones.proyectos?.filas || []).filter(f => {
+                const termino = f['Término'] || f['Período de ejecución'] || '';
+                return new Date(termino) >= hoy;
+            }).length;
+            
+            // Tesis magíster
+            tiposTesisMag.forEach(tipo => {
+                tesMag += (prod.secciones[tipo]?.filas || []).filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+            });
+            
+            // Tesis doctorado
+            tiposTesisDoc.forEach(tipo => {
+                tesDoc += (prod.secciones[tipo]?.filas || []).filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+            });
+            
+            // Libros
+            lib = (prod.secciones.libros?.filas || []).filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+            
+            // Capítulos
+            cap = (prod.secciones.capitulos?.filas || []).filter(f => parseInt(f['Año'] || 0) >= 2020).length;
+        }
+        
+        const total = pub + proy + tesMag + tesDoc + lib + cap;
+        totales.pub += pub;
+        totales.proy += proy;
+        totales.tesMag += tesMag;
+        totales.tesDoc += tesDoc;
+        totales.lib += lib;
+        totales.cap += cap;
+        totales.total += total;
+        
+        const bg = parseInt(proy) > 0 ? '; background: #e8d5f2;' : '';
+        
+        html += `
+            <tr style="border: 1px solid #ddd${bg}">
+                <td style="padding: 8px; border: 1px solid #ddd;">${datosBase[prof].nombre_visual || prof}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${pub}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${proy}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${tesMag}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${tesDoc}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${lib}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${cap}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${total}</td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                        <tr style="background: #e8e8e8; font-weight: bold;">
+                            <td style="padding: 8px; border: 1px solid #ddd;">TOTAL</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.pub}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.proy}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.tesMag}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.tesDoc}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.lib}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.cap}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${totales.total}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
+function generarTablaProyectos5Años() {
+    const profesores = Object.keys(datosBase).sort();
+    const hoy = new Date();
+    const hace5Años = new Date();
+    hace5Años.setFullYear(hace5Años.getFullYear() - 5);
+    
+    let html = `
+        <div class="reporteria-card" style="margin-top: 20px;">
+            <div class="card-header">
+                <h2 class="card-title">Proyectos de Investigación Últimos 5 Años</h2>
+            </div>
+            <div class="table-container">
+                <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 8px; text-align: left; border: 1px solid #ddd; font-weight: bold;">Profesor</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">IP Externos</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">IP Internos</th>
+                            <th style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold;">IP Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+    
+    for (const prof of profesores) {
+        const prod = datosProduccion[prof];
+        let ipExterno = 0, ipInterno = 0;
+        let tieneVigente = false;
+        
+        if (prod && prod.secciones && prod.secciones.proyectos) {
+            const filas = prod.secciones.proyectos.filas || [];
+            
+            for (const f of filas) {
+                const ano = parseInt(f['Año'] || f['Año de adjudicación'] || 0);
+                const fecha = new Date(ano, 0, 1);
+                
+                if (fecha < hace5Años) continue;
+                
+                const rol = String(f['Rol'] || '').toUpperCase();
+                if (!rol.includes('INVESTIGADOR RESPONSABLE') && !rol.includes('PI') && !rol.includes('INVESTIGADOR PRINCIPAL')) {
+                    continue;
+                }
+                
+                const tipo = String(f['Tipo de financiamiento'] || '').toUpperCase();
+                const fuente = String(f['Fuente'] || '').toUpperCase();
+                
+                const esInterno = tipo.includes('INTERNO') || tipo.includes('FAI') || fuente.includes('UNIVERSIDAD DE LOS ANDES') || fuente.includes('ESE');
+                const esExterno = tipo.includes('EXTERNO') || tipo.includes('EXTRANJERO');
+                
+                if (esInterno) ipInterno++;
+                if (esExterno) ipExterno++;
+                
+                // Verificar si es vigente
+                const termino = f['Término'] || f['Período de ejecución'] || '';
+                if (new Date(termino) >= hoy) {
+                    tieneVigente = true;
+                }
+            }
+        }
+        
+        const bg = tieneVigente ? '; background: #e8d5f2;' : '';
+        const total = ipExterno + ipInterno;
+        
+        html += `
+            <tr style="border: 1px solid #ddd${bg}">
+                <td style="padding: 8px; border: 1px solid #ddd;">${datosBase[prof].nombre_visual || prof}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${ipExterno}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${ipInterno}</td>
+                <td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${total}</td>
+            </tr>
+        `;
+    }
+    
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    
+    return html;
+}
+
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
-window.toggleMenuCNA = toggleMenuCNA;
+window.generarResumenClaustro = generarResumenClaustro;
 
 console.log('✓ Funciones Proyectos vigentes disponibles globalmente');
 
