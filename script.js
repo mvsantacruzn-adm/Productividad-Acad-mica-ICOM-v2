@@ -450,33 +450,6 @@ function cambiarPagina(pagina) {
 // FUNCIONES DE MENÚ EXPANDIBLE
 // ============================================
 
-function toggleMenuReporteria(event) {
-    event.stopPropagation();
-    const menuReporteria = document.getElementById("menu-reporteria");
-    const submenuReporteria = document.getElementById("submenu-reporteria");
-    
-    submenuReporteria.style.display = submenuReporteria.style.display === "none" ? "block" : "none";
-    menuReporteria.classList.toggle("active");
-}
-
-function toggleMenuControl(event) {
-    event.stopPropagation();
-    const menuControl = document.getElementById("menu-control");
-    const submenuControl = document.getElementById("submenu-control");
-    
-    submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
-    menuControl.classList.toggle("active");
-}
-
-function toggleMenuCNA(event) {
-    event.stopPropagation();
-    const menuCNA = document.getElementById("menu-cna");
-    const submenuCNA = document.getElementById("submenu-cna");
-    
-    submenuCNA.style.display = submenuCNA.style.display === "none" ? "block" : "none";
-    menuCNA.classList.toggle("active");
-}
-
 cargarDatos();
 
 // ============================================
