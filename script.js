@@ -2319,7 +2319,17 @@ function generarResumenAcademico() {
             <tbody>
     `;
     
-    // Agregar filas
+    // Agregar filas y calcular totales
+    let totales = {
+        pub_indexadas_2020: 0,
+        pub_no_indexadas_2020: 0,
+        libros_2020: 0,
+        capitulos_2020: 0,
+        proyectos_2020: 0,
+        tesis_magister_2020: 0,
+        tesis_doctorado_2020: 0
+    };
+    
     for (const fila of datosResumen) {
         const bgColor = fila.tiene_proyectos_vigentes ? '#FFF9E6' : 'white';
         const bgAlternate = fila.tiene_proyectos_vigentes ? '#FFFBF0' : '#f8f8f8';
@@ -2337,7 +2347,31 @@ function generarResumenAcademico() {
                 <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">${fila.tesis_doctorado_2020}</td>
             </tr>
         `;
+        
+        // Acumular totales
+        totales.pub_indexadas_2020 += fila.pub_indexadas_2020;
+        totales.pub_no_indexadas_2020 += fila.pub_no_indexadas_2020;
+        totales.libros_2020 += fila.libros_2020;
+        totales.capitulos_2020 += fila.capitulos_2020;
+        totales.proyectos_2020 += fila.proyectos_2020;
+        totales.tesis_magister_2020 += fila.tesis_magister_2020;
+        totales.tesis_doctorado_2020 += fila.tesis_doctorado_2020;
     }
+    
+    // Agregar fila de totales
+    html += `
+            <tr style="background: #f0f0f0; font-weight: bold;">
+                <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">TOTAL</td>
+                <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.pub_indexadas_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.pub_no_indexadas_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.libros_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.capitulos_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.proyectos_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.tesis_magister_2020}</td>
+                <td style="padding: 10px; border: 1px solid #ddd; text-align: center; font-weight: bold;">${totales.tesis_doctorado_2020}</td>
+            </tr>
+    `;
     
     html += `
             </tbody>
