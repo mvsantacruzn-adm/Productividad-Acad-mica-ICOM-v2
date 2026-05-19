@@ -16,22 +16,51 @@
             <!-- PROFESORES -->
             <div class="menu-item active" onclick="cambiarPagina('profesores')">👥 Profesores</div>
             
-            <!-- REPORTE PERSONALIZADO -->
-            <div class="menu-item" onclick="cambiarPagina('reporteria-datos-profesores')">📊 Reporte Personalizado</div>
+            <!-- REPORTERÍA -->
+            <div class="menu-item menu-parent" id="menu-reporteria" onclick="toggleMenuReporteria(event)">
+                📋 Reportería
+                <span class="submenu-toggle">▼</span>
+            </div>
+            <div class="submenu" id="submenu-reporteria" style="display: none;">
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
+                    📊 Reporte Personalizado
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
+                    📅 Proyectos vigentes del claustro
+                </div>
+            </div>
             
-            <!-- FICHA ACADÉMICA CNA -->
-            <div class="menu-item" onclick="cambiarPagina('reporteria-ficha-cna')">📄 Ficha Académica CNA</div>
-            
-            <!-- RESUMEN CLAUSTRO -->
-            <div class="menu-item" onclick="cambiarPagina('cna-resumen-claustro')">📊 Resumen Claustro</div>
-            
-            <!-- PROYECTOS CNA -->
-            <div class="menu-item" onclick="cambiarPagina('cna-proyectos')">📅 Proyectos</div>
+            <!-- CNA -->
+            <div class="menu-item menu-parent" id="menu-cna" onclick="toggleMenuCNA(event)">
+                🎯 CNA
+                <span class="submenu-toggle">▼</span>
+            </div>
+            <div class="submenu" id="submenu-cna" style="display: none;">
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
+                    📄 Ficha Académica CNA
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('cna-resumen-claustro')">
+                    📊 Resumen Claustro
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
+                    📅 Proyectos
+                </div>
+            </div>
             
             <!-- CONTROL (SOLO PARA MODO ADMIN) -->
-            <div class="menu-item menu-control" style="display: none;" onclick="cambiarPagina('control-validacion')">📋 Validación de Headers</div>
-            <div class="menu-item menu-control" style="display: none;" onclick="cambiarPagina('control-normalizacion')">✏️ Corrección y Normalización</div>
-            
+            <div class="menu-item menu-parent menu-control" id="menu-control" style="display: none;" onclick="toggleMenuControl(event)">
+                🔧 Control
+                <span class="submenu-toggle">▼</span>
+            </div>
+            <div class="submenu menu-control" id="submenu-control" style="display: none;">
+                <div class="submenu-item" onclick="cambiarPagina('control-validacion')">
+                    📋 Validación de Headers
+                </div>
+                <div class="submenu-item" onclick="cambiarPagina('control-normalizacion')">
+                    ✏️ Corrección y Normalización
+                </div>
+            </div>
+        </div>
         
         <div class="main-content">
             <!-- PÁGINA: PROFESORES -->
@@ -183,34 +212,42 @@
                 </div>
             </div>
 
-            <!-- PÁGINAS CNA -->
-            <div id="page-cna-resumen-claustro" class="page">
+            <div id="page-reporteria-proyectos-vigentes" class="page">
                 <div class="header">
-                    <h1>Resumen Claustro CNA</h1>
-                    <p>Indicadores de productividad académica del claustro</p>
+                    <h1>Proyectos vigentes del claustro</h1>
+                    <p>Proyectos de investigación vigentes en 2026</p>
                 </div>
-                <div id="cna-resumen-kpi" class="reporteria-grid"></div>
-            </div>
-
-            <div id="page-cna-proyectos" class="page">
-                <div class="header">
-                    <h1>Proyectos CNA</h1>
-                    <p>Proyectos de investigación conforme a criterios CNA</p>
-                </div>
+                
                 <div class="reporteria-grid">
                     <div class="reporteria-card">
                         <div class="card-header">
-                            <h2 class="card-title">📅 Proyectos</h2>
-                            <p class="card-subtitle">Módulo en desarrollo</p>
+                            <h2 class="card-title">📅 Resumen de proyectos vigentes</h2>
+                            <p class="card-subtitle">Proyectos de investigación vigentes en 2026 del claustro</p>
                         </div>
+                        
+                        <div class="card-body">
+                            <div class="form-actions">
+                                <button class="btn-primary" onclick="generarReporteProyectosVigentes()">Generar Reporte</button>
+                                <button class="btn-secondary" id="btn-descargar-proyectos-excel" onclick="descargarProyectosVigentesExcel()" style="display: none;">📥 Descargar Excel</button>
+                            </div>
+                        </div>
+                        
                         <div class="card-preview">
-                            <div class="preview-content">
+                            <div id="proyectos-vigentes-preview" class="preview-content">
                                 <div class="preview-placeholder">
-                                    <p>Próximamente</p>
+                                    <p>Haz clic en "Generar Reporte" para ver los proyectos vigentes</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- PÁGINA: CNA RESUMEN CLAUSTRO -->
+            <div id="page-cna-resumen-claustro" class="page">
+                <div class="header">
+                    <h1>Resumen Claustro CNA</h1>
+                    <p>Próximamente</p>
                 </div>
             </div>
         </div>
