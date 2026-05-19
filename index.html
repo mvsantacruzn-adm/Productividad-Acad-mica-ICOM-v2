@@ -22,28 +22,11 @@
                 <span class="submenu-toggle">▼</span>
             </div>
             <div class="submenu" id="submenu-reporteria" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
-                    📊 Reporte Personalizado
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
-                    📅 Proyectos vigentes del claustro
-                </div>
-            </div>
-            
-            <!-- CNA -->
-            <div class="menu-item menu-parent" id="menu-cna" onclick="toggleMenuCNA(event)">
-                🎯 CNA
-                <span class="submenu-toggle">▼</span>
-            </div>
-            <div class="submenu" id="submenu-cna" style="display: none;">
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
                     📄 Ficha Académica CNA
                 </div>
-                <div class="submenu-item" onclick="cambiarPagina('cna-resumen-claustro')">
-                    📊 Resumen Claustro
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
-                    📅 Proyectos
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
+                    📊 Reporte Personalizado
                 </div>
             </div>
             
@@ -247,8 +230,9 @@
             <div id="page-cna-resumen-claustro" class="page">
                 <div class="header">
                     <h1>Resumen Claustro CNA</h1>
-                    <p>Próximamente</p>
+                    <p>Indicadores de productividad académica del claustro</p>
                 </div>
+                <div id="cna-resumen-kpi" class="reporteria-grid"></div>
             </div>
         </div>
     </div>
