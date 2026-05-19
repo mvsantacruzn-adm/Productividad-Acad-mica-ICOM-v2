@@ -2023,7 +2023,6 @@ function descargarProyectosVigentesExcel() {
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
-window.toggleMenuCNA = toggleMenuCNA;
 
 console.log('✓ Funciones Proyectos vigentes disponibles globalmente');
 
