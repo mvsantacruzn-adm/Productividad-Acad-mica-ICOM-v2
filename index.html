@@ -22,28 +22,11 @@
                 <span class="submenu-toggle">▼</span>
             </div>
             <div class="submenu" id="submenu-reporteria" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
-                    📊 Reporte Personalizado
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
-                    📅 Proyectos vigentes del claustro
-                </div>
-            </div>
-            
-            <!-- CNA -->
-            <div class="menu-item menu-parent" id="menu-cna" onclick="toggleMenuCNA(event)">
-                🎯 CNA
-                <span class="submenu-toggle">▼</span>
-            </div>
-            <div class="submenu" id="submenu-cna" style="display: none;">
                 <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
                     📄 Ficha Académica CNA
                 </div>
-                <div class="submenu-item" onclick="cambiarPagina('cna-resumen-claustro')">
-                    📊 Resumen Claustro
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
-                    📅 Proyectos
+                <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
+                    📊 Reporte Personalizado
                 </div>
             </div>
             
@@ -209,45 +192,6 @@
                             <div id="normalizacion-container" class="normalizacion-container"></div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div id="page-reporteria-proyectos-vigentes" class="page">
-                <div class="header">
-                    <h1>Proyectos vigentes del claustro</h1>
-                    <p>Proyectos de investigación vigentes en 2026</p>
-                </div>
-                
-                <div class="reporteria-grid">
-                    <div class="reporteria-card">
-                        <div class="card-header">
-                            <h2 class="card-title">📅 Resumen de proyectos vigentes</h2>
-                            <p class="card-subtitle">Proyectos de investigación vigentes en 2026 del claustro</p>
-                        </div>
-                        
-                        <div class="card-body">
-                            <div class="form-actions">
-                                <button class="btn-primary" onclick="generarReporteProyectosVigentes()">Generar Reporte</button>
-                                <button class="btn-secondary" id="btn-descargar-proyectos-excel" onclick="descargarProyectosVigentesExcel()" style="display: none;">📥 Descargar Excel</button>
-                            </div>
-                        </div>
-                        
-                        <div class="card-preview">
-                            <div id="proyectos-vigentes-preview" class="preview-content">
-                                <div class="preview-placeholder">
-                                    <p>Haz clic en "Generar Reporte" para ver los proyectos vigentes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PÁGINA: CNA RESUMEN CLAUSTRO -->
-            <div id="page-cna-resumen-claustro" class="page">
-                <div class="header">
-                    <h1>Resumen Claustro CNA</h1>
-                    <p>Próximamente</p>
                 </div>
             </div>
         </div>
