@@ -533,8 +533,24 @@ function getTituloTabla(tipo) {
 }
 
 function generarValidacion() {
+    console.log('🔍 generarValidacion() ejecutada');
     const container = document.getElementById('control-tabla');
+    console.log('📦 container:', container);
+    
     const tablasData = obtenerDatosValidacion();
+    console.log('📊 tablasData:', tablasData);
+    console.log('📈 Total tablas:', tablasData.length);
+    
+    if (!container) {
+        console.error('❌ ERROR: No se encontró elemento con id="control-tabla"');
+        return;
+    }
+    
+    if (tablasData.length === 0) {
+        console.warn('⚠️ AVISO: No hay datos para mostrar');
+        container.innerHTML = '<p>No hay datos disponibles</p>';
+        return;
+    }
     
     let html = `
         <table>
@@ -568,6 +584,7 @@ function generarValidacion() {
     `;
     
     container.innerHTML = html;
+    console.log('✅ Tabla generada correctamente');
 }
 
 
@@ -922,13 +939,19 @@ window.cambiarPagina = function(pagina) {
     } else if (pagina === 'cna-resumen-claustro') {
         generarResumenClaustro();
     } else if (pagina === 'control-validacion') {
-        if (Object.keys(datosProduccion).length > 0) {
-            generarValidacion();
-        }
+        // Ejecutar con pequeño delay para asegurar que datos estén listos
+        setTimeout(() => {
+            if (typeof generarValidacion === 'function') {
+                generarValidacion();
+            }
+        }, 100);
     } else if (pagina === 'control-normalizacion') {
-        if (Object.keys(datosProduccion).length > 0) {
-            generarNormalizacion();
-        }
+        // Ejecutar con pequeño delay para asegurar que datos estén listos
+        setTimeout(() => {
+            if (typeof generarNormalizacion === 'function') {
+                generarNormalizacion();
+            }
+        }, 100);
     }
 };
 
