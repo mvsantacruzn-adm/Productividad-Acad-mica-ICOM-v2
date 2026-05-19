@@ -88,10 +88,10 @@ function inicializar() {
     poblarSelectorProfesores();
     
     // Mostrar/ocultar Control según MODO_ADMIN
-    const menuControl = document.querySelector('.menu-control');
-    if (menuControl) {
-        menuControl.style.display = MODO_ADMIN ? 'block' : 'none';
-    }
+    const botonesControl = document.querySelectorAll('.menu-control');
+    botonesControl.forEach(boton => {
+        boton.style.display = MODO_ADMIN ? 'block' : 'none';
+    });
 }
 
 function generarListado(profesores) {
@@ -450,33 +450,6 @@ function cambiarPagina(pagina) {
 // FUNCIONES DE MENÚ EXPANDIBLE
 // ============================================
 
-function toggleMenuReporteria(event) {
-    event.stopPropagation();
-    const menuReporteria = document.getElementById("menu-reporteria");
-    const submenuReporteria = document.getElementById("submenu-reporteria");
-    
-    submenuReporteria.style.display = submenuReporteria.style.display === "none" ? "block" : "none";
-    menuReporteria.classList.toggle("active");
-}
-
-function toggleMenuControl(event) {
-    event.stopPropagation();
-    const menuControl = document.getElementById("menu-control");
-    const submenuControl = document.getElementById("submenu-control");
-    
-    submenuControl.style.display = submenuControl.style.display === "none" ? "block" : "none";
-    menuControl.classList.toggle("active");
-}
-
-function toggleMenuCNA(event) {
-    event.stopPropagation();
-    const menuCNA = document.getElementById("menu-cna");
-    const submenuCNA = document.getElementById("submenu-cna");
-    
-    submenuCNA.style.display = submenuCNA.style.display === "none" ? "block" : "none";
-    menuCNA.classList.toggle("active");
-}
-
 cargarDatos();
 
 // ============================================
@@ -638,22 +611,18 @@ function inicializarMejorado() {
     poblarSelectorProfesores();
     
     // Mostrar/ocultar Control según MODO_ADMIN
-    const menuControl = document.getElementById('menu-control');
-    const submenuControl = document.getElementById('submenu-control');
-    const pagesControl = document.querySelectorAll('.menu-control');
+    const botonesControl = document.querySelectorAll('.menu-control');
     
     if (MODO_ADMIN) {
         // Mostrar Control
-        if (menuControl) menuControl.style.display = 'flex';
-        if (submenuControl) submenuControl.style.display = 'none';
-        pagesControl.forEach(page => {
-            // Las páginas se mostrarán cuando se navegue a ellas
+        botonesControl.forEach(boton => {
+            boton.style.display = 'block';
         });
     } else {
         // Ocultar Control completamente
-        if (menuControl) menuControl.style.display = 'none';
-        if (submenuControl) submenuControl.style.display = 'none';
-        pagesControl.forEach(page => page.style.display = 'none');
+        botonesControl.forEach(boton => {
+            boton.style.display = 'none';
+        });
     }
     
     // Generar contenido si es necesario

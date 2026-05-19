@@ -16,50 +16,20 @@
             <!-- PROFESORES -->
             <div class="menu-item active" onclick="cambiarPagina('profesores')">👥 Profesores</div>
             
-            <!-- REPORTERÍA -->
-            <div class="menu-item menu-parent" id="menu-reporteria" onclick="toggleMenuReporteria(event)">
-                📋 Reportería
-                <span class="submenu-toggle">▼</span>
-            </div>
-            <div class="submenu" id="submenu-reporteria" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-datos-profesores')">
-                    📊 Reporte Personalizado
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-proyectos-vigentes')">
-                    📅 Proyectos vigentes del claustro
-                </div>
-            </div>
+            <!-- REPORTE PERSONALIZADO -->
+            <div class="menu-item" onclick="cambiarPagina('reporteria-datos-profesores')">📊 Reporte Personalizado</div>
             
-            <!-- CNA -->
-            <div class="menu-item menu-parent" id="menu-cna" onclick="toggleMenuCNA(event)">
-                🎯 CNA
-                <span class="submenu-toggle">▼</span>
-            </div>
-            <div class="submenu" id="submenu-cna" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('reporteria-ficha-cna')">
-                    📄 Ficha Académica CNA
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('cna-resumen-claustro')">
-                    📊 Resumen Claustro
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('cna-proyectos')">
-                    📅 Proyectos
-                </div>
-            </div>
+            <!-- FICHA ACADÉMICA CNA -->
+            <div class="menu-item" onclick="cambiarPagina('reporteria-ficha-cna')">📄 Ficha Académica CNA</div>
+            
+            <!-- RESUMEN CLAUSTRO -->
+            <div class="menu-item" onclick="cambiarPagina('cna-resumen-claustro')">📊 Resumen Claustro</div>
+            
+            <!-- PROYECTOS -->
+            <div class="menu-item" onclick="cambiarPagina('cna-proyectos')">📅 Proyectos</div>
             
             <!-- CONTROL (SOLO PARA MODO ADMIN) -->
-            <div class="menu-item menu-parent menu-control" id="menu-control" style="display: none;" onclick="toggleMenuControl(event)">
-                🔧 Control
-                <span class="submenu-toggle">▼</span>
-            </div>
-            <div class="submenu menu-control" id="submenu-control" style="display: none;">
-                <div class="submenu-item" onclick="cambiarPagina('control-validacion')">
-                    📋 Validación de Headers
-                </div>
-                <div class="submenu-item" onclick="cambiarPagina('control-normalizacion')">
-                    ✏️ Corrección y Normalización
-                </div>
-            </div>
+            <div class="menu-item menu-control" style="display: none;" onclick="cambiarPagina('control-validacion')">🔧 Control</div>
         </div>
         
         <div class="main-content">
@@ -240,14 +210,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- PÁGINA: CNA RESUMEN CLAUSTRO -->
-            <div id="page-cna-resumen-claustro" class="page">
-                <div class="header">
-                    <h1>Resumen Claustro CNA</h1>
-                    <p>Próximamente</p>
                 </div>
             </div>
         </div>
