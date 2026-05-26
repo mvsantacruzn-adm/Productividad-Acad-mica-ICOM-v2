@@ -97,6 +97,11 @@ function inicializar() {
 function generarListado(profesores) {
     const lista = document.getElementById('profesor-list');
     
+    if (!lista) {
+        console.error('❌ No se encontró elemento profesor-list');
+        return;
+    }
+    
     // Separar y ordenar por facultad
     const porFacultad = {};
     
@@ -111,15 +116,15 @@ function generarListado(profesores) {
     // Ordenar cada facultad alfabéticamente por primer nombre
     Object.keys(porFacultad).forEach(origen => {
         porFacultad[origen].sort((a, b) => {
-            const nombreA = a.nombre.split(' ')[0];
-            const nombreB = b.nombre.split(' ')[0];
+            const nombreA = (a.nombre || a.nombreVisual || '').split(' ')[0].toLowerCase();
+            const nombreB = (b.nombre || b.nombreVisual || '').split(' ')[0].toLowerCase();
             return nombreA.localeCompare(nombreB);
         });
     });
     
-    // Construir lista: FCEE primero, luego ESE
+    // Construir lista: FCEE primero, luego ESE, luego otros
     let profesoresOrdenados = [];
-    const orden = ['FCEE', 'ESE'];
+    const orden = ['FCEE', 'ESE', 'SIN_ORIGEN'];
     
     orden.forEach(origen => {
         if (porFacultad[origen]) {
@@ -128,13 +133,26 @@ function generarListado(profesores) {
     });
     
     // Generar enumeración por facultad
-    let contadores = { 'FCEE': 0, 'ESE': 0 };
+    let contadores = { 'FCEE': 0, 'ESE': 0, 'SIN_ORIGEN': 0 };
     
     lista.innerHTML = profesoresOrdenados.map(p => {
         const origen = p.origen || 'SIN_ORIGEN';
         const numero = ++contadores[origen] || 1;
-        const colorBg = origen === 'FCEE' ? '#E8F4F8' : '#FFF4E6';
-        const colorBorde = origen === 'FCEE' ? '#4A90E2' : '#FF9800';
+        
+        let colorBg, colorBorde;
+        if (origen === 'FCEE') {
+            colorBg = '#E8F4F8';
+            colorBorde = '#4A90E2';
+        } else if (origen === 'ESE') {
+            colorBg = '#FFF4E6';
+            colorBorde = '#FF9800';
+        } else {
+            colorBg = '#F0F0F0';
+            colorBorde = '#999999';
+        }
+        
+        const nombreVisual = p.nombreVisual || p.nombre || 'N/D';
+        const grado = p.grado || 'N/D';
         
         return `
         <div class="profesor-row ${!p.tieneDatos ? 'sin-ficha' : ''}" onclick="${p.tieneDatos ? `abrirModal('${p.id}')` : ''}">
@@ -142,13 +160,15 @@ function generarListado(profesores) {
                 ${numero} - ${origen}
             </div>
             <div class="profesor-info">
-                <div class="profesor-nombre">${p.nombreVisual}</div>
-                <div class="profesor-resumen">${p.grado || 'N/D'}</div>
+                <div class="profesor-nombre">${nombreVisual}</div>
+                <div class="profesor-resumen">${grado}</div>
             </div>
             <div class="profesor-arrow">${p.tieneDatos ? '→' : ''}</div>
         </div>
         `;
     }).join('');
+    
+    console.log('✓ generarListado completado: ' + profesoresOrdenados.length + ' profesores');
 }
 
 function poblarSelectorProfesores() {
