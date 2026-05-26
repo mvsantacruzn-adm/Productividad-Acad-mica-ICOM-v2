@@ -154,5 +154,18 @@
         "nombres": "DAVID",
         "apellidos": "KIMBER/CAMUSSETTI",
         "nombre_visual": "David Kimber Camussetti"
+    },
+    "Leonardo Epstein Giwercman": {
+        "nombre": "Leonardo David Epstein Giwercman",
+        "vinculo": "Claustro",
+        "titulo": "Ingeniero Matemático, Universidad de Chile, Chile",
+        "grado": "PhD en Estadística, Carnegie Mellon University, Estados Unidos",
+        "lineas": "Estadística, Investigación de Operaciones, Marketing, Biostatística; modelos de inventario para ítems reutilizables y de arriendo; evaluación de campañas de marketing y promociones; métodos bioestadísticos para estimación de prevalencia de enfermedades; eventos recurrentes; análisis de series de tiempo no normales; enfoques bayesianos para regresión con datos no normales.",
+        "rut": "66049493",
+        "apellido_paterno": "EPSTEIN",
+        "apellido_materno": "GIWERCMAN",
+        "nombres": "LEONARDO DAVID",
+        "apellidos": "EPSTEIN/GIWERCMAN",
+        "nombre_visual": "Leonardo Epstein Giwercman"
     }
 }

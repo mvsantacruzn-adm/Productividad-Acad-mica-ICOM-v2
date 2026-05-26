@@ -3591,5 +3591,624 @@
                 "filas": []
             }
         }
+    },
+    "Leonardo Epstein Giwercman": {
+        "secciones": {
+            "publicaciones_indexadas": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Nombre revista",
+                    "Estado",
+                    "ISSN",
+                    "Indicador",
+                    "Indexación",
+                    "Link de verificación electrónica"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Inostroza-Quezada, I.; Epstein, L. D.; Goodstein, R. C.",
+                        "Año": "2026",
+                        "Título": "Using sensor technology to evaluate the effects of a price promotion on store arrival traffic",
+                        "Nombre revista": "Journal of Business Research",
+                        "Estado": "Publicado",
+                        "ISSN": "0148-2963",
+                        "Indicador": "9,8",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research"
+                    },
+                    {
+                        "N°": "2",
+                        "Autor(es)": "Tornero, B.; Epstein, L. D.; Vicuna, M. I.",
+                        "Año": "2025",
+                        "Título": "How likely are doctoral students to recommend their programmes? Associations with satisfaction with six academic aspects of their doctorates",
+                        "Nombre revista": "Journal of Further and Higher Education",
+                        "Estado": "Publicado",
+                        "ISSN": "0309-877X",
+                        "Indicador": "2,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.tandfonline.com/journals/cjfh20"
+                    },
+                    {
+                        "N°": "3",
+                        "Autor(es)": "Cerda Díez, M. F.; Ureta, M. del P.; Pavez, I.; Benavides, C.; Inostroza-Quezada, I.; Epstein, L. D.",
+                        "Año": "2023",
+                        "Título": "Acceso, uso y actitudes de Tecnologías de la Información y Comunicación en personas mayores durante la pandemia de COVID-19",
+                        "Nombre revista": "Revista Española de Comunicación en Salud",
+                        "Estado": "Publicado",
+                        "ISSN": "1989-9882",
+                        "Indicador": "0,3",
+                        "Indexación": "SJR",
+                        "Link de verificación electrónica": "https://dialnet.unirioja.es/servlet/revista?codigo=24687"
+                    },
+                    {
+                        "N°": "4",
+                        "Autor(es)": "Jaques, D.; Bustamante, F.; Aravena, R.; Epstein, L. D.; Mozó, J. A.",
+                        "Año": "2022",
+                        "Título": "Combining data from the National Health Survey with GES depression notifications to improve the prevalence estimation of depression in Chile",
+                        "Nombre revista": "Revista Médica de Chile",
+                        "Estado": "Publicado",
+                        "ISSN": "0034-9887",
+                        "Indicador": "1",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.scielo.cl/scielo.php?script=sci_serial&pid=0034-9887"
+                    },
+                    {
+                        "N°": "5",
+                        "Autor(es)": "Epstein, L. D.; Inostroza-Quezada, I.; Goodstein, R. C.; Choi, S. C.",
+                        "Año": "2021",
+                        "Título": "Effects of store promotions on purchase conversion: expanding technology applications with innovative analytics",
+                        "Nombre revista": "Journal of Business Research",
+                        "Estado": "Publicado",
+                        "ISSN": "0148-2963",
+                        "Indicador": "10,9",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research"
+                    },
+                    {
+                        "N°": "6",
+                        "Autor(es)": "Basso, F.; Epstein, L. D.; Pezoa, R.; Varas, M.",
+                        "Año": "2019",
+                        "Título": "An optimization approach and a heuristic procedure to schedule battery charging processes for stackers of palletized cargo",
+                        "Nombre revista": "Computers and Industrial Engineering",
+                        "Estado": "Publicado",
+                        "ISSN": "0360-8352",
+                        "Indicador": "7,9",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.sciencedirect.com/journal/computers-and-industrial-engineering"
+                    },
+                    {
+                        "N°": "7",
+                        "Autor(es)": "Epstein, L. D.; González, E.; Sepúlveda, A.",
+                        "Año": "2018",
+                        "Título": "Optimal Size of a Rental Inventory with Items Available from a Secondary Source: A Model with Non-stationary Probabilities",
+                        "Nombre revista": "Annals of Operations Research",
+                        "Estado": "Publicado",
+                        "ISSN": "0254-5330",
+                        "Indicador": "2,7",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://link.springer.com/journal/10479"
+                    },
+                    {
+                        "N°": "8",
+                        "Autor(es)": "Epstein, L. D.; Flores, A. A.; Goodstein, R. C.; Milberg, S. J.",
+                        "Año": "2016",
+                        "Título": "A new approach to measuring retail promotion effectiveness: A case of store traffic",
+                        "Nombre revista": "Journal of Business Research",
+                        "Estado": "Publicado",
+                        "ISSN": "0148-2963",
+                        "Indicador": "3,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research"
+                    },
+                    {
+                        "N°": "9",
+                        "Autor(es)": "González, E.; Epstein, L. D.",
+                        "Año": "2015",
+                        "Título": "Minimum Cost in a Mix of New and Old Reusable Items: An Application to Sizing a Fleet of Delivery Trucks",
+                        "Nombre revista": "Annals of Operations Research",
+                        "Estado": "Publicado",
+                        "ISSN": "0254-5330",
+                        "Indicador": "2,1",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://link.springer.com/journal/10479"
+                    },
+                    {
+                        "N°": "10",
+                        "Autor(es)": "Milberg, S. J.; Goodstein, R. C.; Sinn, F.; Cuneo, A.; Epstein, L. D.",
+                        "Año": "2013",
+                        "Título": "Call back the jury: Reinvestigating the effects of fit and parent brand quality in determining brand extension success",
+                        "Nombre revista": "Journal of Marketing Management",
+                        "Estado": "Publicado",
+                        "ISSN": "0267-257X",
+                        "Indicador": "1,6",
+                        "Indexación": "SJR",
+                        "Link de verificación electrónica": "https://www.tandfonline.com/journals/rjmm20"
+                    },
+                    {
+                        "N°": "11",
+                        "Autor(es)": "Bennett, A.; Epstein, L. D.; Gilman, R. H.; Cama, V.; Bern, C.; Cabrera, L.; Lescano, A. G.; Patz, J.; Carcamo, C.; Checkley, W.",
+                        "Año": "2012",
+                        "Título": "Effects of 1997-98 El Niño episode on community rates of diarrhea in Lima, Peru",
+                        "Nombre revista": "American Journal of Public Health",
+                        "Estado": "Publicado",
+                        "ISSN": "0090-0036",
+                        "Indicador": "4,5",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://ajph.aphapublications.org/"
+                    },
+                    {
+                        "N°": "12",
+                        "Autor(es)": "González, E.; Epstein, L. D.; Godoy, V.",
+                        "Año": "2012",
+                        "Título": "Optimal number of bypasses: Minimizing cost of calls to wireless phones under Calling Party Pays",
+                        "Nombre revista": "Annals of Operations Research",
+                        "Estado": "Publicado",
+                        "ISSN": "0254-5330",
+                        "Indicador": "2,0",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://link.springer.com/journal/10479"
+                    },
+                    {
+                        "N°": "13",
+                        "Autor(es)": "Richard, S. A.; Black, R. E.; Gilman, R. H.; Guerrant, R. L.; Kang, G.; Lanata, C. F.; Mølbak, K.; Rasmussen, Z. A.; Sack, R. B.; Valentiner-Branth, P.; Checkley, W.; Epstein, L. D.",
+                        "Año": "2012",
+                        "Título": "Wasting is associated with stunting in early childhood",
+                        "Nombre revista": "Journal of Nutrition",
+                        "Estado": "Publicado",
+                        "ISSN": "0022-3166",
+                        "Indicador": "4,2",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://academic.oup.com/jn"
+                    },
+                    {
+                        "N°": "14",
+                        "Autor(es)": "Checkley, W.; Guzman-Cottrill, J.; Epstein, L.; Innocentini, N.; Patz, J.; Shulman, S.",
+                        "Año": "2009",
+                        "Título": "Short-Term Weather Variability in Chicago and Hospitalizations for Kawasaki Disease",
+                        "Nombre revista": "Epidemiology",
+                        "Estado": "Publicado",
+                        "ISSN": "1044-3983",
+                        "Indicador": "5,1",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://journals.lww.com/epidem"
+                    },
+                    {
+                        "N°": "15",
+                        "Autor(es)": "Sinn, M. F.; Milberg, S. J.; Epstein, L. D.; Goodstein, R. C.",
+                        "Año": "2007",
+                        "Título": "Compromising the Compromise Effect: Brands Matter",
+                        "Nombre revista": "Marketing Letters",
+                        "Estado": "Publicado",
+                        "ISSN": "0923-0645",
+                        "Indicador": "1,8",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://link.springer.com/journal/11002"
+                    },
+                    {
+                        "N°": "16",
+                        "Autor(es)": "Checkley, W.; Gilman, R. H.; Black, R. E.; Epstein, L. D.; Cabrera, L.; Sterling, C. R.; Moulton, L. H.",
+                        "Año": "2004",
+                        "Título": "Effects of water and sanitation on childhood health in a poor Peruvian peri-urban community",
+                        "Nombre revista": "The Lancet",
+                        "Estado": "Publicado",
+                        "ISSN": "0140-6736",
+                        "Indicador": "45,2",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.thelancet.com/"
+                    },
+                    {
+                        "N°": "17",
+                        "Autor(es)": "Leaf, P. J.; Owens, P. L.; Leventhal, J. M.; Forsyth, B. W. C.; Vaden-Kiernan, M.; Epstein, L. D.; Riley, A. W.; Horwitz, S.",
+                        "Año": "2004",
+                        "Título": "Pediatricians' Training and Identification and Management of Psychosocial Problems",
+                        "Nombre revista": "Clinical Pediatrics",
+                        "Estado": "Publicado",
+                        "ISSN": "0009-9228",
+                        "Indicador": "1,3",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://journals.sagepub.com/home/cpj"
+                    },
+                    {
+                        "N°": "18",
+                        "Autor(es)": "Checkley, W.; Epstein, L. D.; Gilman, R. H.; Cabrera, L.; Black, R. E.",
+                        "Año": "2003",
+                        "Título": "Effects of acute diarrhea on linear growth in Peruvian children",
+                        "Nombre revista": "American Journal of Epidemiology",
+                        "Estado": "Publicado",
+                        "ISSN": "0002-9262",
+                        "Indicador": "4,7",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://academic.oup.com/aje"
+                    },
+                    {
+                        "N°": "19",
+                        "Autor(es)": "Checkley, W.; Epstein, L. D.; Gilman, R. H.; Figueroa, D.; Cama, R. I.; Patz, J. A.; Black, R. E.",
+                        "Año": "2000",
+                        "Título": "Effects of the El Niño and ambient temperature on hospital admissions for diarrheal diseases in Peruvian children",
+                        "Nombre revista": "The Lancet",
+                        "Estado": "Publicado",
+                        "ISSN": "0140-6736",
+                        "Indicador": "28,0",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.thelancet.com/"
+                    },
+                    {
+                        "N°": "20",
+                        "Autor(es)": "Malarcher, A. M.; Schulman, J.; Epstein, L. D.; Thun, M. J.; Mowery, P.; Pierce, B.; Escobedo, L.; Giovino, G. A.",
+                        "Año": "2000",
+                        "Título": "Methodologic Issues in Estimating Smoking Attributable Mortality in the United States",
+                        "Nombre revista": "American Journal of Epidemiology",
+                        "Estado": "Publicado",
+                        "ISSN": "0002-9262",
+                        "Indicador": "3,8",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://academic.oup.com/aje"
+                    },
+                    {
+                        "N°": "21",
+                        "Autor(es)": "Checkley, W.; Epstein, L. D.; Gilman, R. H.; Black, R. E.; Cabrera, L.; Sterling, C. R.",
+                        "Año": "1998",
+                        "Título": "Effects of Cryptosporidium parvum in Peruvian Children: Growth Faltering and Subsequent Catch-up Growth",
+                        "Nombre revista": "American Journal of Epidemiology",
+                        "Estado": "Publicado",
+                        "ISSN": "0002-9262",
+                        "Indicador": "3,5",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://academic.oup.com/aje"
+                    },
+                    {
+                        "N°": "22",
+                        "Autor(es)": "Checkley, W.; Gilman, R. H.; Epstein, L. D.; Suarez, M. A.; Diaz, F.; Cabrera, L.; Black, R. E.; Sterling, C. R.",
+                        "Año": "1997",
+                        "Título": "Asymptomatic and Symptomatic Cryptosporidiosis: Their Acute Effect on Weight Gain in Peruvian Children",
+                        "Nombre revista": "American Journal of Epidemiology",
+                        "Estado": "Publicado",
+                        "ISSN": "0002-9262",
+                        "Indicador": "3,3",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://academic.oup.com/aje"
+                    },
+                    {
+                        "N°": "23",
+                        "Autor(es)": "Hernandez, J. E.; Epstein, L. D.; Rodriguez, M. H.; Rodriguez, A. D.; Rejmankova, E.; Roberts, D. R.",
+                        "Año": "1997",
+                        "Título": "Use of Generalized Regression Tree Models to Characterize Vegetation Favoring Anopheles Albimanus Breeding",
+                        "Nombre revista": "Journal of the American Mosquito Control Association",
+                        "Estado": "Publicado",
+                        "ISSN": "8756-971X",
+                        "Indicador": "1,2",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://www.biodiversitylibrary.org/bibliography/12900"
+                    },
+                    {
+                        "N°": "24",
+                        "Autor(es)": "Epstein, L. D.; Muñoz, A.",
+                        "Año": "1996",
+                        "Título": "A Bivariate Parametric Model for Survival and Intermediate Event Times",
+                        "Nombre revista": "Statistics in Medicine",
+                        "Estado": "Publicado",
+                        "ISSN": "0277-6715",
+                        "Indicador": "2,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10970258"
+                    },
+                    {
+                        "N°": "25",
+                        "Autor(es)": "Epstein, L. D.; Muñoz, A.; He, D.",
+                        "Año": "1996",
+                        "Título": "Bayesian Imputation of Predictive Values When Covariate Information is Available and Gold Standard Diagnosis is Unavailable",
+                        "Nombre revista": "Statistics in Medicine",
+                        "Estado": "Publicado",
+                        "ISSN": "0277-6715",
+                        "Indicador": "2,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10970258"
+                    },
+                    {
+                        "N°": "26",
+                        "Autor(es)": "Sepúlveda, A. E.; Epstein, L. D.",
+                        "Año": "1996",
+                        "Título": "The Repulsion Algorithm, A New Multistart Method for Global Optimization",
+                        "Nombre revista": "Structural and Multidisciplinary Optimization",
+                        "Estado": "Publicado",
+                        "ISSN": "1615-147X",
+                        "Indicador": "1,7",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://link.springer.com/journal/158"
+                    },
+                    {
+                        "N°": "27",
+                        "Autor(es)": "Damiano, A. M.; Epstein, L. D.; MacKenzie, E.",
+                        "Año": "1995",
+                        "Título": "A New Model for Category Scaling Data with an Application to the Development of Health Status Measures",
+                        "Nombre revista": "Medical Decision Making",
+                        "Estado": "Publicado",
+                        "ISSN": "0272-989X",
+                        "Indicador": "2,5",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://journals.sagepub.com/home/mdm"
+                    },
+                    {
+                        "N°": "28",
+                        "Autor(es)": "Kuppers, R. C.; Epstein, L. D.; Outschoorn, I.; Rose, N. R.",
+                        "Año": "1994",
+                        "Título": "The Genetic Regulation of the IgG2a Response to Thyroglobulin is Linked to the Igh Locus in Mouse",
+                        "Nombre revista": "Immunogenetics",
+                        "Estado": "Publicado",
+                        "ISSN": "0093-7711",
+                        "Indicador": "3",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://link.springer.com/journal/251"
+                    },
+                    {
+                        "N°": "29",
+                        "Autor(es)": "Epstein, L. D.; Fienberg, S. E.",
+                        "Año": "1992",
+                        "Título": "Comment on \"A Survey on Exact Inference for Contingency Tables\"",
+                        "Nombre revista": "Statistical Science",
+                        "Estado": "Publicado",
+                        "ISSN": "0883-4237",
+                        "Indicador": "2,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://projecteuclid.org/journals/statistical-science"
+                    }
+                ]
+            },
+            "publicaciones_no_indexadas": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Nombre revista",
+                    "Estado",
+                    "ISSN"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Goldberg, A.; Epstein, L. D.; Zurlo, J.",
+                        "Año": "1995",
+                        "Título": "A Modular Approach to Validation: A Work in Progress: In vitro approaches to contact dermatitis",
+                        "Nombre revista": "In Vitro Toxicology",
+                        "Estado": "Publicado",
+                        "ISSN": "0888-319X"
+                    }
+                ]
+            },
+            "libros": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Lugar",
+                    "Editorial"
+                ],
+                "filas": []
+            },
+            "capitulos": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Lugar",
+                    "Editorial"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Goldberg, A. M.; Zurlo, J.; Epstein, L. D.",
+                        "Año": "1997",
+                        "Título": "Validation revisited / Validation and Regulatory Acceptance of Toxicological Test Methods",
+                        "Lugar": "",
+                        "Editorial": ""
+                    },
+                    {
+                        "N°": "2",
+                        "Autor(es)": "Epstein, L. D.; Fienberg, S. E.",
+                        "Año": "1992",
+                        "Título": "Bayesian Estimation in Multidimensional Contingency Tables",
+                        "Lugar": "",
+                        "Editorial": ""
+                    }
+                ]
+            },
+            "proyectos": {
+                "headers": [
+                    "N°",
+                    "Título",
+                    "Año",
+                    "Inicio",
+                    "Término",
+                    "Duración",
+                    "Fuente de financiamiento",
+                    "Nombre del Concurso",
+                    "Tipo de financiamiento",
+                    "Rol",
+                    "Código proyecto",
+                    "USD",
+                    "CLP",
+                    "TC",
+                    "Observaciones"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Título": "Smart FollowUP",
+                        "Año": "2018",
+                        "Inicio": "oct-18",
+                        "Término": "oct-18",
+                        "Duración": "0",
+                        "Fuente de financiamiento": "CORFO",
+                        "Nombre del Concurso": "Technology transfer grant",
+                        "Tipo de financiamiento": "Externo - Nacional",
+                        "Rol": "Investigador Principal (PI)",
+                        "Código proyecto": "18COTE-98095",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": "el proyecto SÍ se adjudicó (ganó el fondo),pero posteriormente rechazaron/no aceptaron ejecutarlo."
+                    },
+                    {
+                        "N°": "2",
+                        "Título": "Consistency between perceptions of students about the quality of their doctoral programs and the evaluation of the National Accreditation Commission: an analysis based on the 2013-2014 Evaluation Study on Doctoral Programs",
+                        "Año": "2018",
+                        "Inicio": "oct-18",
+                        "Término": "oct-18",
+                        "Duración": "",
+                        "Fuente de financiamiento": "Ministry of Education, Division of Higher Education (DIVESUP)",
+                        "Nombre del Concurso": "Ministry of Education, Division of Higher Education (DIVESUP) Grant",
+                        "Tipo de financiamiento": "Externo - Nacional",
+                        "Rol": "Co-investigador",
+                        "Código proyecto": "",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": ""
+                    },
+                    {
+                        "N°": "3",
+                        "Título": "Development of applications for engineering probability courses",
+                        "Año": "2003",
+                        "Inicio": "may-03",
+                        "Término": "nov-03",
+                        "Duración": "0,5",
+                        "Fuente de financiamiento": "Pontificia Universidad Católica de Chile",
+                        "Nombre del Concurso": "Pontificia Universidad Católica de Chile  Grant",
+                        "Tipo de financiamiento": "Externo - Nacional",
+                        "Rol": "",
+                        "Código proyecto": "",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": ""
+                    },
+                    {
+                        "N°": "4",
+                        "Título": "Climate Variability and Childhood Infectious Diseases in Peru",
+                        "Año": "2001",
+                        "Inicio": "feb-01",
+                        "Término": "feb-02",
+                        "Duración": "1",
+                        "Fuente de financiamiento": "National Oceanic and Atmospheric Administration Organization",
+                        "Nombre del Concurso": "National Oceanic and Atmospheric Administration Organization  Grant",
+                        "Tipo de financiamiento": "Extranjero",
+                        "Rol": "",
+                        "Código proyecto": "",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": ""
+                    },
+                    {
+                        "N°": "5",
+                        "Título": "Deforestation Effects on Malaria in the Amazon",
+                        "Año": "2000",
+                        "Inicio": "jul-00",
+                        "Término": "jul-01",
+                        "Duración": "1",
+                        "Fuente de financiamiento": "New York Community Trust",
+                        "Nombre del Concurso": "New York Community Trust",
+                        "Tipo de financiamiento": "Extranjero",
+                        "Rol": "",
+                        "Código proyecto": "",
+                        "USD": "",
+                        "CLP": "",
+                        "TC": "",
+                        "Observaciones": ""
+                    }
+                ]
+            },
+            "tesis_magister_guia": {
+                "headers": [
+                    "N°",
+                    "Año",
+                    "Autor(es)",
+                    "Título",
+                    "Nombre del programa",
+                    "Institución"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Año": "2017",
+                        "Autor(es)": "Tomas Fermandois; Jaime Vergara",
+                        "Título": "Effect of a rack on the sales of snack to a retail store",
+                        "Nombre del programa": "Magíster en Marketing",
+                        "Institución": "Universidad de los Andes"
+                    },
+                    {
+                        "N°": "2",
+                        "Año": "2008",
+                        "Autor(es)": "Daniel Fernandez S.",
+                        "Título": "Parametric Discrete Time Models for Time Between Events in Point Processes",
+                        "Nombre del programa": "Magíster en Estadística",
+                        "Institución": "Pontificia Universidad Católica de Chile"
+                    },
+                    {
+                        "N°": "3",
+                        "Año": "2008",
+                        "Autor(es)": "Beatriz Etchegaray G.",
+                        "Título": "Parametric Models for Multiple Renewal Process with Time-Dependent Covariates",
+                        "Nombre del programa": "Magíster en Estadística",
+                        "Institución": "Pontificia Universidad Católica de Chile"
+                    },
+                    {
+                        "N°": "4",
+                        "Año": "2007",
+                        "Autor(es)": "Guillermo Montt A.",
+                        "Título": "Suicide Risk: Seasonality and Climate Factors",
+                        "Nombre del programa": "Magíster en Estadística",
+                        "Institución": "Pontificia Universidad Católica de Chile"
+                    },
+                    {
+                        "N°": "5",
+                        "Año": "2006",
+                        "Autor(es)": "Ignacio Inostroza Q.",
+                        "Título": "State-Space Models and Kalman Filter with Conditionally Exponential Family Observations",
+                        "Nombre del programa": "Magíster en Estadística",
+                        "Institución": "Pontificia Universidad Católica de Chile"
+                    },
+                    {
+                        "N°": "6",
+                        "Año": "2005",
+                        "Autor(es)": "Michelle E. Keller",
+                        "Título": "Use of Time Series Transfer Function Models to Study the Effect of Temperature in the Incidence of Childhood Diarrhea",
+                        "Nombre del programa": "Magíster en Estadística",
+                        "Institución": "Pontificia Universidad Católica de Chile"
+                    },
+                    {
+                        "N°": "7",
+                        "Año": "1995",
+                        "Autor(es)": "Juan E. Hernandez-Avila",
+                        "Título": "Characteristics of Vegetation Favoring Anopheles Albimanus Mosquito Breeding: Application of Classification and Regression Trees",
+                        "Nombre del programa": "Magíster en Bioestadística",
+                        "Institución": "Johns Hopkins University"
+                    }
+                ]
+            },
+            "tesis_magister_coguia": {
+                "headers": [],
+                "filas": []
+            },
+            "tesis_doctorado_guia": {
+                "headers": [],
+                "filas": []
+            },
+            "tesis_doctorado_coguia": {
+                "headers": [],
+                "filas": []
+            },
+            "patentes": {
+                "headers": [],
+                "filas": []
+            }
+        }
     }
 }
