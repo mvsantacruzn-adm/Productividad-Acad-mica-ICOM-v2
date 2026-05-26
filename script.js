@@ -83,6 +83,13 @@ function inicializar() {
     
     const profesores = [...profesoresConDatos, ...profesoresSinDatos];
     
+    // Actualizar contador dinámico en el cartel de inicio
+    const contadorElement = document.getElementById('contador-profesores');
+    if (contadorElement) {
+        const totalProfesores = Object.keys(datosBase).length;
+        contadorElement.textContent = `${totalProfesores} profesores - Economía, Finanzas y Business Administration`;
+    }
+    
     generarListado(profesores);
     generarModales(profesoresConDatos);
     poblarSelectorProfesores();
