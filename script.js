@@ -97,20 +97,58 @@ function inicializar() {
 function generarListado(profesores) {
     const lista = document.getElementById('profesor-list');
     
-    // Ordenar alfabéticamente por nombres (campo interno)
-    const profesoresOrdenados = [...profesores].sort((a, b) => {
-        return a.nombres.localeCompare(b.nombres);
+    // Separar y ordenar por facultad
+    const porFacultad = {};
+    
+    for (const p of profesores) {
+        const origen = p.origen || 'SIN_ORIGEN';
+        if (!porFacultad[origen]) {
+            porFacultad[origen] = [];
+        }
+        porFacultad[origen].push(p);
+    }
+    
+    // Ordenar cada facultad alfabéticamente por primer nombre
+    Object.keys(porFacultad).forEach(origen => {
+        porFacultad[origen].sort((a, b) => {
+            const nombreA = a.nombre.split(' ')[0];
+            const nombreB = b.nombre.split(' ')[0];
+            return nombreA.localeCompare(nombreB);
+        });
     });
     
-    lista.innerHTML = profesoresOrdenados.map(p => `
+    // Construir lista: FCEE primero, luego ESE
+    let profesoresOrdenados = [];
+    const orden = ['FCEE', 'ESE'];
+    
+    orden.forEach(origen => {
+        if (porFacultad[origen]) {
+            profesoresOrdenados = profesoresOrdenados.concat(porFacultad[origen]);
+        }
+    });
+    
+    // Generar enumeración por facultad
+    let contadores = { 'FCEE': 0, 'ESE': 0 };
+    
+    lista.innerHTML = profesoresOrdenados.map(p => {
+        const origen = p.origen || 'SIN_ORIGEN';
+        const numero = ++contadores[origen] || 1;
+        const colorBg = origen === 'FCEE' ? '#E8F4F8' : '#FFF4E6';
+        const colorBorde = origen === 'FCEE' ? '#4A90E2' : '#FF9800';
+        
+        return `
         <div class="profesor-row ${!p.tieneDatos ? 'sin-ficha' : ''}" onclick="${p.tieneDatos ? `abrirModal('${p.id}')` : ''}">
+            <div class="profesor-badge" style="background-color: ${colorBg}; border: 2px solid ${colorBorde}; padding: 6px 10px; border-radius: 6px; font-weight: bold; font-size: 11px; color: ${colorBorde}; min-width: 70px; text-align: center;">
+                ${numero} - ${origen}
+            </div>
             <div class="profesor-info">
                 <div class="profesor-nombre">${p.nombreVisual}</div>
                 <div class="profesor-resumen">${p.grado || 'N/D'}</div>
             </div>
             <div class="profesor-arrow">${p.tieneDatos ? '→' : ''}</div>
         </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 function poblarSelectorProfesores() {
@@ -2302,18 +2340,21 @@ function generarResumenAcademico() {
     
     // Construir tabla HTML
     let html = `
+        <div style="margin-bottom: 15px;">
+            <button id="btn-descargar-resumen-excel" style="padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;" onclick="descargarResumenAcademicoExcel()">📥 Descargar Excel</button>
+        </div>
         <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; border: 1px solid #ddd; font-size: 12px;">
             <thead>
                 <tr style="background: #f0f0f0;">
-                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold;">Profesor</th>
-                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold;">Vínculo</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Pub. Indexadas 2020+</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Pub. No Indexadas 2020+</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Libros 2020+</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Capítulos 2020+</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Proyectos 2020+</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Tesis Magíster 2020+</th>
-                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold;">Tesis Doctorado 2020+</th>
+                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold; color: black;">Profesor</th>
+                    <th style="padding: 10px; text-align: left; border: 1px solid #ddd; font-weight: bold; color: black;">Vínculo</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Pub. Indexadas 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Pub. No Indexadas 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Libros 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Capítulos 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Proyectos 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Tesis Magíster 2020+</th>
+                    <th style="padding: 10px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: black;">Tesis Doctorado 2020+</th>
                 </tr>
             </thead>
             <tbody>
@@ -2385,10 +2426,138 @@ function generarResumenAcademico() {
     console.log('✓ Resumen Académico generado correctamente');
 }
 
+// Función para descargar Resumen Académico como Excel
+function descargarResumenAcademicoExcel() {
+    // Recopilar datos de todos los profesores (mismo código que generarResumenAcademico)
+    const datosResumen = [];
+    
+    for (const nombreProfesor of Object.keys(datosBase)) {
+        const base = datosBase[nombreProfesor];
+        const produccion = datosProduccion[nombreProfesor];
+        
+        let pub_indexadas_2020 = 0;
+        let pub_no_indexadas_2020 = 0;
+        let libros_2020 = 0;
+        let capitulos_2020 = 0;
+        let proyectos_2020 = 0;
+        let tesis_magister_2020 = 0;
+        let tesis_doctorado_2020 = 0;
+        let proyectos_vigentes = [];
+        
+        if (produccion && produccion.secciones) {
+            if (produccion.secciones.publicaciones_indexadas && produccion.secciones.publicaciones_indexadas.filas) {
+                pub_indexadas_2020 = produccion.secciones.publicaciones_indexadas.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.publicaciones_no_indexadas && produccion.secciones.publicaciones_no_indexadas.filas) {
+                pub_no_indexadas_2020 = produccion.secciones.publicaciones_no_indexadas.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.libros && produccion.secciones.libros.filas) {
+                libros_2020 = produccion.secciones.libros.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.capitulos && produccion.secciones.capitulos.filas) {
+                capitulos_2020 = produccion.secciones.capitulos.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.proyectos && produccion.secciones.proyectos.filas) {
+                const fecha_inicio_vigencia = new Date(2026, 5, 10);
+                for (const proyecto of produccion.secciones.proyectos.filas) {
+                    const ano = parseInt(proyecto['Año']) || 0;
+                    if (ano >= 2020) {
+                        proyectos_2020++;
+                        const termine = proyecto['Término'] || '';
+                        if (termine) {
+                            const [mes, anno] = termine.split('-');
+                            const mesMap = {'ene': 0, 'feb': 1, 'mar': 2, 'abr': 3, 'may': 4, 'jun': 5, 'jul': 6, 'ago': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dic': 11};
+                            const mesNum = mesMap[mes.toLowerCase()] || 0;
+                            const annoNum = 2000 + parseInt(anno);
+                            const fecha_termino = new Date(annoNum, mesNum, 1);
+                            if (fecha_termino >= fecha_inicio_vigencia) {
+                                proyectos_vigentes.push(proyecto);
+                            }
+                        }
+                    }
+                }
+            }
+            if (produccion.secciones.tesis_magister_guia && produccion.secciones.tesis_magister_guia.filas) {
+                tesis_magister_2020 += produccion.secciones.tesis_magister_guia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.tesis_magister_coguia && produccion.secciones.tesis_magister_coguia.filas) {
+                tesis_magister_2020 += produccion.secciones.tesis_magister_coguia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.tesis_doctorado_guia && produccion.secciones.tesis_doctorado_guia.filas) {
+                tesis_doctorado_2020 += produccion.secciones.tesis_doctorado_guia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+            if (produccion.secciones.tesis_doctorado_coguia && produccion.secciones.tesis_doctorado_coguia.filas) {
+                tesis_doctorado_2020 += produccion.secciones.tesis_doctorado_coguia.filas.filter(f => parseInt(f['Año']) >= 2020).length;
+            }
+        }
+        
+        datosResumen.push({
+            Profesor: base.nombre_visual || nombreProfesor,
+            Vinculo: base.vinculo || 'N/D',
+            'Pub. Indexadas 2020+': pub_indexadas_2020,
+            'Pub. No Indexadas 2020+': pub_no_indexadas_2020,
+            'Libros 2020+': libros_2020,
+            'Capítulos 2020+': capitulos_2020,
+            'Proyectos 2020+': proyectos_2020,
+            'Tesis Magíster 2020+': tesis_magister_2020,
+            'Tesis Doctorado 2020+': tesis_doctorado_2020
+        });
+    }
+    
+    // Calcular totales
+    const totalesRow = {
+        Profesor: 'TOTAL',
+        Vinculo: '',
+        'Pub. Indexadas 2020+': 0,
+        'Pub. No Indexadas 2020+': 0,
+        'Libros 2020+': 0,
+        'Capítulos 2020+': 0,
+        'Proyectos 2020+': 0,
+        'Tesis Magíster 2020+': 0,
+        'Tesis Doctorado 2020+': 0
+    };
+    
+    for (const fila of datosResumen) {
+        totalesRow['Pub. Indexadas 2020+'] += fila['Pub. Indexadas 2020+'];
+        totalesRow['Pub. No Indexadas 2020+'] += fila['Pub. No Indexadas 2020+'];
+        totalesRow['Libros 2020+'] += fila['Libros 2020+'];
+        totalesRow['Capítulos 2020+'] += fila['Capítulos 2020+'];
+        totalesRow['Proyectos 2020+'] += fila['Proyectos 2020+'];
+        totalesRow['Tesis Magíster 2020+'] += fila['Tesis Magíster 2020+'];
+        totalesRow['Tesis Doctorado 2020+'] += fila['Tesis Doctorado 2020+'];
+    }
+    
+    datosResumen.push(totalesRow);
+    
+    // Crear worksheet
+    const ws = XLSX.utils.json_to_sheet(datosResumen);
+    
+    // Ajustar ancho de columnas
+    ws['!cols'] = [
+        { wch: 30 },
+        { wch: 15 },
+        { wch: 18 },
+        { wch: 20 },
+        { wch: 15 },
+        { wch: 16 },
+        { wch: 15 },
+        { wch: 18 },
+        { wch: 18 }
+    ];
+    
+    // Crear workbook
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Resumen Académico');
+    
+    // Descargar
+    XLSX.writeFile(wb, 'Resumen_Academico.xlsx');
+}
+
 // Hacer funciones disponibles globalmente
 window.generarReporteProyectosVigentes = generarReporteProyectosVigentes;
 window.descargarProyectosVigentesExcel = descargarProyectosVigentesExcel;
 window.generarResumenClaustro = generarResumenClaustro;
 window.generarResumenAcademico = generarResumenAcademico;
+window.descargarResumenAcademicoExcel = descargarResumenAcademicoExcel;
 
 console.log('✓ Funciones disponibles globalmente');
