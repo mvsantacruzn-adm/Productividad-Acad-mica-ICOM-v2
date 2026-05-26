@@ -4210,5 +4210,242 @@
                 "filas": []
             }
         }
+    },
+    "André Stenzel": {
+        "secciones": {
+            "publicaciones_indexadas": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Nombre revista",
+                    "Estado",
+                    "ISSN",
+                    "Indicador",
+                    "Indexación",
+                    "Link de verificación electrónica"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Stenzel, A., Carnehl, C. & Schmidt, P.",
+                        "Año": "2024",
+                        "Título": "Pricing for the Stars – Dynamic Pricing in the Presence of Rating Systems (Precios dinámicos en presencia de sistemas de calificación)",
+                        "Nombre revista": "Management Science",
+                        "Estado": "Publicado",
+                        "ISSN": "0025-1909",
+                        "Indicador": "5,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://doi.org/10.1287/mnsc.2023.4771"
+                    },
+                    {
+                        "N°": "2",
+                        "Autor(es)": "Stenzel, A., Franke, B. & Gao Fritz, Q.",
+                        "Año": "2024",
+                        "Título": "The (limited) Power of Blockchain Networks for Information Provision (El poder limitado de las redes blockchain para la provisión de información)",
+                        "Nombre revista": "Management Science",
+                        "Estado": "Publicado",
+                        "ISSN": "0025-1909",
+                        "Indicador": "5,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://doi.org/10.1287/mnsc.2023.4718"
+                    },
+                    {
+                        "N°": "3",
+                        "Autor(es)": "Stenzel, A., Engert, W., Shcherbakov, A. & Huynh, K.",
+                        "Año": "2025",
+                        "Título": "Will Canada become cashless? (¿Se convertirá Canadá en una sociedad sin efectivo?)",
+                        "Nombre revista": "Canadian Journal of Economics",
+                        "Estado": "Aceptado",
+                        "ISSN": "0008-4085",
+                        "Indicador": "1,3",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/15405982"
+                    },
+                    {
+                        "N°": "4",
+                        "Autor(es)": "Stenzel, A. & Wagner, W.",
+                        "Año": "2022",
+                        "Título": "Opacity, Liquidity and Disclosure Requirements (Opacidad, liquidez y requisitos de divulgación)",
+                        "Nombre revista": "Journal of Business Finance & Accounting",
+                        "Estado": "Publicado",
+                        "ISSN": "0306-686X",
+                        "Indicador": "2,5",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://doi.org/10.1111/jbfa.12583"
+                    },
+                    {
+                        "N°": "5",
+                        "Autor(es)": "Stenzel, A. & Michel, C.",
+                        "Año": "2021",
+                        "Título": "Model-Based Evaluation of Cooling-Off Policies (Evaluación basada en modelos de políticas de período de reflexión)",
+                        "Nombre revista": "Games and Economic Behavior",
+                        "Estado": "Publicado",
+                        "ISSN": "0899-8256",
+                        "Indicador": "1,4",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://doi.org/10.1016/j.geb.2021.06.009"
+                    },
+                    {
+                        "N°": "6",
+                        "Autor(es)": "Stenzel, A.",
+                        "Año": "2018",
+                        "Título": "Security Design with Interim Public Information (Diseño de valores financieros con información pública intermedia)",
+                        "Nombre revista": "Journal of Mathematical Economics",
+                        "Estado": "Publicado",
+                        "ISSN": "0304-4068",
+                        "Indicador": "0,7",
+                        "Indexación": "JIF",
+                        "Link de verificación electrónica": "https://doi.org/10.1016/j.jmateco.2018.02.005"
+                    }
+                ]
+            },
+            "publicaciones_no_indexadas": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Nombre revista",
+                    "Estado",
+                    "ISSN"
+                ],
+                "filas": [
+                    {
+                        "N°": "1",
+                        "Autor(es)": "Engert, W.; Huynh, K.; Shcherbakov, O.; Stenzel, A.",
+                        "Año": "2024",
+                        "Título": "The Impact of Central Bank Digital Currency on Payments",
+                        "Nombre revista": "Bank of Canada Staff Analytical Note",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "2",
+                        "Autor(es)": "Liu, Y.; Rivadeneyra, F.; Reshidi, E.; Shcherbakov, O.; Stenzel, A.",
+                        "Año": "2024",
+                        "Título": "Ecosystem Models for a Central Bank Digital Currency: Analysis Framework and Potential Models",
+                        "Nombre revista": "Bank of Canada Staff Discussion Paper",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "3",
+                        "Autor(es)": "Hunold, M.; Laitenberger, U.; Licht, G.; Nikogosian, V.; Stenzel, A.; Ullrich, H.; Wolf, C.",
+                        "Año": "2011",
+                        "Título": "Modernisierung der Konzentrationsberichterstattung",
+                        "Nombre revista": "Report for the German Federal Ministry of Economics and Technology",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "4",
+                        "Autor(es)": "Carnehl, C.; Sobolev, A.; Stahl, K.; Stenzel, A.",
+                        "Año": "",
+                        "Título": "Designing Vertical Differentiation with Information",
+                        "Nombre revista": "",
+                        "Estado": "En proceso",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "5",
+                        "Autor(es)": "Carnehl, C.; Schaefer, M.; Tran, K.; Stenzel, A.",
+                        "Año": "",
+                        "Título": "Value for Money and Selection: How Pricing Affects Airbnb Ratings",
+                        "Nombre revista": "",
+                        "Estado": "Working Paper",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "6",
+                        "Autor(es)": "Huynh, K.; Shcherbakov, A.; Stenzel, A.",
+                        "Año": "2025",
+                        "Título": "Dynamic Consumer Cash Inventory Model",
+                        "Nombre revista": "Bank of Canada Staff Working Paper",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    },
+                    {
+                        "N°": "7",
+                        "Autor(es)": "Engert, W.; Shcherbakov, A.; Stenzel, A.",
+                        "Año": "2024",
+                        "Título": "CBDC in the Market for Payments at the Point of Sale: Equilibrium Impact and Incumbent Responses",
+                        "Nombre revista": "Bank of Canada Staff Working Paper",
+                        "Estado": "Publicado",
+                        "ISSN": ""
+                    }
+                ]
+            },
+            "libros": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Lugar",
+                    "Editorial"
+                ],
+                "filas": []
+            },
+            "capitulos": {
+                "headers": [
+                    "N°",
+                    "Autor(es)",
+                    "Año",
+                    "Título",
+                    "Lugar",
+                    "Editorial"
+                ],
+                "filas": []
+            },
+            "proyectos": {
+                "headers": [
+                    "N°",
+                    "Título",
+                    "Año",
+                    "Inicio",
+                    "Término",
+                    "Duración",
+                    "Fuente de financiamiento",
+                    "Nombre del Concurso",
+                    "Tipo de financiamiento",
+                    "Rol",
+                    "Código proyecto",
+                    "USD",
+                    "CLP",
+                    "TC",
+                    "Observaciones"
+                ],
+                "filas": []
+            },
+            "tesis_magister_guia": {
+                "headers": [
+                    "N°",
+                    "Año",
+                    "Autor(es)",
+                    "Título",
+                    "Nombre del programa",
+                    "Institución"
+                ],
+                "filas": []
+            },
+            "tesis_magister_coguia": {
+                "headers": [],
+                "filas": []
+            },
+            "tesis_doctorado_guia": {
+                "headers": [],
+                "filas": []
+            },
+            "tesis_doctorado_coguia": {
+                "headers": [],
+                "filas": []
+            },
+            "patentes": {
+                "headers": [],
+                "filas": []
+            }
+        }
     }
 }

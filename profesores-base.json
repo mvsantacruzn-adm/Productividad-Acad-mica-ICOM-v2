@@ -167,5 +167,18 @@
         "nombres": "LEONARDO DAVID",
         "apellidos": "EPSTEIN/GIWERCMAN",
         "nombre_visual": "Leonardo Epstein Giwercman"
+    },
+    "André Stenzel": {
+        "nombre": "André Stenzel",
+        "vinculo": "Claustro",
+        "titulo": "Licenciatura en Economía, University of Mannheim, Alemania",
+        "grado": "PhD in Economics (Summa Cum Laude), 2015, University of Mannheim",
+        "lineas": "Economía financiera, microeconomía aplicada, organización industrial, mercados financieros, blockchain y economía digital, CBDC y sistemas de pago, regulación financiera, economía bancaria, economía de plataformas digitales, diseño de incentivos e información.",
+        "rut": "290401763",
+        "apellido_paterno": "STENZEL",
+        "apellido_materno": ".",
+        "nombres": "ANDRÉ",
+        "apellidos": "STENZEL/.",
+        "nombre_visual": "André Stenzel"
     }
 }
