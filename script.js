@@ -109,11 +109,14 @@ function generarListado(profesores) {
         }
     }
     
-    // Ordenar cada facultad alfabéticamente por primer nombre
+    // Ordenar cada facultad alfabéticamente por primer nombre (ignorando tildes)
     Object.keys(porFacultad).forEach(origen => {
         porFacultad[origen].sort((a, b) => {
-            const nombreA = (a.nombre || a.nombreVisual || '').split(' ')[0].toLowerCase();
-            const nombreB = (b.nombre || b.nombreVisual || '').split(' ')[0].toLowerCase();
+            // Función para remover tildes
+            const removeTildes = str => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            
+            const nombreA = removeTildes((a.nombre || a.nombreVisual || '').split(' ')[0].toLowerCase());
+            const nombreB = removeTildes((b.nombre || b.nombreVisual || '').split(' ')[0].toLowerCase());
             return nombreA.localeCompare(nombreB);
         });
     });
