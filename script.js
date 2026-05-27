@@ -69,6 +69,9 @@ function inicializar() {
         nombres: datosBase[nombre].nombres || nombre,
         grado: datosBase[nombre].grado || '',
         nombreVisual: datosBase[nombre].nombre_visual || nombre,
+        origen: datosBase[nombre].origen || 'FCEE',
+        linea: datosBase[nombre].linea || '',
+        sexo: datosBase[nombre].sexo || '',
         tieneDatos: true
     }));
     
@@ -78,6 +81,9 @@ function inicializar() {
         nombres: p.nombre,
         grado: '',
         nombreVisual: p.nombre,
+        origen: p.origen || 'FCEE',
+        linea: p.linea || '',
+        sexo: p.sexo || '',
         tieneDatos: false
     }));
     
