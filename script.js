@@ -54,13 +54,8 @@ async function cargarDatos() {
     }
 }
 
-// Los 4 profesores sin ficha
-const sinFicha = [
-    { nombre: 'Hugo Benedetti', resumen: 'Finanzas. Por completar datos.' },
-    { nombre: 'María José Bosch', resumen: 'Management. Por completar datos.' },
-    { nombre: 'Matias Braun', resumen: 'Finanzas Corporativas. Por completar datos.' },
-    { nombre: 'Natalia Yankovic', resumen: 'Investigación de Operaciones. Por completar datos.' }
-];
+// Los 4 profesores sin ficha - VACÍO porque ahora todos están en profesores-base.json
+const sinFicha = [];
 
 function inicializar() {
     const profesoresConDatos = Object.keys(datosBase).map((nombre, idx) => ({
