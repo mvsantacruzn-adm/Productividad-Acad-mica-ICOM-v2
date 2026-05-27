@@ -10,10 +10,7 @@
         "apellido_materno": "EDWARDS",
         "nombres": "SEBASTIAN",
         "apellidos": "CLARO/EDWARDS",
-        "nombre_visual": "Sebastián Claro Edwards",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Sebastián Claro Edwards"
     },
     "Mauricio Larraín Errázuriz": {
         "nombre": "Mauricio Larraín Errázuriz",
@@ -26,10 +23,7 @@
         "apellido_materno": "ERRAZURIZ",
         "nombres": "MAURICIO",
         "apellidos": "LARRAIN/ERRAZURIZ",
-        "nombre_visual": "Mauricio Larraín Errázuriz",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Mauricio Larraín Errázuriz"
     },
     "Ana Elisa Pereira Gonçalves": {
         "nombre": "Ana Elisa Pereira Gonçalves",
@@ -42,10 +36,7 @@
         "apellido_materno": "GONCALVES",
         "nombres": "ANA",
         "apellidos": "PEREIRA/GONCALVES",
-        "nombre_visual": "Ana Elisa Pereira Gonçalves",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "M"
+        "nombre_visual": "Ana Elisa Pereira Gonçalves"
     },
     "Álvaro Felipe García Marín": {
         "nombre": "Álvaro Felipe García Marín",
@@ -58,10 +49,7 @@
         "apellido_materno": "MARIN",
         "nombres": "ALVARO",
         "apellidos": "GARCIA/MARIN",
-        "nombre_visual": "Álvaro García Marín",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Álvaro García Marín"
     },
     "Andrés Barrios Fernández": {
         "nombre": "Andrés Barrios Fernández",
@@ -74,10 +62,7 @@
         "apellido_materno": "FERNANDEZ",
         "nombres": "MAURICIO ANDRES",
         "apellidos": "BARRIOS/FERNANDEZ",
-        "nombre_visual": "Andrés Barrios Fernández",
-        "linea": "Economía Aplicada a las Políticas Públicas",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Andrés Barrios Fernández"
     },
     "Felipe Guzmán González": {
         "nombre": "Felipe Guzmán González",
@@ -90,10 +75,7 @@
         "apellido_materno": "GONZALEZ",
         "nombres": "FELIPE",
         "apellidos": "GUZMAN/GONZALEZ",
-        "nombre_visual": "Felipe Guzmán González",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Felipe Guzmán González"
     },
     "Francisco Morales Flores": {
         "nombre": "Francisco Morales Flores",
@@ -106,10 +88,7 @@
         "apellido_materno": "FLORES",
         "nombres": "FRANCISCO",
         "apellidos": "MORALES/FLORES",
-        "nombre_visual": "Francisco Morales Flores",
-        "linea": "Administración",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Francisco Morales Flores"
     },
     "Juan Sotes Paladino": {
         "nombre": "Juan Sotes Paladino",
@@ -122,10 +101,7 @@
         "apellido_materno": "PALADINO",
         "nombres": "JUAN",
         "apellidos": "SOTES/PALADINO",
-        "nombre_visual": "Juan Sotes Paladino",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Juan Sotes Paladino"
     },
     "Nicolás Riquelme": {
         "nombre": "Nicolás Riquelme",
@@ -138,10 +114,7 @@
         "apellido_materno": "CARRASCO",
         "nombres": "NICOLAS",
         "apellidos": "RIQUELME/CARRASCO",
-        "nombre_visual": "Nicolás Riquelme Carrasco",
-        "linea": "Economía Aplicada a las Políticas Públicas",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Nicolás Riquelme Carrasco"
     },
     "Jorge Alé Chilet": {
         "nombre": "Jorge Alé Chilet",
@@ -154,10 +127,7 @@
         "apellido_materno": "CHILET",
         "nombres": "JORGE",
         "apellidos": "ALE/CHILET",
-        "nombre_visual": "Jorge Alé Chilet",
-        "linea": "Economía Aplicada a las Políticas Públicas",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Jorge Alé Chilet"
     },
     "Jorge Rodríguez": {
         "nombre": "Jorge Rodriguez",
@@ -170,10 +140,7 @@
         "apellido_materno": "OSORIO",
         "nombres": "JORGE",
         "apellidos": "RODRIGUEZ/OSORIO",
-        "nombre_visual": "Jorge Rodriguez Osorio",
-        "linea": "Economía Aplicada a las Políticas Públicas",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "Jorge Rodriguez Osorio"
     },
     "David Kimber Camussetti": {
         "nombre": "David Kimber Camussetti",
@@ -186,121 +153,32 @@
         "apellido_materno": "CAMUSSETTI",
         "nombres": "DAVID",
         "apellidos": "KIMBER/CAMUSSETTI",
-        "nombre_visual": "David Kimber Camussetti",
-        "linea": "Administración",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombre_visual": "David Kimber Camussetti"
     },
-    "Matías Braun": {
-        "nombre": "Matías Braun",
+    "Leonardo Epstein Giwercman": {
+        "nombre": "Leonardo David Epstein Giwercman",
         "vinculo": "Claustro",
-        "titulo": "PhD Economía",
-        "grado": "",
-        "lineas": "Economía Financiera",
-        "rut": "",
-        "apellido_paterno": "BRAUN",
-        "apellido_materno": ".",
-        "nombres": "MATÍAS",
-        "apellidos": "BRAUN/.",
-        "nombre_visual": "Matías Braun",
-        "linea": "Economía Financiera",
-        "origen": "ESE",
-        "sexo": "H"
+        "titulo": "Ingeniero Matemático, Universidad de Chile, Chile",
+        "grado": "PhD en Estadística, Carnegie Mellon University, Estados Unidos",
+        "lineas": "Estadística, Investigación de Operaciones, Marketing, Biostatística; modelos de inventario para ítems reutilizables y de arriendo; evaluación de campañas de marketing y promociones; métodos bioestadísticos para estimación de prevalencia de enfermedades; eventos recurrentes; análisis de series de tiempo no normales; enfoques bayesianos para regresión con datos no normales.",
+        "rut": "66049493",
+        "apellido_paterno": "EPSTEIN",
+        "apellido_materno": "GIWERCMAN",
+        "nombres": "LEONARDO DAVID",
+        "apellidos": "EPSTEIN/GIWERCMAN",
+        "nombre_visual": "Leonardo Epstein Giwercman"
     },
-    "Felipe Aldunate": {
-        "nombre": "Felipe Aldunate",
+    "André Stenzel": {
+        "nombre": "André Stenzel",
         "vinculo": "Claustro",
-        "titulo": "PhD Finanzas",
-        "grado": "",
-        "lineas": "Economía Financiera",
-        "rut": "",
-        "apellido_paterno": "ALDUNATE",
+        "titulo": "Licenciatura en Economía, University of Mannheim, Alemania",
+        "grado": "PhD in Economics (Summa Cum Laude), 2015, University of Mannheim",
+        "lineas": "Economía financiera, microeconomía aplicada, organización industrial, mercados financieros, blockchain y economía digital, CBDC y sistemas de pago, regulación financiera, economía bancaria, economía de plataformas digitales, diseño de incentivos e información.",
+        "rut": "290401763",
+        "apellido_paterno": "STENZEL",
         "apellido_materno": ".",
-        "nombres": "FELIPE",
-        "apellidos": "ALDUNATE/.",
-        "nombre_visual": "Felipe Aldunate",
-        "linea": "Economía Financiera",
-        "origen": "ESE",
-        "sexo": "H"
-    },
-    "Hugo Benedetti": {
-        "nombre": "Hugo Benedetti",
-        "vinculo": "Claustro",
-        "titulo": "PhD Finanzas",
-        "grado": "",
-        "lineas": "Economía Financiera",
-        "rut": "",
-        "apellido_paterno": "BENEDETTI",
-        "apellido_materno": ".",
-        "nombres": "HUGO",
-        "apellidos": "BENEDETTI/.",
-        "nombre_visual": "Hugo Benedetti",
-        "linea": "Economía Financiera",
-        "origen": "ESE",
-        "sexo": "H"
-    },
-    "María José Bosch": {
-        "nombre": "María José Bosch",
-        "vinculo": "Claustro",
-        "titulo": "PhD Administración",
-        "grado": "",
-        "lineas": "Administración",
-        "rut": "",
-        "apellido_paterno": "BOSCH",
-        "apellido_materno": ".",
-        "nombres": "MARÍA JOSÉ",
-        "apellidos": "BOSCH/.",
-        "nombre_visual": "María José Bosch",
-        "linea": "Administración",
-        "origen": "ESE",
-        "sexo": "M"
-    },
-    "Natalia Yankovic": {
-        "nombre": "Natalia Yankovic",
-        "vinculo": "Claustro",
-        "titulo": "PhD Administración",
-        "grado": "",
-        "lineas": "Administración",
-        "rut": "",
-        "apellido_paterno": "YANKOVIC",
-        "apellido_materno": ".",
-        "nombres": "NATALIA",
-        "apellidos": "YANKOVIC/.",
-        "nombre_visual": "Natalia Yankovic",
-        "linea": "Administración",
-        "origen": "ESE",
-        "sexo": "M"
-    },
-    "Álvaro Espejo": {
-        "nombre": "Álvaro Espejo",
-        "vinculo": "Claustro",
-        "titulo": "PhD Administración",
-        "grado": "",
-        "lineas": "Administración",
-        "rut": "",
-        "apellido_paterno": "ESPEJO",
-        "apellido_materno": ".",
-        "nombres": "ÁLVARO",
-        "apellidos": "ESPEJO/.",
-        "nombre_visual": "Álvaro Espejo",
-        "linea": "Administración",
-        "origen": "ESE",
-        "sexo": "H"
-    },
-    "Vincent van Kervel": {
-        "nombre": "Vincent van Kervel",
-        "vinculo": "Claustro",
-        "titulo": "Economía Financiera",
-        "grado": "",
-        "lineas": "Economía Financiera",
-        "rut": "25050005K",
-        "apellido_paterno": "VAN KERVEL",
-        "apellido_materno": ".",
-        "nombres": "VINCENT",
-        "apellidos": "VAN KERVEL/.",
-        "nombre_visual": "Vincent van Kervel",
-        "linea": "Economía Financiera",
-        "origen": "FCEE",
-        "sexo": "H"
+        "nombres": "ANDRÉ",
+        "apellidos": "STENZEL/.",
+        "nombre_visual": "André Stenzel"
     }
 }
