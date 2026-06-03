@@ -4964,7 +4964,7 @@
           }
         ]
       },
-      "capitulos_libro": {
+      "capitulos": {
         "headers": [
           "N°",
           "Autor(es)",
