@@ -334,5 +334,21 @@
         "linea": "Economía Financiera",
         "origen": "FCEE",
         "sexo": "H"
+    },
+    "Cristián Buzeta Riquelme": {
+        "nombre": "Cristián Buzeta Riquelme",
+        "vinculo": "Claustro",
+        "titulo": "Ingeniero Comercial, Universidad de Chile, Chile",
+        "grado": "PhD in Applied Economics, University of Antwerp, 2021, Bélgica",
+        "lineas": "Marketing, comportamiento del consumidor, comunicación de marketing y estrategias digitales de interacción entre consumidores y marcas.",
+        "rut": "",
+        "apellido_paterno": "BUZETA",
+        "apellido_materno": "RIQUELME",
+        "nombres": "CRISTIAN ALEJANDRO",
+        "apellidos": "BUZETA/RIQUELME",
+        "nombre_visual": "Cristián Buzeta Riquelme",
+        "linea": "Administración",
+        "origen": "FCEE",
+        "sexo": "H"
     }
 }

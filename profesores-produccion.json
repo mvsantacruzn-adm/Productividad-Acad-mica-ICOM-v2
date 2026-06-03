@@ -4697,5 +4697,317 @@
         ]
       }
     }
+  },
+  "Cristián Buzeta Riquelme": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Eisend, M.; Rosengren, S.; Mueller-Bryson, S.; Buzeta, C.",
+            "Año": 2026,
+            "Título": "Diversity and inclusion in advertising: a non-Western perspective",
+            "Nombre revista": "International Journal of Advertising",
+            "Estado": "Publicado",
+            "ISSN": "0265-0487",
+            "Indicador": "5,9",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "En el mismo orden:"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Roose, G.; Geuens, M.; Buzeta, C.",
+            "Año": 2026,
+            "Título": "Time for Action: Implied Action Does It!",
+            "Nombre revista": "Psychology & Marketing",
+            "Estado": "Publicado",
+            "ISSN": "0742-6046",
+            "Indicador": "9,1",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2026.2633829"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Van den Bergh, J.; Buzeta, C.; De Pelsmacker, P.",
+            "Año": 2025,
+            "Título": "Meet the most diverse generational cohort in history: Gen Alpha is coming of age",
+            "Nombre revista": "Young Consumers",
+            "Estado": "Publicado",
+            "ISSN": "1747-3616",
+            "Indicador": "5",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": "https://doi.org/10.1002/mar.70132"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "David-Ignatieff, A.; Buzeta, C.; De Pelsmacker, P.; Ben Dahmane Mouelhi, N.",
+            "Año": 2024,
+            "Título": "This embodied conversational agent looks very human and as old as I feel! The effect of perceived agent anthropomorphism and consumer-agent age difference on brand attitude",
+            "Nombre revista": "Journal of Marketing Communications",
+            "Estado": "Publicado",
+            "ISSN": "1352-7266",
+            "Indicador": "4,6",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1108/YC-04-2025-2487"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Buzeta, C.; Dens, N.; De Pelsmacker, P.",
+            "Año": 2024,
+            "Título": "Social media characteristics and COBRAs: The mediating role of time spent and emotional connectedness",
+            "Nombre revista": "Journal of Interactive Advertising",
+            "Estado": "Publicado",
+            "ISSN": "1525-2019",
+            "Indicador": "7,5",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": "https://doi.org/10.1080/13527266.2023.2199026"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "De Keyzer, F.; Buzeta, C.; Lopes, A. I.",
+            "Año": 2024,
+            "Título": "The role of well-being in consumers' responses to personalized advertising on social media",
+            "Nombre revista": "Psychology & Marketing",
+            "Estado": "Publicado",
+            "ISSN": "0742-6046",
+            "Indicador": "9,1",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1080/15252019.2024.2411243"
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Buzeta, C.; De Keyzer, F.; Dens, N.; De Pelsmacker, P.",
+            "Año": 2024,
+            "Título": "Branded content and motivations for social media use as drivers of brand outcomes on social media: A cross-cultural study",
+            "Nombre revista": "International Journal of Advertising",
+            "Estado": "Publicado",
+            "ISSN": "0265-0487",
+            "Indicador": "5,9",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1002/mar.21977"
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "Bergkvist, L.; De Keyzer, F.; Buzeta, C.",
+            "Año": 2024,
+            "Título": "Perspectives: Replication is more than meets the eye",
+            "Nombre revista": "International Journal of Advertising",
+            "Estado": "Publicado",
+            "ISSN": "0265-0487",
+            "Indicador": "5,9",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2023.2215079"
+          },
+          {
+            "N°": 9,
+            "Autor(es)": "Goldsack, S.; Tagle, F.; Buzeta, C.",
+            "Año": 2024,
+            "Título": "Marcas como metáforas sociales: Una aplicación usando análisis de correspondencias",
+            "Nombre revista": "Cuadernos.info",
+            "Estado": "Publicado",
+            "ISSN": "0719-367X",
+            "Indicador": "0,7",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2023.2245278"
+          },
+          {
+            "N°": 10,
+            "Autor(es)": "Ang, L.; Buzeta, C.; Hirose, M.; van Loggerenberg, M. J. C.; van Noort, G.; Uribe, R.; Voorveld, H. A. M.",
+            "Año": 2023,
+            "Título": "An international perspective of the academic-practitioner divide: An exploratory study into its causes and solutions in advertising",
+            "Nombre revista": "International Journal of Advertising",
+            "Estado": "Publicado",
+            "ISSN": "0265-0487",
+            "Indicador": "5,3",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2021.2009825"
+          },
+          {
+            "N°": 11,
+            "Autor(es)": "Barbarossa, C.; Buzeta, C.; De Pelsmacker, P.; Moons, I.",
+            "Año": 2022,
+            "Título": "Foreign company misconduct and how consumers' punitive intent is influenced by country stereotypes and the perceived similarity between the foreign country and the home country",
+            "Nombre revista": "International Business Review",
+            "Estado": "Publicado",
+            "ISSN": "0969-5931",
+            "Indicador": "8,7",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.ibusrev.2022.101995"
+          },
+          {
+            "N°": 12,
+            "Autor(es)": "Uribe, R.; Buzeta, C.; Manzur, E.; Celis, M.",
+            "Año": 2022,
+            "Título": "Celebrity endorsement using different types of new media and advertising formats",
+            "Nombre revista": "Academia – Revista Latinoamericana de Administración",
+            "Estado": "Publicado",
+            "ISSN": "1012-8255",
+            "Indicador": "1,2",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": "N/A"
+          },
+          {
+            "N°": 13,
+            "Autor(es)": "Uribe, R.; Buzeta, C.; Manzur, E.; Álvarez, I.",
+            "Año": 2021,
+            "Título": "Determinants of Football TV Audience: The straight and ancillary effects of the Local Team on the FIFA World Cup",
+            "Nombre revista": "Journal of Business Research",
+            "Estado": "Publicado",
+            "ISSN": "0148-2963",
+            "Indicador": "11",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.jbusres.2021.01.030"
+          },
+          {
+            "N°": 14,
+            "Autor(es)": "Buzeta, C.; De Pelsmacker, P.; Dens, N.",
+            "Año": 2020,
+            "Título": "Motivations to use different social media types and their impact on consumers' online brand-related activities (COBRAs)",
+            "Nombre revista": "Journal of Interactive Marketing",
+            "Estado": "Publicado",
+            "ISSN": "1094-9968",
+            "Indicador": "6,3",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.intmar.2020.08.004"
+          },
+          {
+            "N°": 15,
+            "Autor(es)": "Uribe, R.; Buzeta, C.; Manzur, E.; Pefaur, N.",
+            "Año": 2018,
+            "Título": "Desgastada pero aún efectiva: Examinando los datos de audiencia de la franja electoral presidencial chilena (1999-2017)",
+            "Nombre revista": "Cuadernos.info",
+            "Estado": "Publicado",
+            "ISSN": "0719-367X",
+            "Indicador": "1",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": ""
+          },
+          {
+            "N°": 16,
+            "Autor(es)": "Uribe, R.; Buzeta, C.; Reyes, J.",
+            "Año": 2017,
+            "Título": "Personalidad de marca de los partidos políticos en Chile: una mirada desde los ciudadanos más jóvenes",
+            "Nombre revista": "Cuadernos.info",
+            "Estado": "Publicado",
+            "ISSN": "0719-367X",
+            "Indicador": "0,7",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": ""
+          },
+          {
+            "N°": 17,
+            "Autor(es)": "Uribe, R.; Buzeta, C.; Velásquez, M.",
+            "Año": 2016,
+            "Título": "Sidedness, commercial intent and expertise in blog advertising",
+            "Nombre revista": "Journal of Business Research",
+            "Estado": "Publicado",
+            "ISSN": "0148-2963",
+            "Indicador": "3,4",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": ""
+          },
+          {
+            "N°": 18,
+            "Autor(es)": "Buzeta, C.; Moyano, P.",
+            "Año": 2013,
+            "Título": "La medición de las audiencias de televisión en la era digital",
+            "Nombre revista": "Cuadernos.info",
+            "Estado": "Publicado",
+            "ISSN": "0719-367X",
+            "Indicador": "0,2",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": ""
+          },
+          {
+            "N°": 19,
+            "Autor(es)": "Uribe, R.; Buzeta, C.; Hurtado, D.",
+            "Año": 2011,
+            "Título": "Looking for the audiences: The effect of using partial counterprogramming and a friendlier style of news presentation",
+            "Nombre revista": "INNOVAR",
+            "Estado": "Publicado",
+            "ISSN": "0121-5051",
+            "Indicador": "0,1",
+            "Indexación": "SJR",
+            "Link de verificación electrónica": ""
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Uribe, R.; Valenzuela, M.; Buzeta, C.",
+            "Año": 2010,
+            "Título": "Cómo se comportan las audiencias en los mega-eventos deportivos: La Copa Mundial de Fútbol Sudáfrica 2010",
+            "Nombre revista": "Economía y Administración",
+            "Estado": "Publicado"
+          }
+        ]
+      },
+      "capitulos_libro": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "De Pelsmacker, P.; Roose, G.; Buzeta, C.",
+            "Año": "Aceptado",
+            "Título": "Hybrid pathways to persuasion: Integrating online and offline advertising and consumer behavior / Digital Advertising Theory (4th ed.)",
+            "Lugar": "New York, USA",
+            "Editorial": "Routledge"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Van den Bergh, J.; De Pelsmacker, P.; Buzeta, C.",
+            "Año": 2025,
+            "Título": "New Kids on the Block. Profiling Generation Alpha / Advances in Advertising Research XV: Moving Forward, Looking Back: Advertising in the Advent of AI",
+            "Lugar": "Wiesbaden, Germany",
+            "Editorial": "Springer Gabler"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Benavides, C.; Buzeta, C.",
+            "Año": 2025,
+            "Título": "OTT video streaming: Redefining the future of television / De Gruyter Handbook of Media Technology and Innovation",
+            "Lugar": "Berlin, Germany",
+            "Editorial": "Walter de Gruyter GmbH & Co. KG"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Buzeta, C.; De Pelsmacker, P.; Dens, N.",
+            "Año": 2023,
+            "Título": "Sales promotion posts across different social media: A text-based analysis / Advances in Advertising Research (Vol. XII): Communicating, Designing and Consuming Authenticity and Narrative",
+            "Lugar": "Wiesbaden, Germany",
+            "Editorial": "Springer Gabler"
+          }
+        ]
+      }
+    }
   }
 }
