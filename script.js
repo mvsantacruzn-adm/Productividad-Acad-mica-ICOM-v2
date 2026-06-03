@@ -1743,15 +1743,16 @@ function generarReporteProyectosVigentes() {
             // Recorrer proyectos
             for (let i = 0; i < filas.length; i++) {
                 const fila = filas[i];
-                const periodo = fila['Período de ejecución'] || '';
+                const inicio = fila['Inicio'] || '';
+                const termino = fila['Término'] || '';
                 
-                // Verificar vigencia
-                if (!esProyectoVigente(periodo)) {
-                    console.log(`      Fila ${i}: NO vigente (${periodo})`);
+                // Verificar vigencia usando Inicio y Término
+                if (!esProyectoVigente(inicio, termino)) {
+                    console.log(`      Fila ${i}: NO vigente (${inicio} - ${termino})`);
                     continue;
                 }
                 
-                console.log(`      Fila ${i}: VIGENTE (${periodo}) ✓`);
+                console.log(`      Fila ${i}: VIGENTE (${inicio} - ${termino}) ✓`);
                 
                 // Clasificar
                 const titulo = fila['Título'] || '';
@@ -1765,7 +1766,7 @@ function generarReporteProyectosVigentes() {
                     titulo: titulo,
                     fuente: fuente,
                     anoAdjudicacion: fila['Año de adjudicación'] || '',
-                    periodo: periodo,
+                    periodo: `${inicio} - ${termino}`,
                     rol: fila['Rol en el proyecto'] || '',
                     clasificacion: clasificacion
                 });
@@ -1908,38 +1909,37 @@ function generarReporteProyectosVigentes() {
     }
 }
 
-function esProyectoVigente(periodo) {
-    if (!periodo) return false;
+function esProyectoVigente(inicio, termino) {
+    if (!termino) return false;
     
-    periodo = String(periodo).trim();
+    termino = String(termino).trim();
     
-    // Caso 1: Año único (ej: 2026)
-    if (/^\d{4}$/.test(periodo)) {
-        return periodo === '2026';
+    // Caso 1: Solo año (ej: 2026)
+    if (/^\d{4}$/.test(termino)) {
+        return parseInt(termino) >= 2026;
     }
     
-    // Caso 2: Rango de años (ej: 2022-2026 o 2024–2026)
-    const rangoMatch = periodo.match(/(\d{4})\s*[-–]\s*(\d{4})/);
+    // Caso 2: Mes-año (ej: dic-26, ene-27)
+    const mesAnoMatch = termino.match(/^([a-záéíóú]+)-(\d{2,4})$/i);
+    if (mesAnoMatch) {
+        const ano = parseInt(mesAnoMatch[2]);
+        // Asumir que es 20XX si es 2 dígitos
+        const anoCompleto = mesAnoMatch[2].length === 2 ? 2000 + ano : ano;
+        return anoCompleto >= 2026;
+    }
+    
+    // Caso 3: Rango de años (ej: 2022-2026 o 2024–2026)
+    const rangoMatch = termino.match(/(\d{4})\s*[-–]\s*(\d{4})/);
     if (rangoMatch) {
-        const anoTermino = rangoMatch[2];
-        return anoTermino === '2026';
+        const anoTermino = parseInt(rangoMatch[2]);
+        return anoTermino >= 2026;
     }
     
-    // Caso 3: Fechas exactas (ej: 01/03/2024 – 20/12/2026)
-    const fechasMatch = periodo.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})\s*[-–]\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    // Caso 4: Fechas exactas (ej: 01/03/2024 – 20/12/2026)
+    const fechasMatch = termino.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})\s*[-–]\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/);
     if (fechasMatch) {
-        const diaTermino = parseInt(fechasMatch[4]);
-        const mesTermino = parseInt(fechasMatch[5]);
         const anoTermino = parseInt(fechasMatch[6]);
-        
-        // Verificar si está en 2026
-        if (anoTermino !== 2026) return false;
-        
-        // Verificar si es igual o anterior al 29 de diciembre de 2026
-        const fechaTermino = new Date(anoTermino, mesTermino - 1, diaTermino);
-        const limite = new Date(2026, 11, 29); // 29 de diciembre de 2026
-        
-        return fechaTermino <= limite;
+        return anoTermino >= 2026;
     }
     
     return false;
@@ -2255,23 +2255,28 @@ function generarResumenAcademico() {
             
             // Proyectos 2020+ y vigentes
             if (produccion.secciones.proyectos && produccion.secciones.proyectos.filas) {
-                const fecha_inicio_vigencia = new Date(2026, 5, 10); // 10-jun-2026
-                
                 for (const proyecto of produccion.secciones.proyectos.filas) {
                     const ano = parseInt(proyecto['Año']) || 0;
                     if (ano >= 2020) {
                         proyectos_2020++;
                         
-                        // Verificar si es vigente
+                        // Verificar si es vigente (Término >= 2026)
                         const termine = proyecto['Término'] || '';
                         if (termine) {
-                            const [mes, anno] = termine.split('-');
-                            const mesMap = {'ene': 0, 'feb': 1, 'mar': 2, 'abr': 3, 'may': 4, 'jun': 5, 'jul': 6, 'ago': 7, 'sep': 8, 'oct': 9, 'nov': 10, 'dic': 11};
-                            const mesNum = mesMap[mes.toLowerCase()] || 0;
-                            const annoNum = 2000 + parseInt(anno);
-                            const fecha_termino = new Date(annoNum, mesNum, 1);
+                            let annoTermino = 0;
                             
-                            if (fecha_termino >= fecha_inicio_vigencia) {
+                            // Caso 1: Formato "mes-año" (ej: dic-26)
+                            if (termine.includes('-')) {
+                                const [mes, anno] = termine.split('-');
+                                annoTermino = parseInt(anno) >= 100 ? parseInt(anno) : 2000 + parseInt(anno);
+                            }
+                            // Caso 2: Solo año (ej: 2026)
+                            else if (/^\d{4}$/.test(termine)) {
+                                annoTermino = parseInt(termine);
+                            }
+                            
+                            // Contar como vigente si año >= 2026
+                            if (annoTermino >= 2026) {
                                 proyectos_vigentes.push(proyecto);
                             }
                         }
