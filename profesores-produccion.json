@@ -5007,6 +5007,307 @@
             "Editorial": "Springer Gabler"
           }
         ]
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Título": "Characteristics of algorithmic persuasion and its understanding among digital users in Chile",
+            "Año": 2024,
+            "Inicio": "2024",
+            "Término": "jul-05",
+            "Duración": "3",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "Fondecyt Iniciación",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Investigador Principal (PI)",
+            "Código proyecto": "11240433",
+            "USD": "100.500",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          },
+          {
+            "N°": 2,
+            "Título": "A cross-cultural examination of social media privacy concerns",
+            "Año": 2022,
+            "Inicio": "2022",
+            "Término": "jul-05",
+            "Duración": "1",
+            "Fuente de financiamiento": "Meta",
+            "Nombre del Concurso": "2022 People's Expectations and Experiences with Digital Privacy RFP",
+            "Tipo de financiamiento": "Extranjero",
+            "Rol": "Investigador Principal (PI)",
+            "Código proyecto": "798651404917391",
+            "USD": "95.400",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          },
+          {
+            "N°": 3,
+            "Título": "Doctoral studies scholarship",
+            "Año": 2017,
+            "Inicio": "2017",
+            "Término": "jul-05",
+            "Duración": "4",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "CONICYT - Becas Chile",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Becario",
+            "Código proyecto": "",
+            "USD": "94.500",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          },
+          {
+            "N°": 4,
+            "Título": "Additional research and data collection",
+            "Año": 2021,
+            "Inicio": "2021",
+            "Término": "jul-05",
+            "Duración": "1",
+            "Fuente de financiamiento": "University of Antwerp, Faculty of Business and Economics",
+            "Nombre del Concurso": "University of Antwerp, Faculty of Business and Economics Grant",
+            "Tipo de financiamiento": "Extranjero",
+            "Rol": "Investigador Principal (PI)",
+            "Código proyecto": "",
+            "USD": "315",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          },
+          {
+            "N°": 5,
+            "Título": "Competitive young researchers training grant on personalised advertising",
+            "Año": 2018,
+            "Inicio": "2018",
+            "Término": "jul-05",
+            "Duración": "2",
+            "Fuente de financiamiento": "Flemish Government",
+            "Nombre del Concurso": "OJO-Omkadering Jonge Onderzoekers",
+            "Tipo de financiamiento": "Extranjero",
+            "Rol": "Co-investigador",
+            "Código proyecto": "",
+            "USD": "4.540",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          },
+          {
+            "N°": 6,
+            "Título": "ICORIA Grant",
+            "Año": 2019,
+            "Inicio": "2019",
+            "Término": "1",
+            "Duración": "1",
+            "Fuente de financiamiento": "European Advertising Academy (EAA)",
+            "Nombre del Concurso": "ICORIA Grant",
+            "Tipo de financiamiento": "Grant Académico",
+            "Rol": "Investigador Principal (PI)",
+            "Código proyecto": "",
+            "USD": "500",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          },
+          {
+            "N°": 7,
+            "Título": "Evaluation and Optimization of the Model of Political Election Broadcasts (PEB) in Chile",
+            "Año": 2017,
+            "Inicio": "2017",
+            "Término": "2018",
+            "Duración": "1",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "CONICYT - VIII Concurso Estudios sobre Pluralismo en el Sistema Informativo Nacional",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Co-investigador",
+            "Código proyecto": "PLU160023",
+            "USD": "26.000",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          }
+        ]
+      },
+      "tesis_magisters": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución",
+          "Rol"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Año": 2025,
+            "Autor(es)": "Valentina Tobar Walker",
+            "Título": "N/A",
+            "Nombre del programa": "Magíster en Marketing",
+            "Institución": "Universidad de Chile",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 2,
+            "Año": 2025,
+            "Autor(es)": "Santiago Figueroa Ortega",
+            "Título": "N/A",
+            "Nombre del programa": "Magíster en Marketing",
+            "Institución": "Universidad de Chile",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 3,
+            "Año": 2022,
+            "Autor(es)": "Ellen Cerneels",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Applied Economics",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 4,
+            "Año": 2022,
+            "Autor(es)": "Cecilia Cifuentes Reyes",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Applied Economics",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 5,
+            "Año": 2022,
+            "Autor(es)": "Quinten Van Meirvenne",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Applied Economics",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 6,
+            "Año": 2022,
+            "Autor(es)": "Farhana Zahra",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Applied Economics",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 7,
+            "Año": 2021,
+            "Autor(es)": "Lisa Martinez Sanchez",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Applied Economics",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 8,
+            "Año": 2022,
+            "Autor(es)": "Emma Van Cauwelaert",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Business Engineering",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 9,
+            "Año": 2022,
+            "Autor(es)": "Britt Van den Bosch",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Business Engineering",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 10,
+            "Año": 2019,
+            "Autor(es)": "Thibaut Dieltjens",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Applied Economics",
+            "Institución": "University of Antwerp",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 1,
+            "Año": 2025,
+            "Autor(es)": "Laura Flores Mata",
+            "Título": "N/A",
+            "Nombre del programa": "MBA",
+            "Institución": "Universidad de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 2,
+            "Año": 2025,
+            "Autor(es)": "Nicole Jiménez Cuello",
+            "Título": "N/A",
+            "Nombre del programa": "MBA",
+            "Institución": "Universidad de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 3,
+            "Año": 2020,
+            "Autor(es)": "Vitto van Gent",
+            "Título": "N/A",
+            "Nombre del programa": "Master of Science in Business Engineering",
+            "Institución": "University of Antwerp",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 4,
+            "Año": 2017,
+            "Autor(es)": "Victoria Jorquera",
+            "Título": "N/A",
+            "Nombre del programa": "Magíster en Marketing",
+            "Institución": "Universidad de Chile",
+            "Rol": "Co-Guía"
+          }
+        ]
+      },
+      "tesis_doctorados": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución",
+          "Rol"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Año": 2023,
+            "Autor(es)": "Guillermo Bustamante Pavez",
+            "Título": "N/A",
+            "Nombre del programa": "Doctorado en Comunicación",
+            "Institución": "Universidad de los Andes",
+            "Rol": "Co-Guía"
+          }
+        ]
       }
     }
   }
