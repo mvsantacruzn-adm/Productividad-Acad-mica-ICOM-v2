@@ -58,17 +58,20 @@ async function cargarDatos() {
 const sinFicha = [];
 
 function inicializar() {
-    const profesoresConDatos = Object.keys(datosBase).map((nombre, idx) => ({
-        id: `prof${String(idx + 1).padStart(2, '0')}`,
-        nombre: nombre,
-        nombres: datosBase[nombre].nombres || nombre,
-        grado: datosBase[nombre].grado || '',
-        nombreVisual: datosBase[nombre].nombre_visual || nombre,
-        origen: datosBase[nombre].origen || 'FCEE',
-        linea: datosBase[nombre].linea || '',
-        sexo: datosBase[nombre].sexo || '',
-        tieneDatos: true
-    }));
+    const profesoresConDatos = Object.keys(datosBase).map((nombre, idx) => {
+        const datoProf = datosBase[nombre];
+        return {
+            id: `prof${String(idx + 1).padStart(2, '0')}`,
+            nombre: nombre,
+            nombres: datoProf.nombres || nombre,
+            grado: datoProf.grado || '',
+            nombreVisual: datoProf.nombre_visual || nombre,
+            origen: datoProf.origen || 'FCEE',  // Leer directamente de datoProf
+            linea: datoProf.linea || '',
+            sexo: datoProf.sexo || '',
+            tieneDatos: true
+        };
+    });
     
     const profesoresSinDatos = sinFicha.map((p, idx) => ({
         id: `prof${String(Object.keys(datosBase).length + idx + 1).padStart(2, '0')}`,
@@ -98,52 +101,20 @@ function inicializar() {
 function generarListado(profesores) {
     const lista = document.getElementById('profesor-list');
     
-    // Separar por facultad
-    const porFacultad = { 'FCEE': [], 'ESE': [] };
-    
-    for (const p of profesores) {
-        const origen = p.origen || 'FCEE';
-        if (porFacultad[origen]) {
-            porFacultad[origen].push(p);
-        } else {
-            porFacultad['FCEE'].push(p);
-        }
-    }
-    
-    // Ordenar cada facultad alfabéticamente por primer nombre (ignorando tildes)
-    Object.keys(porFacultad).forEach(origen => {
-        porFacultad[origen].sort((a, b) => {
-            // Función para remover tildes
-            const removeTildes = str => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-            
-            const nombreA = removeTildes((a.nombre || a.nombreVisual || '').split(' ')[0].toLowerCase());
-            const nombreB = removeTildes((b.nombre || b.nombreVisual || '').split(' ')[0].toLowerCase());
-            return nombreA.localeCompare(nombreB);
-        });
+    // Ordenar profesores alfabéticamente
+    profesores.sort((a, b) => {
+        const removeTildes = str => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const nombreA = removeTildes((a.nombre || a.nombreVisual || '').split(' ')[0].toLowerCase());
+        const nombreB = removeTildes((b.nombre || b.nombreVisual || '').split(' ')[0].toLowerCase());
+        return nombreA.localeCompare(nombreB);
     });
     
-    // Construir lista: FCEE primero, luego ESE
-    let profesoresOrdenados = [...porFacultad['FCEE'], ...porFacultad['ESE']];
-    
-    // Generar enumeración por facultad
-    let contadores = { 'FCEE': 0, 'ESE': 0 };
-    
-    lista.innerHTML = profesoresOrdenados.map(p => {
-        const origen = p.origen || 'FCEE';
-        const numero = ++contadores[origen];
-        
-        // Colores sutiles
-        const colorBg = origen === 'FCEE' ? '#E8F4F8' : '#FFF4E6';
-        const colorBorde = origen === 'FCEE' ? '#4A90E2' : '#FF9800';
-        
+    lista.innerHTML = profesores.map(p => {
         const nombreVisual = p.nombreVisual || p.nombre || 'N/D';
         const grado = p.grado || 'N/D';
         
         return `
         <div class="profesor-row ${!p.tieneDatos ? 'sin-ficha' : ''}" onclick="${p.tieneDatos ? `abrirModal('${p.id}')` : ''}">
-            <div class="profesor-badge" style="background-color: ${colorBg}; border: 2px solid ${colorBorde}; padding: 6px 10px; border-radius: 6px; font-weight: bold; font-size: 11px; color: ${colorBorde}; min-width: 70px; text-align: center; margin-right: 12px;">
-                ${numero} - ${origen}
-            </div>
             <div class="profesor-info">
                 <div class="profesor-nombre">${nombreVisual}</div>
                 <div class="profesor-resumen">${grado}</div>
