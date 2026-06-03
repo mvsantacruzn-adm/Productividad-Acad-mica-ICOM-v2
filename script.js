@@ -123,6 +123,17 @@ function mostrarConteoClaustro() {
     conteoDiv.innerHTML = html;
 }
 
+// Función para generar timestamp de descarga (hh-mm-dd-mm-aa en 24hrs)
+function obtenerTimestampDescarga() {
+    const now = new Date();
+    const hh = String(now.getHours()).padStart(2, '0');
+    const mm = String(now.getMinutes()).padStart(2, '0');
+    const dd = String(now.getDate()).padStart(2, '0');
+    const mes = String(now.getMonth() + 1).padStart(2, '0');
+    const aa = String(now.getFullYear()).slice(-2);
+    return `${hh}-${mm}-${dd}-${mes}-${aa}`;
+}
+
 function generarListado(profesores) {
     const lista = document.getElementById('profesor-list');
     
@@ -370,7 +381,8 @@ function descargarPDF() {
     }
     
     const element = document.getElementById('ficha-pdf-content');
-    const nombreArchivo = `Ficha_CNA_${profesorActualFicha.replace(/\s+/g, '_')}.pdf`;
+    const timestamp = obtenerTimestampDescarga();
+    const nombreArchivo = `Ficha_CNA_${profesorActualFicha.replace(/\s+/g, '_')}_${timestamp}.pdf`;
     
     const opt = {
         margin: 8,
@@ -1358,7 +1370,8 @@ function descargarFichaExcel() {
         }
         
         // Generar XLSX
-        generarXLSX(datos, 'ReporteVSC_FichaCNA.xlsx');
+        const timestamp = obtenerTimestampDescarga();
+        generarXLSX(datos, `ReporteVSC_FichaCNA_${timestamp}.xlsx`);
         console.log('=== descargarFichaExcel COMPLETADO ✓ ===');
         
     } catch (error) {
@@ -1392,7 +1405,8 @@ function descargarDatosExcel() {
         console.log(`✓ Headers dinámicos: ${reporte.headersUnicos.length}`);
         
         // Generar XLSX
-        generarXLSX(reporte.filas, 'ReporteVSC_Personalizado.xlsx');
+        const timestamp = obtenerTimestampDescarga();
+        generarXLSX(reporte.filas, `ReporteVSC_Personalizado_${timestamp}.xlsx`);
         console.log('=== descargarDatosExcel COMPLETADO ✓ ===');
         
     } catch (error) {
@@ -1433,7 +1447,7 @@ function descargarValidacionExcel() {
         console.log(`✓ Datos transformados: ${datos.length} registros`);
         
         // Generar XLSX
-        generarXLSX(datos, 'ReporteVSC_ControlEstructura.xlsx');
+        generarXLSX(datos, `ReporteVSC_ControlEstructura_${obtenerTimestampDescarga()}.xlsx`);
         console.log('=== descargarValidacionExcel COMPLETADO ✓ ===');
         
     } catch (error) {
