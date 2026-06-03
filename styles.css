@@ -296,6 +296,15 @@ tbody tr:hover {
     gap: 20px;
 }
 
+/* Headers negros para tablas de reportería */
+.reporteria-grid thead {
+    color: #000;
+}
+
+.reporteria-grid th {
+    color: #000;
+}
+
 .reporteria-card {
     background: white;
     border-radius: 12px;
