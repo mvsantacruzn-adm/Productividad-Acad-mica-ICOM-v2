@@ -1558,10 +1558,273 @@ function verificarXLSX() {
     }
 }
 
+function descargarFichasClaustroExcel() {
+    console.log('=== descargarFichasClaustroExcel INICIADO ===');
+    
+    if (typeof XLSX === 'undefined') {
+        console.error('❌ XLSX no está disponible');
+        alert('Error: Librería XLSX no cargó correctamente. Recarga la página.');
+        return;
+    }
+    
+    try {
+        const filas = [];
+        const merges = [];
+        let numFila = 0;
+        
+        const profesoresOrdenados = Object.keys(datosBase).sort();
+        let primerProfesor = true;
+        
+        for (const nombreProfesor of profesoresOrdenados) {
+            const base = datosBase[nombreProfesor];
+            const produccion = datosProduccion[nombreProfesor];
+            
+            if (!base || !produccion) {
+                console.warn(`⚠️ Profesor sin datos completos: ${nombreProfesor}`);
+                continue;
+            }
+            
+            // Agregar 3 filas en blanco entre profesores (excepto antes del primero)
+            if (!primerProfesor) {
+                filas.push({});
+                numFila++;
+                filas.push({});
+                numFila++;
+                filas.push({});
+                numFila++;
+            }
+            primerProfesor = false;
+            
+            console.log(`✓ Procesando: ${nombreProfesor}`);
+            
+            // INFORMACIÓN PERSONAL
+            filas.push({
+                'Campo': 'Nombre',
+                'Valor': base.nombre || ''
+            });
+            numFila++;
+            
+            filas.push({
+                'Campo': 'Vínculo',
+                'Valor': base.vinculo || ''
+            });
+            numFila++;
+            
+            filas.push({
+                'Campo': 'Título Profesional',
+                'Valor': base.titulo || ''
+            });
+            numFila++;
+            
+            filas.push({
+                'Campo': 'Grado Académico',
+                'Valor': base.grado || ''
+            });
+            numFila++;
+            
+            filas.push({
+                'Campo': 'Líneas de Investigación',
+                'Valor': base.lineas || ''
+            });
+            numFila++;
+            
+            // Agregar 1 fila en blanco entre tablas
+            filas.push({});
+            numFila++;
+            
+            // SECCIONES ACADÉMICAS
+            const secciones = produccion.secciones || {};
+            const seccionesOrdenadas = [
+                'publicaciones_indexadas',
+                'publicaciones_no_indexadas',
+                'libros',
+                'capitulos',
+                'proyectos',
+                'tesis_magisters',
+                'tesis_doctorados'
+            ];
+            
+            for (const tipoSeccion of seccionesOrdenadas) {
+                const seccion = secciones[tipoSeccion];
+                if (!seccion || !seccion.filas || seccion.filas.length === 0) continue;
+                
+                const encabezados = seccion.headers || [];
+                const nombreFormateado = formatearNombreSeccion(tipoSeccion);
+                
+                console.log(`  → ${nombreFormateado}: ${seccion.filas.length} registros`);
+                
+                // Fila 1: Nombre de tabla (unificado)
+                const filatitulo = {};
+                filatitulo[encabezados[0]] = nombreFormateado;
+                filas.push(filatitulo);
+                merges.push({ s: { r: numFila, c: 0 }, e: { r: numFila, c: Math.max(0, encabezados.length - 1) } });
+                numFila++;
+                
+                // Fila 2: Headers
+                const filaHeaders = {};
+                for (const header of encabezados) {
+                    filaHeaders[header] = header;
+                }
+                filas.push(filaHeaders);
+                numFila++;
+                
+                // Filas de datos
+                for (let i = 0; i < seccion.filas.length; i++) {
+                    const fila = seccion.filas[i];
+                    const filaData = {};
+                    
+                    for (const header of encabezados) {
+                        filaData[header] = String(fila[header] || '');
+                    }
+                    filas.push(filaData);
+                    numFila++;
+                }
+                
+                // Agregar 1 fila en blanco entre tablas
+                filas.push({});
+                numFila++;
+            }
+        }
+        
+        console.log(`✓ Total de filas: ${filas.length}`);
+        
+        if (filas.length === 0) {
+            console.warn('❌ Sin datos para exportar');
+            alert('No hay datos para descargar.');
+            return;
+        }
+        
+        // Generar XLSX con bordes y merges
+        const timestamp = obtenerTimestampDescarga();
+        generarXLSXConBordesYMerges(filas, merges, `Fichas_CNA_Claustro_Completo_${timestamp}.xlsx`);
+        console.log('=== descargarFichasClaustroExcel COMPLETADO ✓ ===');
+        
+    } catch (error) {
+        console.error('❌ Error en descargarFichasClaustroExcel:', error);
+        alert('Error: ' + error.message);
+    }
+}
+
+function formatearNombreSeccion(tipoSeccion) {
+    const nombres = {
+        'publicaciones_indexadas': 'Publicaciones Indexadas',
+        'publicaciones_no_indexadas': 'Publicaciones No Indexadas',
+        'libros': 'Libros',
+        'capitulos': 'Capítulos de Libro',
+        'proyectos': 'Proyectos',
+        'tesis_magisters': 'Tesis Magíster',
+        'tesis_doctorados': 'Tesis Doctorado'
+    };
+    return nombres[tipoSeccion] || tipoSeccion;
+}
+
+function generarXLSXConBordesYMerges(datos, merges, nombreArchivo) {
+    console.log('→ generarXLSXConBordesYMerges:', nombreArchivo);
+    
+    if (!datos || datos.length === 0) {
+        throw new Error('No hay datos para generar XLSX');
+    }
+    
+    if (typeof XLSX === 'undefined' || !XLSX.utils || !XLSX.utils.json_to_sheet) {
+        throw new Error('XLSX no disponible - recarga la página');
+    }
+    
+    try {
+        // Crear hoja
+        const worksheet = XLSX.utils.json_to_sheet(datos);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, 'Fichas CNA');
+        
+        // Ajustar ancho de columnas
+        const colWidths = calcularAnchoColumnasConBordes(datos);
+        worksheet['!cols'] = colWidths;
+        
+        // Agregar merges
+        if (merges && merges.length > 0) {
+            worksheet['!merges'] = merges;
+        }
+        
+        // Agregar bordes a todas las celdas
+        const range = XLSX.utils.decode_range(worksheet['!ref']);
+        for (let R = range.s.r; R <= range.e.r; ++R) {
+            for (let C = range.s.c; C <= range.e.c; ++C) {
+                const cellAddress = XLSX.utils.encode_col(C) + XLSX.utils.encode_row(R);
+                const cell = worksheet[cellAddress];
+                
+                if (!cell) {
+                    worksheet[cellAddress] = {};
+                }
+                
+                const cellToStyle = worksheet[cellAddress];
+                
+                cellToStyle.s = {
+                    border: {
+                        top: { style: 'thin', color: { rgb: '999999' } },
+                        bottom: { style: 'thin', color: { rgb: '999999' } },
+                        left: { style: 'thin', color: { rgb: '999999' } },
+                        right: { style: 'thin', color: { rgb: '999999' } }
+                    },
+                    alignment: {
+                        vertical: 'top',
+                        wrapText: true,
+                        horizontal: 'left'
+                    }
+                };
+                
+                // Detectar si es header de tabla (segundo header row en cada tabla)
+                // o nombre de tabla (primera fila de tabla)
+                if (R === 0 && C < 2) {
+                    // Primera fila es Información Personal
+                    cellToStyle.s.fill = { fgColor: { rgb: 'e8e8e8' } };
+                    cellToStyle.s.font = { bold: true, color: { rgb: '000000' } };
+                }
+            }
+        }
+        
+        // Descargar
+        console.log('→ XLSX.writeFile()...');
+        XLSX.writeFile(workbook, nombreArchivo);
+        console.log(`✅ DESCARGA EXITOSA: ${nombreArchivo}`);
+        
+    } catch (error) {
+        console.error('❌ Error en generarXLSXConBordesYMerges:', error);
+        throw error;
+    }
+}
+
+function calcularAnchoColumnasConBordes(datos) {
+    if (!datos || datos.length === 0) {
+        return [];
+    }
+    
+    const headers = Object.keys(datos[0]);
+    const ANCHO_MIN = 15;
+    const ANCHO_MAX = 60;
+    
+    const colWidths = [];
+    
+    for (const header of headers) {
+        let maxLen = header.length;
+        
+        for (const row of datos) {
+            if (row[header]) {
+                const len = String(row[header]).length;
+                if (len > maxLen) maxLen = len;
+            }
+        }
+        
+        const ancho = Math.max(ANCHO_MIN, Math.min(ANCHO_MAX, maxLen + 3));
+        colWidths.push({ wch: ancho });
+    }
+    
+    return colWidths;
+}
+
 // Hacer funciones disponibles globalmente
 window.descargarFichaExcel = descargarFichaExcel;
 window.descargarDatosExcel = descargarDatosExcel;
 window.descargarValidacionExcel = descargarValidacionExcel;
+window.descargarFichasClaustroExcel = descargarFichasClaustroExcel;
 
 // Verificar XLSX cuando se carga el script
 console.log('');
