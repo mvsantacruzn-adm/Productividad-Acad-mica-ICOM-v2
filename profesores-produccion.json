@@ -1082,7 +1082,7 @@
             "Nombre revista": "Oxford Open Economics",
             "Estado": "Publicación (early access)",
             "ISSN": "2752-572X",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "https://doi.org/10.1093/ooec/odae037",
             "Título": "Inequality and market power in Latin America and the Caribbean",
             "Indicador": "N/A",
             "Indexación": "N/A"
@@ -1094,7 +1094,7 @@
             "Nombre revista": "American Economic Review: Insights",
             "Estado": "Publicado",
             "ISSN": "2640-205X",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "https://doi.org/10.1257/aeri.20210466",
             "Título": "Proximity to the frontier, markups, and the response of innovation to foreign competition: Evidence from matched production-innovation surveys in Chile",
             "Indicador": "4,7",
             "Indexación": "JIF"
@@ -1106,7 +1106,7 @@
             "Nombre revista": "Resources Policy",
             "Estado": "Publicado",
             "ISSN": "0301-4207",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.resourpol.2018.04.004",
             "Título": "Commodity price shocks and poverty reduction in Chile",
             "Indicador": "5,4",
             "Indexación": "JIF"
@@ -1118,7 +1118,7 @@
             "Nombre revista": "Revista de Estudios Públicos (CEP)",
             "Estado": "Publicado",
             "ISSN": "0716-1115",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "N/A",
             "Título": "Empresas de crecimiento acelerado y productividad: evidencia microeconómica para Chile",
             "Indicador": "0,2",
             "Indexación": "SJR"
@@ -1130,7 +1130,7 @@
             "Nombre revista": "Journal of Political Economy",
             "Estado": "Publicado",
             "ISSN": "0022-3808",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "https://doi.org/10.1086/703118",
             "Título": "Exporting and plant-level efficiency gains: It’s in the measure",
             "Indicador": "7",
             "Indexación": "JIF"
@@ -1142,7 +1142,7 @@
             "Nombre revista": "Journal of Comparative Economics",
             "Estado": "Publicado",
             "ISSN": "0147-5967",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "https://doi.org/10.1086/682751",
             "Título": "Constitutional rights and education: An international comparative study",
             "Indicador": "2,1",
             "Indexación": "JIF"
@@ -1154,7 +1154,7 @@
             "Nombre revista": "Revista de Estudios Públicos (CEP)",
             "Estado": "Publicado",
             "ISSN": "0716-1115",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "N/A",
             "Título": "Educación y derechos constitucionales",
             "Indicador": "0,15",
             "Indexación": "SJR"
@@ -1166,7 +1166,7 @@
             "Nombre revista": "Trimestre Económico",
             "Estado": "Publicado",
             "ISSN": "0041-3011",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "N/A",
             "Título": "En busca de un buen marco de referencia predictivo para la inflación en Chile",
             "Indicador": "0,2",
             "Indexación": "SJR"
@@ -1178,7 +1178,7 @@
             "Nombre revista": "World Development",
             "Estado": "Publicado",
             "ISSN": "0305-750X",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "https://doi.org/10.1016/S0305-750X(10)00137-4",
             "Título": "R&D and Productivity: A Two Way Avenue?",
             "Indicador": "3,7",
             "Indexación": "JIF"
@@ -1190,7 +1190,7 @@
             "Nombre revista": "Trimestre Económico",
             "Estado": "Publicado",
             "ISSN": "0041-3011",
-            "Link de verificación electrónica": "",
+            "Link de verificación electrónica": "N/A",
             "Título": "Productividad, innovación y exportaciones en la industria manufacturera chilena",
             "Indicador": "0,15",
             "Indexación": "SJR"
@@ -2169,7 +2169,7 @@
             "Año": "2020",
             "Lugar": "Cheltenham, Reino Unido / Northampton, Estados Unidos",
             "Editorial": "Edward Elgar Publishing Ltd.",
-            "Título": "Attracting knowledge workers to high-tech ventures: a signaling perspective on employee mobility"
+            "Título": "Attracting knowledge workers to high-tech ventures: a signaling perspective on employee mobility / Research Handbook on Employee Mobility and Organizational Commitment"
           }
         ]
       },
@@ -4013,7 +4013,7 @@
             "N°": "2",
             "Autor(es)": "Epstein, L. D.; Fienberg, S. E.",
             "Año": "1992",
-            "Título": "Bayesian Estimation in Multidimensional Contingency Tables",
+            "Título": "Bayesian Estimation in Multidimensional Contingency Tables / Bayesian Statistics 4",
             "Lugar": "",
             "Editorial": ""
           }
