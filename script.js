@@ -98,6 +98,31 @@ function inicializar() {
     });
 }
 
+function mostrarConteoClaustro() {
+    const conteoDiv = document.getElementById('conteo-claustro');
+    if (!conteoDiv) return;
+    
+    // Contar por institución y línea
+    const fcee = Object.values(datosBase).filter(p => p.origen === 'FCEE').length;
+    const ese = Object.values(datosBase).filter(p => p.origen === 'ESE').length;
+    
+    const econFin = Object.values(datosBase).filter(p => p.linea === 'Economía Financiera').length;
+    const admin = Object.values(datosBase).filter(p => p.linea === 'Administración').length;
+    const econPol = Object.values(datosBase).filter(p => p.linea === 'Economía Aplicada a las Políticas Públicas').length;
+    
+    const html = `
+        <strong>DISTRIBUCIÓN:</strong><br>
+        FCEE: ${fcee}  |  ESE: ${ese}<br>
+        <br>
+        <strong>LÍNEAS DE INVESTIGACIÓN:</strong><br>
+        Economía Financiera: ${econFin}<br>
+        Administración: ${admin}<br>
+        Economía Aplicada a las Políticas Públicas: ${econPol}
+    `;
+    
+    conteoDiv.innerHTML = html;
+}
+
 function generarListado(profesores) {
     const lista = document.getElementById('profesor-list');
     
@@ -110,11 +135,26 @@ function generarListado(profesores) {
     });
     
     lista.innerHTML = profesores.map(p => {
+        // Leer origen con fallbacks
+        let origen = p.origen;
+        if (!origen && p.nombre && datosBase[p.nombre]) {
+            origen = datosBase[p.nombre].origen;
+        }
+        origen = origen || 'FCEE';
+        
+        // Colores para cajita
+        const colorBg = origen === 'FCEE' ? '#E8F4F8' : '#FFF4E6';
+        const colorBorde = origen === 'FCEE' ? '#4A90E2' : '#FF9800';
+        const colorTexto = origen === 'FCEE' ? '#4A90E2' : '#FF9800';
+        
         const nombreVisual = p.nombreVisual || p.nombre || 'N/D';
         const grado = p.grado || 'N/D';
         
         return `
         <div class="profesor-row ${!p.tieneDatos ? 'sin-ficha' : ''}" onclick="${p.tieneDatos ? `abrirModal('${p.id}')` : ''}">
+            <div style="background: ${colorBg}; border: 2px solid ${colorBorde}; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 11px; color: ${colorTexto}; min-width: 60px; text-align: center; margin-right: 12px; flex-shrink: 0;">
+                ${origen}
+            </div>
             <div class="profesor-info">
                 <div class="profesor-nombre">${nombreVisual}</div>
                 <div class="profesor-resumen">${grado}</div>
@@ -123,6 +163,9 @@ function generarListado(profesores) {
         </div>
         `;
     }).join('');
+    
+    // Mostrar conteo del claustro
+    mostrarConteoClaustro();
 }
 
 function poblarSelectorProfesores() {
