@@ -5310,5 +5310,419 @@
         ]
       }
     }
+  },
+  "Felipe Aldunate": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Título",
+          "Link de verificación electrónica",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Aldunate, F.; Diaz, C.; Truffa, S.",
+            "Año": 2025,
+            "Nombre revista": "PLoS ONE",
+            "Título": "Do political parties matter for property taxes?",
+            "Estado": "Publicado",
+            "ISSN": "1932-6203",
+            "Indicador": "7,2",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-financial-economics"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Aldunate, F.; Da, Z.; Larrain, B.; Sialm, C.",
+            "Año": 2025,
+            "Nombre revista": "Journal of Financial Economics",
+            "Título": "Pension fund flows, exchange rates, and covered interest rate parity",
+            "Estado": "Publicado",
+            "ISSN": "0304-405X",
+            "Indicador": "3,8",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://journals.plos.org/plosone/"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Aldunate, F.; González, F.; Prem, M.",
+            "Año": 2024,
+            "Nombre revista": "Journal of Development Economics",
+            "Título": "The Limits of Hegemony: U.S. Banks and Chilean Firms in the Cold War",
+            "Estado": "Publicado",
+            "ISSN": "0304-3878",
+            "Indicador": "4,6",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-development-economics"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Aldunate, F.; Quiroga, B.",
+            "Año": 2021,
+            "Nombre revista": "Operations Research Letters",
+            "Título": "Nonparametric Identification and Estimation of Score Auctions in Multi-Attribute Procurement",
+            "Estado": "Publicado",
+            "ISSN": "0167-6377",
+            "Indicador": "1,25",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/operations-research-letters"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Aldunate, F.; González, F.; Prem, M.; Urzúa, F.",
+            "Año": 2020,
+            "Nombre revista": "Explorations in Economic History",
+            "Título": "Privatization and Business Groups: Evidence from the Chicago Boys in Chile",
+            "Estado": "Publicado",
+            "ISSN": "0014-4983",
+            "Indicador": "2",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/explorations-in-economic-history"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Aldunate, F.",
+            "Año": 2019,
+            "Nombre revista": "Review of Corporate Finance Studies",
+            "Título": "Deposit Insurance, Bank Risk Taking and Failures: Evidence from Early Twentieth-Century State Deposit Insurance Systems",
+            "Estado": "Publicado",
+            "ISSN": "2046-9128",
+            "Indicador": "1,6",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://academic.oup.com/rcfs/pages/About"
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Aldunate, F.",
+            "Año": 2018,
+            "Nombre revista": "Financial Management",
+            "Título": "Firm Competition and CEO Turnover: Evidence from US Railroad Deregulation",
+            "Estado": "Publicado",
+            "ISSN": "0046-3892",
+            "Indicador": "3,1",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/1755053x"
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "Aldunate, F.; Casassus, J.",
+            "Año": 2012,
+            "Nombre revista": "European Financial Management",
+            "Título": "Consumption and Hedging in Oil-Importing Developing Countries",
+            "Estado": "Publicado",
+            "ISSN": "1354-7798",
+            "Indicador": "1,7",
+            "Indexación": "JIF",
+            "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/1468036x"
+          },
+          {
+            "N°": 9,
+            "Autor(es)": "Aldunate, F.; Da, Z.; Larraín, B.; Sialm, C.",
+            "Año": "",
+            "Nombre revista": "Journal of Financial Economics",
+            "Título": "Pension Fund Flows, Exchange Rates, and Covered Interest Rate Parity",
+            "Estado": "Aceptado",
+            "ISSN": "0304-405X",
+            "Indicador": "",
+            "Indexación": "",
+            "Link de verificación electrónica": ""
+          },
+          {
+            "N°": 10,
+            "Autor(es)": "Aldunate, F.; Díaz, C.; Truffa, S.",
+            "Año": "",
+            "Nombre revista": "PLOS One",
+            "Título": "Do Political Parties Matter for Municipal Finances? Evidence from Property Reassessments and Estate Taxes",
+            "Estado": "R&R",
+            "ISSN": "1932-6203",
+            "Indicador": "",
+            "Indexación": "",
+            "Link de verificación electrónica": ""
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Tipo de publicación",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Aldunate Anfossi, F.; Alvarez, S.; Braun, M.",
+            "Año": 2024,
+            "Título": "Corporate Networks, Financial Development, and Economic Rents",
+            "Nombre revista": "",
+            "Estado": "Working Paper",
+            "ISSN": ""
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Aldunate Anfossi, F.; Berkovitch, J.; Israeli, D.; Larrain Errázuriz, M.",
+            "Año": 2024,
+            "Título": "Economic Consequences of Mandatory ESG Reporting",
+            "Nombre revista": "",
+            "Estado": "Working Paper",
+            "ISSN": ""
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Aldunate, F.; Jenter, D.; Korteweg, A.; Koudijs, P.",
+            "Año": "",
+            "Título": "Shareholder Liability and Bank Failure",
+            "Nombre revista": "",
+            "Estado": "Working Paper",
+            "ISSN": ""
+          }
+        ]
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Enrione Cáceres, A.; Aldunate Anfossi, F.",
+            "Año": 2024,
+            "Título": "Directorios en acción: Creando valor sostenible en América Latina",
+            "Lugar": "Santiago de Chile",
+            "Editorial": "ESE Business School, Universidad de los Andes"
+          }
+        ]
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Aldunate, F.",
+            "Año": 2025,
+            "Título": "The Evolution of Business Groups During the Pinochet Regime / The Pinochet Shock: Radical Economic Change and Life Under Dictatorship in Chile",
+            "Lugar": "Santiago de Chile",
+            "Editorial": "Springer Science+Business Media"
+          }
+        ]
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Título": "Who Follows Mass Financial Advice? Behavioral Patterns Of Individual Investors Managing Their Pension Savings",
+            "Año": 2026,
+            "Inicio": "abr-26",
+            "Término": "mar-29",
+            "Duración": "3 años",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "FONDECYT Regular",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Investigador Principal (PI)",
+            "Código proyecto": "1262214",
+            "USD": "82.973",
+            "CLP": "74.676.000",
+            "TC": "900",
+            "Observaciones": ""
+          },
+          {
+            "N°": 2,
+            "Título": "Climate Finance And Sustainability In Chile",
+            "Año": 2024,
+            "Inicio": "abr-24",
+            "Término": "mar-28",
+            "Duración": "4 años",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "FONDECYT Regular",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Co-investigador",
+            "Código proyecto": "1240442",
+            "USD": "116.458",
+            "CLP": "104.812.000",
+            "TC": "900",
+            "Observaciones": ""
+          },
+          {
+            "N°": 3,
+            "Título": "Non-Fundamental Shifts In The Demand For Financial Assets: Consequences For Exchange Rates And Portfolio Management",
+            "Año": 2022,
+            "Inicio": "abr-22",
+            "Término": "mar-25",
+            "Duración": "3 años",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "FONDECYT Regular",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Co-investigador",
+            "Código proyecto": "1220012",
+            "USD": "64.673",
+            "CLP": "58.206.000",
+            "TC": "900",
+            "Observaciones": ""
+          },
+          {
+            "N°": 4,
+            "Título": "Moral Hazard And Government Regulation",
+            "Año": 2016,
+            "Inicio": "nov-16",
+            "Término": "oct-19",
+            "Duración": "3 años",
+            "Fuente de financiamiento": "ANID",
+            "Nombre del Concurso": "FONDECYT Iniciación",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Investigador Principal (PI)",
+            "Código proyecto": "11160874",
+            "USD": "",
+            "CLP": "",
+            "TC": "900",
+            "Observaciones": ""
+          }
+        ]
+      },
+      "tesis_magisters": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución",
+          "Rol"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Año": 2020,
+            "Autor(es)": "Roberto Massuh",
+            "Título": "Estructura de Capital en Chile: Un enfoque en Componentes no observados",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 2,
+            "Año": 2020,
+            "Autor(es)": "Josefina Menchaca",
+            "Título": "Evidencia de Suavización de Dividendos en Chile",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 3,
+            "Año": 2020,
+            "Autor(es)": "David Parra",
+            "Título": "Premio en el mes de dividendo: caso de Chile",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Guía"
+          },
+          {
+            "N°": 4,
+            "Año": 2021,
+            "Autor(es)": "Mauricio Barrera",
+            "Título": "Efecto de los impuestos en la estructura de capital de las empresas",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 5,
+            "Año": 2021,
+            "Autor(es)": "Eduardo Cuevas",
+            "Título": "Ventas Cortas ante Anuncios Corporativos Negativos: Evidencia Chilena",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 6,
+            "Año": 2021,
+            "Autor(es)": "Diego Cárcamo",
+            "Título": "Recomendaciones de Cambio en los Fondos de Pensiones: Presión de Precios en los Mercados",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 7,
+            "Año": 2020,
+            "Autor(es)": "Manuel Díaz",
+            "Título": "Risk Managed Momentum y Asset Pricing",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 8,
+            "Año": 2020,
+            "Autor(es)": "Francisco Campos",
+            "Título": "Eficiencia en el mercado de Basis Swap Cámara Libor",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Co-Guía"
+          },
+          {
+            "N°": 9,
+            "Año": 2020,
+            "Autor(es)": "Ricardo del Río",
+            "Título": "Estimación de la estructura de tasas de interés y efecto de la política monetaria en Chile",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile",
+            "Rol": "Co-Guía"
+          }
+        ]
+      },
+      "tesis_doctorados": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución",
+          "Rol"
+        ],
+        "filas": []
+      }
+    }
   }
 }
