@@ -5617,100 +5617,6 @@
           }
         ]
       },
-      "tesis_magisters": {
-        "headers": [
-          "N°",
-          "Año",
-          "Autor(es)",
-          "Título",
-          "Nombre del programa",
-          "Institución",
-          "Rol"
-        ],
-        "filas": [
-          {
-            "N°": 1,
-            "Año": 2020,
-            "Autor(es)": "Roberto Massuh",
-            "Título": "Estructura de Capital en Chile: Un enfoque en Componentes no observados",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Guía"
-          },
-          {
-            "N°": 2,
-            "Año": 2020,
-            "Autor(es)": "Josefina Menchaca",
-            "Título": "Evidencia de Suavización de Dividendos en Chile",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Guía"
-          },
-          {
-            "N°": 3,
-            "Año": 2020,
-            "Autor(es)": "David Parra",
-            "Título": "Premio en el mes de dividendo: caso de Chile",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Guía"
-          },
-          {
-            "N°": 4,
-            "Año": 2021,
-            "Autor(es)": "Mauricio Barrera",
-            "Título": "Efecto de los impuestos en la estructura de capital de las empresas",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Co-Guía"
-          },
-          {
-            "N°": 5,
-            "Año": 2021,
-            "Autor(es)": "Eduardo Cuevas",
-            "Título": "Ventas Cortas ante Anuncios Corporativos Negativos: Evidencia Chilena",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Co-Guía"
-          },
-          {
-            "N°": 6,
-            "Año": 2021,
-            "Autor(es)": "Diego Cárcamo",
-            "Título": "Recomendaciones de Cambio en los Fondos de Pensiones: Presión de Precios en los Mercados",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Co-Guía"
-          },
-          {
-            "N°": 7,
-            "Año": 2020,
-            "Autor(es)": "Manuel Díaz",
-            "Título": "Risk Managed Momentum y Asset Pricing",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Co-Guía"
-          },
-          {
-            "N°": 8,
-            "Año": 2020,
-            "Autor(es)": "Francisco Campos",
-            "Título": "Eficiencia en el mercado de Basis Swap Cámara Libor",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Co-Guía"
-          },
-          {
-            "N°": 9,
-            "Año": 2020,
-            "Autor(es)": "Ricardo del Río",
-            "Título": "Estimación de la estructura de tasas de interés y efecto de la política monetaria en Chile",
-            "Nombre del programa": "Magíster en Finanzas",
-            "Institución": "Pontificia Universidad Católica de Chile",
-            "Rol": "Co-Guía"
-          }
-        ]
-      },
       "tesis_doctorados": {
         "headers": [
           "N°",
@@ -5720,6 +5626,1484 @@
           "Nombre del programa",
           "Institución",
           "Rol"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Año": 2020,
+            "Autor(es)": "Roberto Massuh",
+            "Título": "Estructura de Capital en Chile: Un enfoque en Componentes no observados",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 2,
+            "Año": 2020,
+            "Autor(es)": "Josefina Menchaca",
+            "Título": "Evidencia de Suavización de Dividendos en Chile",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 3,
+            "Año": 2020,
+            "Autor(es)": "David Parra",
+            "Título": "Premio en el mes de dividendo: caso de Chile",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          }
+        ]
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Año": 2021,
+            "Autor(es)": "Mauricio Barrera",
+            "Título": "Efecto de los impuestos en la estructura de capital de las empresas",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 2,
+            "Año": 2021,
+            "Autor(es)": "Eduardo Cuevas",
+            "Título": "Ventas Cortas ante Anuncios Corporativos Negativos: Evidencia Chilena",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 3,
+            "Año": 2021,
+            "Autor(es)": "Diego Cárcamo",
+            "Título": "Recomendaciones de Cambio en los Fondos de Pensiones: Presión de Precios en los Mercados",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 4,
+            "Año": 2020,
+            "Autor(es)": "Manuel Díaz",
+            "Título": "Risk Managed Momentum y Asset Pricing",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 5,
+            "Año": 2020,
+            "Autor(es)": "Francisco Campos",
+            "Título": "Eficiencia en el mercado de Basis Swap Cámara Libor",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          },
+          {
+            "N°": 6,
+            "Año": 2020,
+            "Autor(es)": "Ricardo del Río",
+            "Título": "Estimación de la estructura de tasas de interés y efecto de la política monetaria en Chile",
+            "Nombre del programa": "Magíster en Finanzas",
+            "Institución": "Pontificia Universidad Católica de Chile"
+          }
+        ]
+      }
+    }
+  },
+  "Matías Braun": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Título",
+          "Link de verificación electrónica",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Braun, M., Truffa, S. & Valdivieso, E.",
+            "Año": 2025,
+            "Nombre revista": "Global Finance Journal",
+            "Título": "Director networks and misconduct",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1044-0283",
+            "Indicador": "5.1",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Braun, M., Marcet, F. & Raddatz, C.",
+            "Año": 2025,
+            "Nombre revista": "International Review of Financial Analysis",
+            "Título": "How do ESG firms invest?",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1057-5219",
+            "Indicador": "8.1",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Bosch, M. J., Braun, M. & Cifuentes, C.",
+            "Año": 2025,
+            "Nombre revista": "Community, Work and Family",
+            "Título": "The relationship between mother's workplace flexibility and child development",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1366-8803",
+            "Indicador": "3.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Braun, M., Riutort, J. & Roche, H.",
+            "Año": 2024,
+            "Nombre revista": "Economic Modelling",
+            "Título": "Hedge fund fee structure and risk exposure",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0264-9993",
+            "Indicador": "4.6",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Aldunate, F., Alvarez, S. & Braun, M.",
+            "Año": 2024,
+            "Nombre revista": "Journal of Financial Stability",
+            "Título": "The good, the bad, and the not-so-ugly of credit booms? capital allocation and financial constraints",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1572-3089",
+            "Indicador": "5.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Braun, M., Larrain, B. & Sertsios, G.",
+            "Año": 2023,
+            "Nombre revista": "Journal of Financial Economics",
+            "Título": "Payout policy around the world",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0304-405X",
+            "Indicador": "7.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Braun, M. & Sadaka, G.",
+            "Año": 2022,
+            "Nombre revista": "Journal of Banking & Finance",
+            "Título": "Are there pricing spillovers within ETFs? Evidence from emerging markets",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0378-4266",
+            "Indicador": "4.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "Braun, M., Larrain, B. & Sertsios, G.",
+            "Año": 2021,
+            "Nombre revista": "Journal of Corporate Finance",
+            "Título": "Inheritance tax, shareholder protection, and the market value of family firms",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0929-1199",
+            "Indicador": "6.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 9,
+            "Autor(es)": "Braun, M. & Parro, F.",
+            "Año": 2019,
+            "Nombre revista": "Journal of Development Economics",
+            "Título": "Does finance alter the relation between inequality and growth?",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0304-3878",
+            "Indicador": "2.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 10,
+            "Autor(es)": "Braun, M. & Raddatz, C.",
+            "Año": 2016,
+            "Nombre revista": "Review of Financial Studies",
+            "Título": "Banking on politics",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0893-9454",
+            "Indicador": "5.8",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 11,
+            "Autor(es)": "Braun, M. & Larrain, B.",
+            "Año": 2016,
+            "Nombre revista": "Journal of Monetary Economics",
+            "Título": "Finance and the business cycle",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0304-3932",
+            "Indicador": "6.0",
+            "Indexación": "JIF"
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Tipo de publicación",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Título": "FAI ÁREAS TEMÁTICAS PRIORITARIAS - INV-AT-2020-01: EL IMPACTO DEL BALANCE TRABAJO Y FAMILIA DE LOS PADRES EN EL DESARROLLO DE CAPITAL HUMANO DE SUS HIJOS",
+            "Año": 2020,
+            "Inicio": "ene-2020",
+            "Término": "ene-2022",
+            "Duración": "2",
+            "Fuente de financiamiento": "Universidad de los Andes Chile - FAI",
+            "Nombre del Concurso": "",
+            "Tipo de financiamiento": "",
+            "Rol": "Co-investigador",
+            "Código proyecto": "",
+            "USD": "",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          }
+        ]
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Natalia Yankovic": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Título",
+          "Link de verificación electrónica",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Alfaro, G.; Berger, Z.; Mondschein, S.; Subiabre, F.; Yankovic, N.",
+            "Año": 2024,
+            "Nombre revista": "Scientific Reports",
+            "Título": "Barriers to the use of tests for early detection of colorectal cancer in Chile",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "2045-2322",
+            "Indicador": "4.1",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Mondschein, S.; Subiabre, F.; Yankovic, N.; Estay, C.; Mühlenbrock, C. V.; Berger, Z.",
+            "Año": 2022,
+            "Nombre revista": "PLoS ONE",
+            "Título": "Colorectal cancer trends in Chile: a Latin-American country with marked socioeconomic inequities",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1932-6203",
+            "Indicador": "3.1",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Basso, L. J.; Salinas, V.; Sauré, D.; Thraves, C.; Yankovic, N.",
+            "Año": 2022,
+            "Nombre revista": "Health Care Management Science",
+            "Título": "The effect of correlation and false negatives in pool testing strategies for COVID-19",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1386-9620",
+            "Indicador": "3",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Mondschein, S.; Yankovic, N.; Matus, O.",
+            "Año": 2021,
+            "Nombre revista": "International Transactions in Operational Research",
+            "Título": "Age-dependent optimal policies for hepatitis C virus treatment",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0969-6016",
+            "Indicador": "3.4",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Mondschein, S.; Yankovic, N.; Matus, O.",
+            "Año": 2021,
+            "Nombre revista": "Public Health",
+            "Título": "The challenges of administering a new treatment: the case of direct-acting antivirals for hepatitis C virus",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0033-3506",
+            "Indicador": "3",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Mondschein, S.; Quinteros, M.; Yankovic, N.",
+            "Año": 2020,
+            "Nombre revista": "PLoS ONE",
+            "Título": "Gender bias in the Chilean public health system: Do we all wait the same?",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1932-6203",
+            "Indicador": "2.1",
+            "Indexación": "JIF"
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Tipo de publicación",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "María José Bosch": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Título",
+          "Link de verificación electrónica",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Wang, S.; Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; Marescaux, E.",
+            "Año": 2025,
+            "Nombre revista": "BRQ Business Research Quarterly",
+            "Título": "Do you get what you desire? Consequences of (mis) fit of desired versus actual servant leadership",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "2340-9436",
+            "Indicador": "4.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Bosch, M. J.; Braun, M.; Cifuentes, C.",
+            "Año": 2025,
+            "Nombre revista": "Community, Work and Family",
+            "Título": "The relationship between mother's workplace flexibility and child development",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1366-8803",
+            "Indicador": "3.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Rofcanin, Y.; Wang, S.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2025,
+            "Nombre revista": "Journal of Occupational and Organizational Psychology",
+            "Título": "Understanding the dynamics of strategic renewal across domains",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0963-1798",
+            "Indicador": "5.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Wang, S.; Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2024,
+            "Nombre revista": "European Management Journal",
+            "Título": "A fit perspective to family supportive supervisor behaviors",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0263-2373",
+            "Indicador": "4.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Ererdi, C.; Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2024,
+            "Nombre revista": "European Management Review",
+            "Título": "Family-supportive supervisor behaviours",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1740-4754",
+            "Indicador": "3.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Rofcanin, Y.; Wang, S.; Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2024,
+            "Nombre revista": "European Management Review",
+            "Título": "Perceptions of support trickle down",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1740-4754",
+            "Indicador": "3.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Erdogan, D. T.; Heras, M.; Rofcanin, Y.; Bosch, M. J.; et al.",
+            "Año": 2022,
+            "Nombre revista": "Journal of Applied Social Psychology",
+            "Título": "Family motivation of supervisors",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0021-9029",
+            "Indicador": "3.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "Taser, D.; Rofcanin, Y.; Las Heras, M.; Bosch, M. J.",
+            "Año": 2021,
+            "Nombre revista": "International Journal of Human Resource Management",
+            "Título": "Flexibility I-deals and prosocial motives",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0958-5192",
+            "Indicador": "6.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 9,
+            "Autor(es)": "Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2021,
+            "Nombre revista": "European Journal of Work and Organizational Psychology",
+            "Título": "Weekly obtained task i-deals",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1359-432X",
+            "Indicador": "3.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 10,
+            "Autor(es)": "Rofcanin, Y.; Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2021,
+            "Nombre revista": "Journal of Business Research",
+            "Título": "Servant leadership and family supportiveness",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0148-2963",
+            "Indicador": "7.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 11,
+            "Autor(es)": "Kelly, C. M.; Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2020,
+            "Nombre revista": "Journal of Vocational Behavior",
+            "Título": "Seeking an i-deal balance",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0001-8791",
+            "Indicador": "4.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 12,
+            "Autor(es)": "Stollberger, J.; Bosch, M. J.; Las Heras, M.; et al.",
+            "Año": 2020,
+            "Nombre revista": "European Journal of Work and Organizational Psychology",
+            "Título": "The tone at the top",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1359-432X",
+            "Indicador": "3.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 13,
+            "Autor(es)": "Marescaux, E.; Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2020,
+            "Nombre revista": "Journal of Vocational Behavior",
+            "Título": "When employees and supervisors do not see eye to eye",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0001-8791",
+            "Indicador": "4.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 14,
+            "Autor(es)": "Rofcanin, Y.; Las Heras, M.; Bosch, M. J.; et al.",
+            "Año": 2019,
+            "Nombre revista": "Human Relations",
+            "Título": "A closer look at the positive crossover",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0018-7267",
+            "Indicador": "4.8",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 15,
+            "Autor(es)": "Benavides, C.; Pérez-Latre, F.; Sánchez-Tabernero, A.; Bosch, M. J.",
+            "Año": 2019,
+            "Nombre revista": "Revista de Comunicacion",
+            "Título": "How editors perceive leadership behavior",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1684-0933",
+            "Indicador": "0.3",
+            "Indexación": "Scopus"
+          },
+          {
+            "N°": 16,
+            "Autor(es)": "Stollberger, J.; Las Heras, M.; Rofcanin, Y.; Bosch, M. J.",
+            "Año": 2019,
+            "Nombre revista": "Journal of Vocational Behavior",
+            "Título": "Serving followers and family",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0001-8791",
+            "Indicador": "4.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 17,
+            "Autor(es)": "Idrovo, S.; Bosch, M. J.",
+            "Año": 2019,
+            "Nombre revista": "Academia Revista Latinoamericana de Administracion",
+            "Título": "Organisational support and work–life balance",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1012-8255",
+            "Indicador": "0.4",
+            "Indexación": "Scopus"
+          },
+          {
+            "N°": 18,
+            "Autor(es)": "Bosch, M. J.; Las Heras, M.; Russo, M.; et al.",
+            "Año": 2018,
+            "Nombre revista": "Journal of Business Research",
+            "Título": "How context matters",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0148-2963",
+            "Indicador": "5.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 19,
+            "Autor(es)": "Las Heras, M.; Bosch, M. J.; Raes, A.",
+            "Año": 2015,
+            "Nombre revista": "Journal of Business Research",
+            "Título": "Sequential mediation",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0148-2963",
+            "Indicador": "3.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 20,
+            "Autor(es)": "Bosch, M. J.; García, C. J.; Manríquez, M.; Valenzuela, G.",
+            "Año": 2018,
+            "Nombre revista": "Trimestre Económico",
+            "Título": "Macroeconomía y conciliación familiar: El impacto económico de los jardines infantiles",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0041-3011",
+            "Indicador": "0.2",
+            "Indexación": "Scopus"
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Tipo de publicación",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Bosch, M. J.; Las Heras, M.",
+            "Año": 2022,
+            "Título": "Small changes that make a great difference: reading, playing and eating with your children",
+            "Tipo de publicación": "Conference Article",
+            "Editorial": "Contributions to Management Science"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Stollberger, J.; Las Heras, M.; Rofcanin, Y.; Bosch, M. J.",
+            "Año": 2019,
+            "Título": "Serving followers and family? A trickle-down model",
+            "Tipo de publicación": "Conference Article",
+            "Editorial": "Academy of Management Annual Meeting Proceedings"
+          }
+        ]
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Bosch, M. J.",
+            "Año": 2026,
+            "Título": "BEYOND WEIRD COUNTRIES: Work-Life Management across the Globe",
+            "Lugar": "Londres, Reino Unido",
+            "Editorial": "Taylor & Francis"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Bosch, M. J.",
+            "Año": 2022,
+            "Título": "Conclusion: What We Have Learnt From Multidisciplinary Views on Human Flourishing",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer International Publishing"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Bosch, M. J.; Hernández, T.",
+            "Año": 2020,
+            "Título": "A closer look to millennials in Chile: how they perceive the new i-deal worker",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Kim, S.; Bianchi, G.; Bosch, M. J.",
+            "Año": 2020,
+            "Título": "An examination of the impact of macro context on women CEOs in the hospitality industry",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer Science and Business Media Deutschland GmbH"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Bosch, M. J.; Kimber, D. I.; Leiva, R.",
+            "Año": 2020,
+            "Título": "The use of conjoint analysis in revealing preferences for hiring: The gender bias effect",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Bosch, M. J.",
+            "Año": 2016,
+            "Título": "Women in management in Chile",
+            "Lugar": "Londres, Reino Unido",
+            "Editorial": "Taylor & Francis"
+          }
+        ]
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Título": "FAI Áreas Temáticas Prioritarias N°INV-AT-2020-01: El impacto del balance trabajo y familia de los padres en el desarrollo de capital humano de sus hijos",
+            "Año": 2020,
+            "Inicio": "oct-2020",
+            "Término": "oct-2022",
+            "Duración": "2",
+            "Fuente de financiamiento": "Universidad de los Andes Chile - FAI",
+            "Nombre del Concurso": "",
+            "Tipo de financiamiento": "",
+            "Rol": "Investigador Responsable (Principal Investigator)",
+            "Código proyecto": "",
+            "USD": "",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          }
+        ]
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Hugo Benedetti": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Título",
+          "Link de verificación electrónica",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Benedetti, H.; Nikbakht, E.; Pastén-Henríquez, B.",
+            "Año": 2026,
+            "Nombre revista": "International Review of Economics and Finance",
+            "Título": "Quantile-based connectedness in the crypto-stablecoin network across market conditions",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1059-0560",
+            "Indicador": "3.9",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Benedetti, H.; Rodríguez-Garnica, G.",
+            "Año": 2025,
+            "Nombre revista": "Journal of International Money and Finance",
+            "Título": "Does what happens on-chain stays on-chain? The dynamics of blockchain token transactions and prices",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0261-5606",
+            "Indicador": "3.8",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Benedetti, H.; Karim, M. A.; Sarkar, S.; Spieler, A. C.",
+            "Año": 2025,
+            "Nombre revista": "International Review of Economics and Finance",
+            "Título": "Green density and spillover effects on earnings management",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1059-0560",
+            "Indicador": "3.9",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Benedetti, H.; Nikbakht, E.; Spieler, A. C.",
+            "Año": 2024,
+            "Nombre revista": "Journal of Financial Research",
+            "Título": "Hostile activism: hostile tactics or hostile hedge funds?",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0270-2592",
+            "Indicador": "1.9",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Benedetti, H.; Kostovetsky, L.",
+            "Año": 2021,
+            "Nombre revista": "Journal of Corporate Finance",
+            "Título": "Digital Tulips? returns to investors in initial coin offerings",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0929-1199",
+            "Indicador": "6.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Benedetti, H.; Nikbakht, E.",
+            "Año": 2021,
+            "Nombre revista": "Journal of Corporate Finance",
+            "Título": "Returns and network growth of digital tokens after cross-listings",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0929-1199",
+            "Indicador": "6.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Benedetti, H.; Nikbakht, E.; Sarkar, S.; Spieler, A. C.",
+            "Año": 2020,
+            "Nombre revista": "Journal of Financial Crime",
+            "Título": "Blockchain and corporate fraud",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1359-0790",
+            "Indicador": "1.2",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "Romero-Meza, R.; Bonilla, C.; Benedetti, H.; Serletis, A.",
+            "Año": 2015,
+            "Nombre revista": "Economic Modelling",
+            "Título": "Nonlinearities and financial contagion in Latin American stock markets",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0264-9993",
+            "Indicador": "1.5",
+            "Indexación": "JIF"
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Tipo de publicación",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Baker, H. K.; Benedetti, H.; Nikbakht, E.; Smith, S. S.",
+            "Año": 2023,
+            "Título": "The Emerald Handbook on Cryptoassets: Investment Opportunities and Challenges",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          }
+        ]
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Benedetti, H.; Calderón, C.",
+            "Año": 2025,
+            "Título": "The Social Impact of Fintech",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer Nature"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Benedetti, H.; Ross, S.; Sarkar, S.; Spieler, A. C.",
+            "Año": 2025,
+            "Título": "Variations of a Social Finance Theme: Socially Responsible Investing, ESG, Sustainable Investing, and Impact Investing",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer Nature"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Benedetti, H.; Smith, S. S.",
+            "Año": 2024,
+            "Título": "Cryptoassets and Fintech",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Publishing"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Benedetti, H.; Pavlic, F.",
+            "Año": 2024,
+            "Título": "Using Fintech in Sovereign Wealth Fund Operations",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer International Publishing"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Benedetti, H.; Labbe, S.",
+            "Año": 2023,
+            "Título": "A closer look into decentralized finance",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Baker, H. K.; Benedetti, H.; Nikbakht, E.; Smith, S. S.",
+            "Año": 2023,
+            "Título": "Cryptoassets: an overview",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Benedetti, H.; Rodriguez-Garnica, G.",
+            "Año": 2023,
+            "Título": "Tokenized assets and securities",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "Benedetti, H.; Nikbakht, E.; Zukhubaia, G.",
+            "Año": 2023,
+            "Título": "Trade settlements",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          },
+          {
+            "N°": 9,
+            "Autor(es)": "Benedetti, H.; Caceres, C.; Abarzúa, L. Á.",
+            "Año": 2023,
+            "Título": "Utility tokens",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          },
+          {
+            "N°": 10,
+            "Autor(es)": "Benedetti, H.; McKeon, S.; Pfiffer, C.",
+            "Año": 2021,
+            "Título": "Blockchain Trading and Exchange",
+            "Lugar": "Cham, Suiza",
+            "Editorial": "Springer International Publishing"
+          },
+          {
+            "N°": 11,
+            "Autor(es)": "Benedetti, H.",
+            "Año": 2021,
+            "Título": "Public Blockchains and Applications",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          },
+          {
+            "N°": 12,
+            "Autor(es)": "Baker, H. K.; Benedetti, H.; Nikbakht, E.; Smith, S. S.",
+            "Año": 2023,
+            "Título": "The Emerald Handbook on Cryptoassets: Investment Opportunities and Challenges",
+            "Lugar": "Bingley, Reino Unido",
+            "Editorial": "Emerald Group Publishing Ltd."
+          }
+        ]
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Título": "FONDECYT Iniciación N°11261346: Mapping the Blockchain: From User Classification to Market Insights Using Transactional Data and On-Chain Behavior",
+            "Año": 2026,
+            "Inicio": "abr-2026",
+            "Término": "mar-2029",
+            "Duración": "3",
+            "Fuente de financiamiento": "Agencia Nacional de Investigación y Desarrollo (ANID) – FONDECYT Iniciación",
+            "Nombre del Concurso": "FONDECYT Iniciación",
+            "Tipo de financiamiento": "Externo - Nacional",
+            "Rol": "Investigador Responsable (Principal Investigator)",
+            "Código proyecto": "11261346",
+            "USD": "",
+            "CLP": "",
+            "TC": "",
+            "Observaciones": ""
+          }
+        ]
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Álvaro Espejo": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Título",
+          "Link de verificación electrónica",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Pinto-Garay, J.; Espejo, Á.; Scalzo, G. R.",
+            "Año": 2026,
+            "Nombre revista": "International Journal of Ethics and Systems",
+            "Título": "Guiding unphilosophical employees",
+            "Link de verificación electrónica": "",
+            "Estado": "En prensa",
+            "ISSN": "2514-9369",
+            "Indicador": "2.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 2,
+            "Autor(es)": "Escribano, P. I.; Espejo, A.; Brodt, S. E.",
+            "Año": 2026,
+            "Nombre revista": "Current Psychology",
+            "Título": "Taking the risk",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1046-1310",
+            "Indicador": "2.8",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 3,
+            "Autor(es)": "Gómez, M.; Espejo, Á.; Martela, F.; et al.",
+            "Año": 2024,
+            "Nombre revista": "European Journal of Work and Organizational Psychology",
+            "Título": "The virtuous cycle of prosocial behaviour",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1359-432X",
+            "Indicador": "3.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 4,
+            "Autor(es)": "Poisson-De Haro, S.; Espejo, A.; Martí, I.",
+            "Año": 2022,
+            "Nombre revista": "International Journal of Arts Management",
+            "Título": "Business Model Evolution and Entrepreneurial Adaptation",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1480-8986",
+            "Indicador": "0.4",
+            "Indexación": "Scopus"
+          },
+          {
+            "N°": 5,
+            "Autor(es)": "Martela, F.; Gómez, M.; Unanue, W.; et al.",
+            "Año": 2021,
+            "Nombre revista": "Journal of Vocational Behavior",
+            "Título": "What makes work meaningful?",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0001-8791",
+            "Indicador": "4.5",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 6,
+            "Autor(es)": "Perez-Arrau, G.; Espejo, A.; Mandiola, M.; et al.",
+            "Año": 2020,
+            "Nombre revista": "RAE Revista de Administracao de Empresas",
+            "Título": "Organizing organizational studies in Chile",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0034-7590",
+            "Indicador": "0.6",
+            "Indexación": "Scopus"
+          },
+          {
+            "N°": 7,
+            "Autor(es)": "Guzman, F. A.; Espejo, A.",
+            "Año": 2019,
+            "Nombre revista": "Journal of Organizational Behavior",
+            "Título": "Introducing changes at work",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0894-3796",
+            "Indicador": "5.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 8,
+            "Autor(es)": "González, N. A. R.; Toro, J. P.; et al.",
+            "Año": 2018,
+            "Nombre revista": "Psicoperspectivas",
+            "Título": "Estudios Organizacionales en Chile",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0718-6924",
+            "Indicador": "0.5",
+            "Indexación": "Scopus"
+          },
+          {
+            "N°": 9,
+            "Autor(es)": "Ascorra, P.; Rivera-Aguilera, G.; et al.",
+            "Año": 2018,
+            "Nombre revista": "Psicoperspectivas",
+            "Título": "Sección temática estudios organizacionales",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0718-6924",
+            "Indicador": "0.5",
+            "Indexación": "Scopus"
+          },
+          {
+            "N°": 10,
+            "Autor(es)": "Guzman, F. A.; Espejo, A.",
+            "Año": 2015,
+            "Nombre revista": "Journal of Business Research",
+            "Título": "Dispositional and situational differences",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "0148-2963",
+            "Indicador": "3.0",
+            "Indexación": "JIF"
+          },
+          {
+            "N°": 11,
+            "Autor(es)": "Lavín, C.; Espejo, A.; Bravo, D.; Morales, S.",
+            "Año": 2015,
+            "Nombre revista": "Asian Journal of Social Psychology",
+            "Título": "What makes people decide to pay more?",
+            "Link de verificación electrónica": "",
+            "Estado": "Publicado",
+            "ISSN": "1367-2223",
+            "Indicador": "1.5",
+            "Indexación": "JIF"
+          }
+        ]
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Tipo de publicación",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Lugar",
+          "Editorial"
+        ],
+        "filas": [
+          {
+            "N°": 1,
+            "Autor(es)": "Zander, L.; Mockaitis, A. I.; Harzing, A. W.; Barner-Rasmussen, W.; Barzantny, C.; Choudhury, S. R.; Davila, A.; De Leon, J.; Espejo, A.; Ferreira, R.; Giroud, A.; Köster, K.; Liang, Y. K.; Morley, M. J.; Myloni, B.; Odusanya, J. O. T.; O'Sullivan, S. L.; Palaniappan, A. K.; Prochno, P.; Saka-Helmhout, A.; et al.",
+            "Año": 2020,
+            "Título": "Action intent: getting closer to leadership behavior in 22 countries",
+            "Lugar": "Cheltenham, Reino Unido / Northampton, Estados Unidos",
+            "Editorial": "Edward Elgar Publishing Ltd."
+          }
+        ]
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Inicio",
+          "Término",
+          "Duración",
+          "Fuente de financiamiento",
+          "Nombre del Concurso",
+          "Tipo de financiamiento",
+          "Rol",
+          "Código proyecto",
+          "USD",
+          "CLP",
+          "TC",
+          "Observaciones"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Año",
+          "Autor(es)",
+          "Título",
+          "Nombre del programa",
+          "Institución"
         ],
         "filas": []
       }
