@@ -419,10 +419,22 @@ function generarModales(profesores) {
             if (!seccion || !seccion.filas || seccion.filas.length === 0) continue;
             
             const titulo = traducirTipo(tipo);
-            const headers = seccion.headers;
+            let headers = seccion.headers;
+            
+            // Reordenar headers para publicaciones_indexadas: poner Cuartil después de ISSN
+            if (tipo === 'publicaciones_indexadas') {
+                headers = [...headers];
+                const issnIndex = headers.indexOf('ISSN');
+                const cuartilIndex = headers.indexOf('Cuartil');
+                
+                if (issnIndex !== -1 && cuartilIndex !== -1 && cuartilIndex !== issnIndex + 1) {
+                    headers.splice(cuartilIndex, 1);
+                    headers.splice(issnIndex + 1, 0, 'Cuartil');
+                }
+            }
             
             // Aplicar orden visual por Año
-            const filasOrdenadas = ordenarPorAnoYRenumerar(seccion.filas, headers);
+            const filasOrdenadas = ordenarPorAnoYRenumerar(seccion.filas, seccion.headers);
 
             
             seccionesHTML += `
@@ -930,8 +942,17 @@ function construirReporteDatos() {
         });
         html += `<th class="reporte-tabla-columna-tipo">Tipo de tabla</th>`;
         
-        // Headers dinámicos
-        Array.from(headersUnicos).sort().forEach(header => {
+        // Headers dinámicos - reordenar: Cuartil después de ISSN
+        let headersDyn = Array.from(headersUnicos).sort();
+        const issnI = headersDyn.indexOf('ISSN');
+        const cuartilI = headersDyn.indexOf('Cuartil');
+        
+        if (issnI !== -1 && cuartilI !== -1 && cuartilI !== issnI + 1) {
+            headersDyn.splice(cuartilI, 1);
+            headersDyn.splice(issnI + 1, 0, 'Cuartil');
+        }
+        
+        headersDyn.forEach(header => {
             html += `<th>${header}</th>`;
         });
         
@@ -946,7 +967,7 @@ function construirReporteDatos() {
             });
             html += `<td class="reporte-tabla-columna-tipo">${fila['Tipo de tabla']}</td>`;
             
-            Array.from(headersUnicos).sort().forEach(header => {
+            headersDyn.forEach(header => {
                 html += `<td>${fila[header] || ''}</td>`;
             });
             html += `</tr>`;
@@ -958,11 +979,21 @@ function construirReporteDatos() {
     
     html += `</div>`;
     
+    // Reordenar headers para que Cuartil vaya después de ISSN
+    let headersOrdenados = Array.from(headersUnicos).sort();
+    const issnIdx = headersOrdenados.indexOf('ISSN');
+    const cuartilIdx = headersOrdenados.indexOf('Cuartil');
+    
+    if (issnIdx !== -1 && cuartilIdx !== -1 && cuartilIdx !== issnIdx + 1) {
+        headersOrdenados.splice(cuartilIdx, 1);
+        headersOrdenados.splice(issnIdx + 1, 0, 'Cuartil');
+    }
+    
     return {
         html: html,
         filas: filasReporte,
         columnasBase: columnasBase,
-        headersUnicos: Array.from(headersUnicos).sort()
+        headersUnicos: headersOrdenados
     };
 }
 

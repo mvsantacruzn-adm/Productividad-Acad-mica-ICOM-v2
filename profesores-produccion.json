@@ -12,7 +12,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -25,7 +26,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1086/727289",
             "Título": "The ABCs of firm heterogeneity when firms sort into markets: The case of exporters",
             "Indicador": "9,7",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -37,7 +39,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1016/j.jinteco.2024.103877",
             "Título": "UIP deviations: Insights from event studies",
             "Indicador": "3,9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -49,7 +52,8 @@
             "Link de verificación electrónica": "N/A",
             "Título": "Gobernanza de bancos centrales para los desafíos del siglo XXI",
             "Indicador": "0,2",
-            "Indexación": "SJR"
+            "Indexación": "SJR",
+            "Cuartil": "Q3"
           },
           {
             "N°": "4",
@@ -61,7 +65,8 @@
             "Link de verificación electrónica": "N/A",
             "Título": "The DNA of New Exporters: Spin-Offs and FDI at the Extensive Margin of Trade",
             "Indicador": "4,7",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -73,7 +78,8 @@
             "Link de verificación electrónica": "",
             "Título": "Channels of US Monetary Policy Spillovers to International Bond Markets",
             "Indicador": "7,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "6",
@@ -85,7 +91,8 @@
             "Link de verificación electrónica": "",
             "Título": "Inventory Management, Product Quality, and Cross-Country Income Differences",
             "Indicador": "4",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "7",
@@ -97,7 +104,8 @@
             "Link de verificación electrónica": "",
             "Título": "A Balls-and-Bins Model of Trade: Comment",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "8",
@@ -133,7 +141,8 @@
             "Link de verificación electrónica": "",
             "Título": "Occasional and Perennial Exporters",
             "Indicador": "2,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "11",
@@ -145,7 +154,8 @@
             "Link de verificación electrónica": "",
             "Título": "FDI Liberalization as a Source of Comparative Advantage in China",
             "Indicador": "0,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "12",
@@ -528,7 +538,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -541,7 +552,8 @@
             "Estado": "En prensa",
             "ISSN": "2046-9128",
             "Indicador": "",
-            "Indexación": ""
+            "Indexación": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -553,7 +565,8 @@
             "Link de verificación electrónica": "",
             "Título": "Ownership Network of Firms and Labor Income",
             "Indicador": "1,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -565,7 +578,8 @@
             "Link de verificación electrónica": "",
             "Título": "Large International Corporate Bonds: Investor Behavior and Firm Responses",
             "Indicador": "3,9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "4",
@@ -577,7 +591,8 @@
             "Link de verificación electrónica": "",
             "Título": "The Internal Labor Markets of Business Groups",
             "Indicador": "6,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -589,7 +604,8 @@
             "Link de verificación electrónica": "",
             "Título": "Financing Firms in Hibernation during COVID-19",
             "Indicador": "5,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "6",
@@ -601,7 +617,8 @@
             "Link de verificación electrónica": "",
             "Título": "Capital Inflows, Equity Issuance Activity, and Corporate Investment",
             "Indicador": "4,3",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "7",
@@ -613,7 +630,8 @@
             "Link de verificación electrónica": "",
             "Título": "Capital Account Liberalization and Aggregate Productivity: The Role of Firm Capital Allocation",
             "Indicador": "6",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "8",
@@ -625,7 +643,8 @@
             "Link de verificación electrónica": "",
             "Título": "How Collateral Laws Shape Lending and Sectoral Activity",
             "Indicador": "7,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "9",
@@ -661,7 +680,8 @@
             "Link de verificación electrónica": "",
             "Título": "Age-differentiated Minimum Wages in Developing Countries",
             "Indicador": "2,4",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -870,7 +890,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -883,7 +904,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-banking-and-finance",
             "Título": "Guarantees, risk shifting and credit crunches",
             "Indicador": "3,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -895,7 +917,8 @@
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/14679361",
             "Título": "Factors of production, productivity, institutions, and development: Evidence from Brazil",
             "Indicador": "2",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "3",
@@ -907,7 +930,8 @@
             "Link de verificación electrónica": "https://link.springer.com/journal/11127",
             "Título": "Optimal Capital Structure with Stock Market Feedback",
             "Indicador": "8,4",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "4",
@@ -919,7 +943,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
             "Título": "Rollover risk and stress test credibility",
             "Indicador": "1,6",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -931,7 +956,8 @@
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10991258",
             "Título": "Dynamic coordination with timing frictions: Theory and applications",
             "Indicador": "1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "6",
@@ -943,7 +969,8 @@
             "Link de verificación electrónica": "https://link.springer.com/journal/938",
             "Título": "Entry and mergers in oligopoly with firm-specific network effects",
             "Indicador": "1,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "7",
@@ -1084,7 +1111,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -1097,7 +1125,8 @@
             "Estado": "Aceptado",
             "ISSN": "1945-7707",
             "Indicador": "",
-            "Indexación": ""
+            "Indexación": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -1109,7 +1138,8 @@
             "Estado": "Aceptado",
             "ISSN": "0304-405X",
             "Indicador": "",
-            "Indexación": ""
+            "Indexación": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -1121,7 +1151,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1093/ooec/odae037",
             "Título": "Inequality and market power in Latin America and the Caribbean",
             "Indicador": "N/A",
-            "Indexación": "N/A"
+            "Indexación": "N/A",
+            "Cuartil": "Q2"
           },
           {
             "N°": "4",
@@ -1133,7 +1164,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1257/aeri.20210466",
             "Título": "Proximity to the frontier, markups, and the response of innovation to foreign competition: Evidence from matched production-innovation surveys in Chile",
             "Indicador": "4,7",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -1145,7 +1177,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1016/j.resourpol.2018.04.004",
             "Título": "Commodity price shocks and poverty reduction in Chile",
             "Indicador": "5,4",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "6",
@@ -1169,7 +1202,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1086/703118",
             "Título": "Exporting and plant-level efficiency gains: It’s in the measure",
             "Indicador": "7",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "8",
@@ -1361,7 +1395,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -1374,7 +1409,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1257/aer.20230802",
             "Título": "Elite Universities and the Intergenerational Transmission of Human and Social Capital",
             "Indicador": "9,4",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -1386,7 +1422,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1086/730119",
             "Título": "Recidivism and Neighborhood Institutions: Evidence from the Rise of the Evangelical Church in Chile",
             "Indicador": "6,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -1398,7 +1435,8 @@
             "Link de verificación electrónica": "https://doi.org/10.1016/j.econedurev.2024.102541",
             "Título": "Teacher value-added and gender gaps in educational outcomes",
             "Indicador": "3",
-            "Indexación": "SJR"
+            "Indexación": "SJR",
+            "Cuartil": "Q2"
           },
           {
             "N°": "4",
@@ -1410,7 +1448,8 @@
             "Link de verificación electrónica": "N/A",
             "Título": "Neighbors’ Effects on University Enrollment",
             "Indicador": "5,2",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -1422,7 +1461,8 @@
             "Link de verificación electrónica": "N/A",
             "Título": "It's time to learn: School institutions and returns to instruction time",
             "Indicador": "2,7",
-            "Indexación": "SJR"
+            "Indexación": "SJR",
+            "Cuartil": "Q2"
           },
           {
             "N°": "6",
@@ -1434,7 +1474,8 @@
             "Link de verificación electrónica": "N/A",
             "Título": "O Brother, Where Start Thou? Sibling Spillovers on College and Major Choice in Four Countries",
             "Indicador": "11",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -1573,7 +1614,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -1586,7 +1628,8 @@
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/industrial-and-organizational-psychology",
             "Título": "The Role of Developmental Reviewing and the Pursuit of Good Science",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -1598,7 +1641,8 @@
             "Link de verificación electrónica": "https://bpspsychub.onlinelibrary.wiley.com/journal/20448325",
             "Título": "Job Autonomy as a Double-Edged Sword: Good for Work Performance, But Bad for Psychological Detachment",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -1610,7 +1654,8 @@
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/17504716",
             "Título": "Disagreeing with Employees’ Constructive Disagreement: On Giving (Non-)Specific Explanations for Rejecting Employees’ Voiced Suggestions",
             "Indicador": "1,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "4",
@@ -1622,7 +1667,8 @@
             "Link de verificación electrónica": "https://www.nature.com/srep/",
             "Título": "Endorsing voice behavior can be as devastating as rejecting it when the endorsement is laced with a hint of anger",
             "Indicador": "4,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -1634,7 +1680,8 @@
             "Link de verificación electrónica": "https://bpspsychub.onlinelibrary.wiley.com/journal/20448325",
             "Título": "Turning Down Employee Voice with Humor: A Mixed Blessing for Employee Voice Resilience?",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "6",
@@ -1646,7 +1693,8 @@
             "Link de verificación electrónica": "https://www.emerald.com/insight/publication/issn/0268-3946",
             "Título": "Employees’ Attitudinal Reactions to Supervisors’ Weekly Taking Charge Behavior",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "7",
@@ -1658,7 +1706,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes",
             "Título": "A Chorus of Different Tongues: Foreign Language Fluency and Informal Influence in Multinational Teams",
             "Indicador": "6,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "8",
@@ -1670,7 +1719,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/acta-psychologica",
             "Título": "The language of blame: Exploring the effects of non-native accents on post-accident blame attributions",
             "Indicador": "2,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "9",
@@ -1682,7 +1732,8 @@
             "Link de verificación electrónica": "https://www.apa.org/pubs/journals/amp",
             "Título": "Supervisors’ Achievement Goal Orientations and Employees’ Mindfulness",
             "Indicador": "4,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "10",
@@ -1694,7 +1745,8 @@
             "Link de verificación electrónica": "https://bpspsychub.onlinelibrary.wiley.com/journal/20448325",
             "Título": "When discordant work selves yield workplace creativity",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "11",
@@ -1706,7 +1758,8 @@
             "Link de verificación electrónica": "https://www.emerald.com/insight/publication/issn/1044-4068",
             "Título": "When anger and happiness generate concessions",
             "Indicador": "2,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "12",
@@ -1718,7 +1771,8 @@
             "Link de verificación electrónica": "https://www.apa.org/pubs/journals/amp",
             "Título": "Leader-subordinate congruence in power distance values and voice behavior",
             "Indicador": "3,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "13",
@@ -1742,7 +1796,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research",
             "Título": "Dispositional and situational differences in motives to engage in citizenship behavior",
             "Indicador": "5,2",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -2078,7 +2133,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -2091,7 +2147,8 @@
             "Link de verificación electrónica": "https://pubsonline.informs.org/journal/mnsc",
             "Título": "Does Employing Skilled Immigrants Enhance Competitive Performance? Evidence from European Football Clubs",
             "Indicador": "7,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -2103,7 +2160,8 @@
             "Link de verificación electrónica": "https://journals.sagepub.com/home/joc",
             "Título": "Changes in social norms during the early stages of the COVID-19 pandemic across 43 countries",
             "Indicador": "16,6",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -2115,7 +2173,8 @@
             "Link de verificación electrónica": "https://www.journals.elsevier.com/international-business-review",
             "Título": "The impact of experience on the agglomeration of cross-border investments within a region: the case of private equity in emerging markets",
             "Indicador": "8,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "4",
@@ -2316,7 +2375,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -2329,7 +2389,8 @@
             "Link de verificación electrónica": "",
             "Título": "Short of capital: Stock Market Implications of Short Sellers’ Losses",
             "Indicador": "4,9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2341,7 +2402,8 @@
             "Link de verificación electrónica": "",
             "Título": "The Value of Growth: Changes in Profitability and Future Stock Returns",
             "Indicador": "3,9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2353,7 +2415,8 @@
             "Link de verificación electrónica": "",
             "Título": "Out of Sync: Dispersed Short Selling and the Correction of Mispricing",
             "Indicador": "5,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2365,7 +2428,8 @@
             "Link de verificación electrónica": "",
             "Título": "Carrot and Stick: A Role for Benchmark-Adjusted Compensation in Active Fund Management",
             "Indicador": "5,2",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2389,7 +2453,8 @@
             "Link de verificación electrónica": "",
             "Título": "The Invisible Hand of Internal Markets in Mutual Fund Families",
             "Indicador": "4,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2401,7 +2466,8 @@
             "Link de verificación electrónica": "",
             "Título": "Starting on the Wrong Foot: Seasonality in Mutual Fund Performance",
             "Indicador": "3,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -2566,7 +2632,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -2579,7 +2646,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/games-and-economic-behavior",
             "Título": "Competitive limit of competing auctions",
             "Indicador": "1,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2591,7 +2659,8 @@
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/american-journal-of-political-science",
             "Título": "Learning by lobbying",
             "Indicador": "4,3",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2603,7 +2672,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/economic-theory",
             "Título": "Information exchange through secret vertical contracts",
             "Indicador": "1,6",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "N/D",
@@ -2615,7 +2685,8 @@
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/quarterly-journal-of-political-science",
             "Título": "International Cooperation, Information Transmission, and Delegation",
             "Indicador": "1,5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -2767,7 +2838,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -2780,7 +2852,8 @@
             "Link de verificación electrónica": "",
             "Título": "Colluding against Environmental Regulation",
             "Indicador": "7",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -2792,7 +2865,8 @@
             "Link de verificación electrónica": "",
             "Título": "Beyond Consumer Switching: Supply Responses to Food Packaging & Advertising Regulations",
             "Indicador": "5,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -2804,7 +2878,8 @@
             "Link de verificación electrónica": "",
             "Título": "Countervailing Market Power and Consumer Surplus: An Empirical Examination",
             "Indicador": "1,1",
-            "Indexación": "SJR"
+            "Indexación": "SJR",
+            "Cuartil": "Q1"
           },
           {
             "N°": "4",
@@ -2816,7 +2891,8 @@
             "Link de verificación electrónica": "",
             "Título": "Trade associations and collusion among many agents: evidence from physicians",
             "Indicador": "1,99",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -3008,7 +3084,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -3021,7 +3098,8 @@
             "Link de verificación electrónica": "https://www.sciencedirect.com/journal/labour-economics",
             "Título": "Is private education worth it? Evidence from school-to-work transitions in Chile",
             "Indicador": "3,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -3033,7 +3111,8 @@
             "Link de verificación electrónica": "https://www.journals.uchicago.edu/journals/jole/about",
             "Título": "Understanding the Effects of Workfare Policies on Child Human Capital",
             "Indicador": "7,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -3045,7 +3124,8 @@
             "Link de verificación electrónica": "https://www.cambridge.org/core/journals/european-psychiatry",
             "Título": "Clinical Correlates of Cardiac Conduction in Bipolar Disorder",
             "Indicador": "7,8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "4",
@@ -3057,7 +3137,8 @@
             "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/10991255",
             "Título": "Dynamic treatment effects of job training",
             "Indicador": "4,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -3213,7 +3294,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -3226,7 +3308,8 @@
             "ISSN": "1856-9536",
             "Indicador": "1,1",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=21101026698&tip=sid"
+            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=21101026698&tip=sid",
+            "Cuartil": "Q4"
           },
           {
             "N°": "2",
@@ -3238,7 +3321,8 @@
             "ISSN": "0719-529X",
             "Indicador": "N/A",
             "Indexación": "Latindex",
-            "Link de verificación electrónica": "https://revistadesociologia.uchile.cl/index.php/RDS/index"
+            "Link de verificación electrónica": "https://revistadesociologia.uchile.cl/index.php/RDS/index",
+            "Cuartil": "Q3"
           },
           {
             "N°": "3",
@@ -3250,7 +3334,8 @@
             "ISSN": "0214-0039",
             "Indicador": "1",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=16500154700&tip=sid"
+            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=16500154700&tip=sid",
+            "Cuartil": "Q2"
           },
           {
             "N°": "4",
@@ -3262,7 +3347,8 @@
             "ISSN": "1077-6990",
             "Indicador": "2,6",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://journals.sagepub.com/home/JMQ"
+            "Link de verificación electrónica": "https://journals.sagepub.com/home/JMQ",
+            "Cuartil": "Q2"
           },
           {
             "N°": "5",
@@ -3274,7 +3360,8 @@
             "ISSN": "0885-8624",
             "Indicador": "5,742",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/15405931"
+            "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/15405931",
+            "Cuartil": "Q2"
           },
           {
             "N°": "6",
@@ -3286,7 +3373,8 @@
             "ISSN": "0718-400X",
             "Indicador": "0,5",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=21100826817&tip=sid"
+            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=21100826817&tip=sid",
+            "Cuartil": "Q3"
           },
           {
             "N°": "7",
@@ -3298,7 +3386,8 @@
             "ISSN": "0214-0039",
             "Indicador": "0,9",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=16500154700&tip=sid"
+            "Link de verificación electrónica": "https://www.scimagojr.com/journalsearch.php?q=16500154700&tip=sid",
+            "Cuartil": "Q2"
           },
           {
             "N°": "8",
@@ -3641,7 +3730,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -3654,7 +3744,8 @@
             "ISSN": "0148-2963",
             "Indicador": "9,8",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -3666,7 +3757,8 @@
             "ISSN": "0309-877X",
             "Indicador": "2,4",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.tandfonline.com/journals/cjfh20"
+            "Link de verificación electrónica": "https://www.tandfonline.com/journals/cjfh20",
+            "Cuartil": "Q2"
           },
           {
             "N°": "3",
@@ -3678,7 +3770,8 @@
             "ISSN": "1989-9882",
             "Indicador": "0,3",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://dialnet.unirioja.es/servlet/revista?codigo=24687"
+            "Link de verificación electrónica": "https://dialnet.unirioja.es/servlet/revista?codigo=24687",
+            "Cuartil": "Q3"
           },
           {
             "N°": "4",
@@ -3690,7 +3783,8 @@
             "ISSN": "0034-9887",
             "Indicador": "1",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.scielo.cl/scielo.php?script=sci_serial&pid=0034-9887"
+            "Link de verificación electrónica": "https://www.scielo.cl/scielo.php?script=sci_serial&pid=0034-9887",
+            "Cuartil": "Q3"
           },
           {
             "N°": "5",
@@ -3702,7 +3796,8 @@
             "ISSN": "0148-2963",
             "Indicador": "10,9",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research",
+            "Cuartil": "Q1"
           },
           {
             "N°": "6",
@@ -3738,7 +3833,8 @@
             "ISSN": "0148-2963",
             "Indicador": "3,4",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-business-research",
+            "Cuartil": "Q1"
           },
           {
             "N°": "9",
@@ -4260,7 +4356,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -4273,7 +4370,8 @@
             "Estado": "Aceptado",
             "ISSN": "0008-4085 / 1540-5982",
             "Indicador": "1,1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -4285,7 +4383,8 @@
             "ISSN": "0025-1909",
             "Indicador": "5,4",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1287/mnsc.2023.4771"
+            "Link de verificación electrónica": "https://doi.org/10.1287/mnsc.2023.4771",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -4297,7 +4396,8 @@
             "ISSN": "0025-1909",
             "Indicador": "5,4",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1287/mnsc.2023.4718"
+            "Link de verificación electrónica": "https://doi.org/10.1287/mnsc.2023.4718",
+            "Cuartil": "Q1"
           },
           {
             "N°": "4",
@@ -4309,7 +4409,8 @@
             "ISSN": "0008-4085",
             "Indicador": "1,3",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/15405982"
+            "Link de verificación electrónica": "https://onlinelibrary.wiley.com/journal/15405982",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -4321,7 +4422,8 @@
             "ISSN": "0306-686X",
             "Indicador": "2,5",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1111/jbfa.12583"
+            "Link de verificación electrónica": "https://doi.org/10.1111/jbfa.12583",
+            "Cuartil": "Q1"
           },
           {
             "N°": "6",
@@ -4333,7 +4435,8 @@
             "ISSN": "0899-8256",
             "Indicador": "1,4",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1016/j.geb.2021.06.009"
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.geb.2021.06.009",
+            "Cuartil": "Q1"
           },
           {
             "N°": "7",
@@ -4509,7 +4612,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -4522,7 +4626,8 @@
             "ISSN": "1386-4181",
             "Indicador": "2,1",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/science/article/pii/S1386418125000229?via%3Dihub"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/science/article/pii/S1386418125000229?via%3Dihub",
+            "Cuartil": "Q2"
           },
           {
             "N°": "2",
@@ -4534,7 +4639,8 @@
             "ISSN": "0022-1082",
             "Indicador": "9,5",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1111/jofi.13337"
+            "Link de verificación electrónica": "https://doi.org/10.1111/jofi.13337",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -4546,7 +4652,8 @@
             "ISSN": "1386-4181",
             "Indicador": "2,1",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1016/j.finmar.2023.100850"
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.finmar.2023.100850",
+            "Cuartil": "Q2"
           },
           {
             "N°": "4",
@@ -4558,7 +4665,8 @@
             "ISSN": "1386-4181",
             "Indicador": "2,1",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1111/jofi.12759"
+            "Link de verificación electrónica": "https://doi.org/10.1111/jofi.12759",
+            "Cuartil": "Q2"
           },
           {
             "N°": "5",
@@ -4570,7 +4678,8 @@
             "ISSN": "",
             "Indicador": "",
             "Indexación": "",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": "6",
@@ -4582,7 +4691,8 @@
             "ISSN": "",
             "Indicador": "",
             "Indexación": "",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": "7",
@@ -4759,7 +4869,8 @@
           "ISSN",
           "Indicador",
           "Indexación",
-          "Link de verificación electrónica"
+          "Link de verificación electrónica",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -4772,7 +4883,8 @@
             "ISSN": "0265-0487",
             "Indicador": "5,9",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "En el mismo orden:"
+            "Link de verificación electrónica": "En el mismo orden:",
+            "Cuartil": "Q2"
           },
           {
             "N°": 2,
@@ -4784,7 +4896,8 @@
             "ISSN": "0742-6046",
             "Indicador": "9,1",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2026.2633829"
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2026.2633829",
+            "Cuartil": "Q2"
           },
           {
             "N°": 3,
@@ -4796,7 +4909,8 @@
             "ISSN": "1747-3616",
             "Indicador": "5",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://doi.org/10.1002/mar.70132"
+            "Link de verificación electrónica": "https://doi.org/10.1002/mar.70132",
+            "Cuartil": "Q3"
           },
           {
             "N°": 4,
@@ -4808,7 +4922,8 @@
             "ISSN": "1352-7266",
             "Indicador": "4,6",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1108/YC-04-2025-2487"
+            "Link de verificación electrónica": "https://doi.org/10.1108/YC-04-2025-2487",
+            "Cuartil": "Q2"
           },
           {
             "N°": 5,
@@ -4820,7 +4935,8 @@
             "ISSN": "1525-2019",
             "Indicador": "7,5",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://doi.org/10.1080/13527266.2023.2199026"
+            "Link de verificación electrónica": "https://doi.org/10.1080/13527266.2023.2199026",
+            "Cuartil": "Q2"
           },
           {
             "N°": 6,
@@ -4832,7 +4948,8 @@
             "ISSN": "0742-6046",
             "Indicador": "9,1",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1080/15252019.2024.2411243"
+            "Link de verificación electrónica": "https://doi.org/10.1080/15252019.2024.2411243",
+            "Cuartil": "Q2"
           },
           {
             "N°": 7,
@@ -4844,7 +4961,8 @@
             "ISSN": "0265-0487",
             "Indicador": "5,9",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1002/mar.21977"
+            "Link de verificación electrónica": "https://doi.org/10.1002/mar.21977",
+            "Cuartil": "Q2"
           },
           {
             "N°": 8,
@@ -4856,7 +4974,8 @@
             "ISSN": "0265-0487",
             "Indicador": "5,9",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2023.2215079"
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2023.2215079",
+            "Cuartil": "Q2"
           },
           {
             "N°": 9,
@@ -4868,7 +4987,8 @@
             "ISSN": "0719-367X",
             "Indicador": "0,7",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2023.2245278"
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2023.2245278",
+            "Cuartil": "Q3"
           },
           {
             "N°": 10,
@@ -4880,7 +5000,8 @@
             "ISSN": "0265-0487",
             "Indicador": "5,3",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2021.2009825"
+            "Link de verificación electrónica": "https://doi.org/10.1080/02650487.2021.2009825",
+            "Cuartil": "Q2"
           },
           {
             "N°": 11,
@@ -4892,7 +5013,8 @@
             "ISSN": "0969-5931",
             "Indicador": "8,7",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1016/j.ibusrev.2022.101995"
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.ibusrev.2022.101995",
+            "Cuartil": "Q1"
           },
           {
             "N°": 12,
@@ -4904,7 +5026,8 @@
             "ISSN": "1012-8255",
             "Indicador": "1,2",
             "Indexación": "SJR",
-            "Link de verificación electrónica": "N/A"
+            "Link de verificación electrónica": "N/A",
+            "Cuartil": "Q3"
           },
           {
             "N°": 13,
@@ -4916,7 +5039,8 @@
             "ISSN": "0148-2963",
             "Indicador": "11",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1016/j.jbusres.2021.01.030"
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.jbusres.2021.01.030",
+            "Cuartil": "Q1"
           },
           {
             "N°": 14,
@@ -4928,7 +5052,8 @@
             "ISSN": "1094-9968",
             "Indicador": "6,3",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://doi.org/10.1016/j.intmar.2020.08.004"
+            "Link de verificación electrónica": "https://doi.org/10.1016/j.intmar.2020.08.004",
+            "Cuartil": "Q1"
           },
           {
             "N°": 15,
@@ -4940,7 +5065,8 @@
             "ISSN": "0719-367X",
             "Indicador": "1",
             "Indexación": "SJR",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q3"
           },
           {
             "N°": 16,
@@ -4952,7 +5078,8 @@
             "ISSN": "0719-367X",
             "Indicador": "0,7",
             "Indexación": "SJR",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q3"
           },
           {
             "N°": 17,
@@ -4964,7 +5091,8 @@
             "ISSN": "0148-2963",
             "Indicador": "3,4",
             "Indexación": "JIF",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": 18,
@@ -4976,7 +5104,8 @@
             "ISSN": "0719-367X",
             "Indicador": "0,2",
             "Indexación": "SJR",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q3"
           },
           {
             "N°": 19,
@@ -5372,7 +5501,8 @@
           "Estado",
           "ISSN",
           "Indicador",
-          "Indexación"
+          "Indexación",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -5385,7 +5515,8 @@
             "ISSN": "1932-6203",
             "Indicador": "7,2",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-financial-economics"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-financial-economics",
+            "Cuartil": "Q1"
           },
           {
             "N°": 2,
@@ -5397,7 +5528,8 @@
             "ISSN": "0304-405X",
             "Indicador": "3,8",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://journals.plos.org/plosone/"
+            "Link de verificación electrónica": "https://journals.plos.org/plosone/",
+            "Cuartil": "Q1"
           },
           {
             "N°": 3,
@@ -5409,7 +5541,8 @@
             "ISSN": "0304-3878",
             "Indicador": "4,6",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-development-economics"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/journal-of-development-economics",
+            "Cuartil": "Q1"
           },
           {
             "N°": 4,
@@ -5421,7 +5554,8 @@
             "ISSN": "0167-6377",
             "Indicador": "1,25",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/operations-research-letters"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/operations-research-letters",
+            "Cuartil": "Q2"
           },
           {
             "N°": 5,
@@ -5433,7 +5567,8 @@
             "ISSN": "0014-4983",
             "Indicador": "2",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/explorations-in-economic-history"
+            "Link de verificación electrónica": "https://www.sciencedirect.com/journal/explorations-in-economic-history",
+            "Cuartil": "Q1"
           },
           {
             "N°": 6,
@@ -5445,7 +5580,8 @@
             "ISSN": "2046-9128",
             "Indicador": "1,6",
             "Indexación": "JIF",
-            "Link de verificación electrónica": "https://academic.oup.com/rcfs/pages/About"
+            "Link de verificación electrónica": "https://academic.oup.com/rcfs/pages/About",
+            "Cuartil": "Q1"
           },
           {
             "N°": 7,
@@ -5481,7 +5617,8 @@
             "ISSN": "0304-405X",
             "Indicador": "",
             "Indexación": "",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": 10,
@@ -5493,7 +5630,8 @@
             "ISSN": "1932-6203",
             "Indicador": "",
             "Indexación": "",
-            "Link de verificación electrónica": ""
+            "Link de verificación electrónica": "",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -5788,7 +5926,8 @@
           "Estado",
           "ISSN",
           "Indicador",
-          "Indexación"
+          "Indexación",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -5801,7 +5940,8 @@
             "Estado": "Publicado",
             "ISSN": "1044-0283",
             "Indicador": "5.1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 2,
@@ -5813,7 +5953,8 @@
             "Estado": "Publicado",
             "ISSN": "1057-5219",
             "Indicador": "8.1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 3,
@@ -5825,7 +5966,8 @@
             "Estado": "Publicado",
             "ISSN": "1366-8803",
             "Indicador": "3.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 4,
@@ -5837,7 +5979,8 @@
             "Estado": "Publicado",
             "ISSN": "0264-9993",
             "Indicador": "4.6",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 5,
@@ -5849,7 +5992,8 @@
             "Estado": "Publicado",
             "ISSN": "1572-3089",
             "Indicador": "5.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": 6,
@@ -5861,7 +6005,8 @@
             "Estado": "Publicado",
             "ISSN": "0304-405X",
             "Indicador": "7.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 7,
@@ -5873,7 +6018,8 @@
             "Estado": "Publicado",
             "ISSN": "0378-4266",
             "Indicador": "4.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 8,
@@ -5885,7 +6031,8 @@
             "Estado": "Publicado",
             "ISSN": "0929-1199",
             "Indicador": "6.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 9,
@@ -5897,7 +6044,8 @@
             "Estado": "Publicado",
             "ISSN": "0304-3878",
             "Indicador": "2.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 10,
@@ -6033,7 +6181,8 @@
           "Estado",
           "ISSN",
           "Indicador",
-          "Indexación"
+          "Indexación",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -6046,7 +6195,8 @@
             "Estado": "Publicado",
             "ISSN": "2045-2322",
             "Indicador": "4.1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 2,
@@ -6058,7 +6208,8 @@
             "Estado": "Publicado",
             "ISSN": "1932-6203",
             "Indicador": "3.1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 3,
@@ -6070,7 +6221,8 @@
             "Estado": "Publicado",
             "ISSN": "1386-9620",
             "Indicador": "3",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 4,
@@ -6082,7 +6234,8 @@
             "Estado": "Publicado",
             "ISSN": "0969-6016",
             "Indicador": "3.4",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 5,
@@ -6094,7 +6247,8 @@
             "Estado": "Publicado",
             "ISSN": "0033-3506",
             "Indicador": "3",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 6,
@@ -6106,7 +6260,8 @@
             "Estado": "Publicado",
             "ISSN": "1932-6203",
             "Indicador": "2.1",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -6200,7 +6355,8 @@
           "Estado",
           "ISSN",
           "Indicador",
-          "Indexación"
+          "Indexación",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -6213,7 +6369,8 @@
             "Estado": "Publicado",
             "ISSN": "2340-9436 / 2340-9444",
             "Indicador": "",
-            "Indexación": ""
+            "Indexación": "",
+            "Cuartil": "Q1"
           },
           {
             "N°": "2",
@@ -6225,7 +6382,8 @@
             "Estado": "Publicado",
             "ISSN": "2340-9436",
             "Indicador": "4.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "3",
@@ -6237,7 +6395,8 @@
             "Estado": "Publicado",
             "ISSN": "1366-8803",
             "Indicador": "3.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "4",
@@ -6249,7 +6408,8 @@
             "Estado": "Publicado",
             "ISSN": "0963-1798",
             "Indicador": "5.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "5",
@@ -6261,7 +6421,8 @@
             "Estado": "Publicado",
             "ISSN": "0263-2373",
             "Indicador": "4.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "6",
@@ -6273,7 +6434,8 @@
             "Estado": "Publicado",
             "ISSN": "1740-4754",
             "Indicador": "3.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "7",
@@ -6285,7 +6447,8 @@
             "Estado": "Publicado",
             "ISSN": "1740-4754",
             "Indicador": "3.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "8",
@@ -6297,7 +6460,8 @@
             "Estado": "Publicado",
             "ISSN": "0021-9029",
             "Indicador": "3.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": "9",
@@ -6309,7 +6473,8 @@
             "Estado": "Publicado",
             "ISSN": "0958-5192",
             "Indicador": "6.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "10",
@@ -6321,7 +6486,8 @@
             "Estado": "Publicado",
             "ISSN": "1359-432X",
             "Indicador": "3.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "11",
@@ -6333,7 +6499,8 @@
             "Estado": "Publicado",
             "ISSN": "0148-2963",
             "Indicador": "7.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "12",
@@ -6345,7 +6512,8 @@
             "Estado": "Publicado",
             "ISSN": "0001-8791",
             "Indicador": "4.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "13",
@@ -6357,7 +6525,8 @@
             "Estado": "Publicado",
             "ISSN": "1359-432X",
             "Indicador": "3.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "14",
@@ -6369,7 +6538,8 @@
             "Estado": "Publicado",
             "ISSN": "0001-8791",
             "Indicador": "4.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "15",
@@ -6405,7 +6575,8 @@
             "Estado": "Publicado",
             "ISSN": "0001-8791",
             "Indicador": "4.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "18",
@@ -6429,7 +6600,8 @@
             "Estado": "Publicado",
             "ISSN": "0148-2963",
             "Indicador": "5.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "20",
@@ -6441,7 +6613,8 @@
             "Estado": "Publicado",
             "ISSN": "0148-2963",
             "Indicador": "3.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": "21",
@@ -6631,7 +6804,8 @@
           "Estado",
           "ISSN",
           "Indicador",
-          "Indexación"
+          "Indexación",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -6644,7 +6818,8 @@
             "Estado": "Publicado",
             "ISSN": "1059-0560",
             "Indicador": "3.9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 2,
@@ -6656,7 +6831,8 @@
             "Estado": "Publicado",
             "ISSN": "0261-5606",
             "Indicador": "3.8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 3,
@@ -6668,7 +6844,8 @@
             "Estado": "Publicado",
             "ISSN": "1059-0560",
             "Indicador": "3.9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 4,
@@ -6680,7 +6857,8 @@
             "Estado": "Publicado",
             "ISSN": "0270-2592",
             "Indicador": "1.9",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q2"
           },
           {
             "N°": 5,
@@ -6692,7 +6870,8 @@
             "Estado": "Publicado",
             "ISSN": "0929-1199",
             "Indicador": "6.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 6,
@@ -6704,7 +6883,8 @@
             "Estado": "Publicado",
             "ISSN": "0929-1199",
             "Indicador": "6.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 7,
@@ -6716,7 +6896,8 @@
             "Estado": "Publicado",
             "ISSN": "1359-0790",
             "Indicador": "1.2",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 8,
@@ -6728,7 +6909,8 @@
             "Estado": "Publicado",
             "ISSN": "0264-9993",
             "Indicador": "1.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           }
         ]
       },
@@ -6946,7 +7128,8 @@
           "Estado",
           "ISSN",
           "Indicador",
-          "Indexación"
+          "Indexación",
+          "Cuartil"
         ],
         "filas": [
           {
@@ -6959,7 +7142,8 @@
             "Estado": "Publicado",
             "ISSN": "2514-9369",
             "Indicador": "2.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 2,
@@ -6971,7 +7155,8 @@
             "Estado": "Publicado",
             "ISSN": "1046-1310",
             "Indicador": "2.8",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 3,
@@ -6983,7 +7168,8 @@
             "Estado": "Publicado",
             "ISSN": "1359-432X",
             "Indicador": "3.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 4,
@@ -6995,7 +7181,8 @@
             "Estado": "Publicado",
             "ISSN": "1480-8986",
             "Indicador": "0.4",
-            "Indexación": "Scopus"
+            "Indexación": "Scopus",
+            "Cuartil": "Q1"
           },
           {
             "N°": 5,
@@ -7007,7 +7194,8 @@
             "Estado": "Publicado",
             "ISSN": "0001-8791",
             "Indicador": "4.5",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 6,
@@ -7019,7 +7207,8 @@
             "Estado": "Publicado",
             "ISSN": "0034-7590",
             "Indicador": "0.6",
-            "Indexación": "Scopus"
+            "Indexación": "Scopus",
+            "Cuartil": "Q2"
           },
           {
             "N°": 7,
@@ -7067,7 +7256,8 @@
             "Estado": "Publicado",
             "ISSN": "0148-2963",
             "Indicador": "3.0",
-            "Indexación": "JIF"
+            "Indexación": "JIF",
+            "Cuartil": "Q1"
           },
           {
             "N°": 11,
