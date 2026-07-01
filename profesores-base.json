@@ -11,7 +11,7 @@
     "nombres": "SEBASTIAN",
     "apellidos": "CLARO/EDWARDS",
     "nombre_visual": "Sebastián Claro Edwards",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -27,7 +27,7 @@
     "nombres": "MAURICIO",
     "apellidos": "LARRAIN/ERRAZURIZ",
     "nombre_visual": "Mauricio Larraín Errázuriz",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -43,7 +43,7 @@
     "nombres": "ANA",
     "apellidos": "PEREIRA/GONCALVES",
     "nombre_visual": "Ana Elisa Pereira Gonçalves",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "FCEE",
     "sexo": "M"
   },
@@ -59,7 +59,7 @@
     "nombres": "ALVARO",
     "apellidos": "GARCIA/MARIN",
     "nombre_visual": "Álvaro García Marín",
-    "linea": "Economía Financiera",
+    "linea": "Economía y Políticas Públicas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -75,7 +75,7 @@
     "nombres": "MAURICIO ANDRES",
     "apellidos": "BARRIOS/FERNANDEZ",
     "nombre_visual": "Andrés Barrios Fernández",
-    "linea": "Economía Aplicada a las Políticas Públicas",
+    "linea": "Economía y Políticas Públicas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -91,7 +91,7 @@
     "nombres": "FELIPE",
     "apellidos": "GUZMAN/GONZALEZ",
     "nombre_visual": "Felipe Guzmán González",
-    "linea": "Economía Financiera",
+    "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -107,7 +107,7 @@
     "nombres": "FRANCISCO",
     "apellidos": "MORALES/FLORES",
     "nombre_visual": "Francisco Morales Flores",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -123,7 +123,7 @@
     "nombres": "JUAN",
     "apellidos": "SOTES/PALADINO",
     "nombre_visual": "Juan Sotes Paladino",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -139,7 +139,7 @@
     "nombres": "NICOLAS",
     "apellidos": "RIQUELME/CARRASCO",
     "nombre_visual": "Nicolás Riquelme Carrasco",
-    "linea": "Economía Aplicada a las Políticas Públicas",
+    "linea": "Economía y Políticas Públicas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -155,7 +155,7 @@
     "nombres": "JORGE",
     "apellidos": "ALE/CHILET",
     "nombre_visual": "Jorge Alé Chilet",
-    "linea": "Economía Aplicada a las Políticas Públicas",
+    "linea": "Economía y Políticas Públicas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -171,7 +171,7 @@
     "nombres": "JORGE",
     "apellidos": "RODRIGUEZ/OSORIO",
     "nombre_visual": "Jorge Rodriguez Osorio",
-    "linea": "Economía Aplicada a las Políticas Públicas",
+    "linea": "Economía y Políticas Públicas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -187,7 +187,7 @@
     "nombres": "DAVID",
     "apellidos": "KIMBER/CAMUSSETTI",
     "nombre_visual": "David Kimber Camussetti",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -203,7 +203,7 @@
     "nombres": "LEONARDO DAVID",
     "apellidos": "EPSTEIN/GIWERCMAN",
     "nombre_visual": "Leonardo Epstein Giwercman",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -219,7 +219,7 @@
     "nombres": "ANDRÉ",
     "apellidos": "STENZEL/.",
     "nombre_visual": "André Stenzel",
-    "linea": "Economía Financiera",
+    "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -235,7 +235,7 @@
     "nombres": "MATÍAS",
     "apellidos": "BRAUN/.",
     "nombre_visual": "Matías Braun",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "ESE",
     "sexo": "H"
   },
@@ -251,7 +251,7 @@
     "nombres": "FELIPE",
     "apellidos": "ALDUNATE/.",
     "nombre_visual": "Felipe Aldunate",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "ESE",
     "sexo": "H"
   },
@@ -267,7 +267,7 @@
     "nombres": "HUGO",
     "apellidos": "BENEDETTI/.",
     "nombre_visual": "Hugo Benedetti",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "ESE",
     "sexo": "H"
   },
@@ -283,7 +283,7 @@
     "nombres": "MARÍA JOSÉ",
     "apellidos": "BOSCH/.",
     "nombre_visual": "María José Bosch",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "ESE",
     "sexo": "M"
   },
@@ -299,7 +299,7 @@
     "nombres": "NATALIA",
     "apellidos": "YANKOVIC/.",
     "nombre_visual": "Natalia Yankovic",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "ESE",
     "sexo": "M"
   },
@@ -315,7 +315,7 @@
     "nombres": "ÁLVARO",
     "apellidos": "ESPEJO/.",
     "nombre_visual": "Álvaro Espejo",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "ESE",
     "sexo": "H"
   },
@@ -331,7 +331,7 @@
     "nombres": "VINCENT",
     "apellidos": "VAN KERVEL/.",
     "nombre_visual": "Vincent van Kervel",
-    "linea": "Economía Financiera",
+    "linea": "Macroeconomía y Finanzas",
     "origen": "FCEE",
     "sexo": "H"
   },
@@ -347,7 +347,7 @@
     "nombres": "CRISTIAN ALEJANDRO",
     "apellidos": "BUZETA/RIQUELME",
     "nombre_visual": "Cristián Buzeta Riquelme",
-    "linea": "Administración",
+    "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
   }

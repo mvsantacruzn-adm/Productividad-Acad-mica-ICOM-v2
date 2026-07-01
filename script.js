@@ -911,6 +911,7 @@ function construirReporteDatos() {
                     'Apellido materno': base.apellido_materno || 'N/D',
                     'Nombres': base.nombres || 'N/D',
                     'Nombre visual': base.nombre_visual || nombreProfesor,
+                    'Línea de Investigación': base.linea || 'N/D',
                     'Vínculo': base.vinculo || 'N/D',
                     'Tipo de tabla': mapeoTablas[tipoTabla] || tipoTabla
                 };
