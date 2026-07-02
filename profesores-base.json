@@ -350,5 +350,137 @@
     "linea": "Management",
     "origen": "FCEE",
     "sexo": "H"
+  },
+  "Cristian Cuevas": {
+    "nombre": "Cristian Cuevas",
+    "nombre_visual": "Cristian Cuevas",
+    "nombres": "Cristian",
+    "apellido_paterno": "Cuevas",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Macroeconomía y Finanzas",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Alfredo Mendoza": {
+    "nombre": "Alfredo Mendoza",
+    "nombre_visual": "Alfredo Mendoza",
+    "nombres": "Alfredo",
+    "apellido_paterno": "Mendoza",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Macroeconomía y Finanzas",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "María Eugenia Delfino": {
+    "nombre": "María Eugenia Delfino",
+    "nombre_visual": "María Eugenia Delfino",
+    "nombres": "María Eugenia",
+    "apellido_paterno": "Delfino",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Economía y Políticas Públicas",
+    "origen": "ESE",
+    "vinculo": "Colaborador"
+  },
+  "Juan Pedro Ronconi": {
+    "nombre": "Juan Pedro Ronconi",
+    "nombre_visual": "Juan Pedro Ronconi",
+    "nombres": "Juan Pedro",
+    "apellido_paterno": "Ronconi",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Economía y Políticas Públicas",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Marcela Mello": {
+    "nombre": "Marcela Mello",
+    "nombre_visual": "Marcela Mello",
+    "nombres": "Marcela",
+    "apellido_paterno": "Mello",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Economía y Políticas Públicas",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Isabela Munevar": {
+    "nombre": "Isabela Munevar",
+    "nombre_visual": "Isabela Munevar",
+    "nombres": "Isabela",
+    "apellido_paterno": "Munevar",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Economía y Políticas Públicas",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Wei Xiong": {
+    "nombre": "Wei Xiong",
+    "nombre_visual": "Wei Xiong",
+    "nombres": "Wei",
+    "apellido_paterno": "Xiong",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Economía y Políticas Públicas",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Alfredo Enrione": {
+    "nombre": "Alfredo Enrione",
+    "nombre_visual": "Alfredo Enrione",
+    "nombres": "Alfredo",
+    "apellido_paterno": "Enrione",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Management",
+    "origen": "ESE",
+    "vinculo": "Colaborador"
+  },
+  "Guillermo Armelini": {
+    "nombre": "Guillermo Armelini",
+    "nombre_visual": "Guillermo Armelini",
+    "nombres": "Guillermo",
+    "apellido_paterno": "Armelini",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Management",
+    "origen": "ESE",
+    "vinculo": "Colaborador"
+  },
+  "Javier Boncompte": {
+    "nombre": "Javier Boncompte",
+    "nombre_visual": "Javier Boncompte",
+    "nombres": "Javier",
+    "apellido_paterno": "Boncompte",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Management",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Ignacio Inostroza": {
+    "nombre": "Ignacio Inostroza",
+    "nombre_visual": "Ignacio Inostroza",
+    "nombres": "Ignacio",
+    "apellido_paterno": "Inostroza",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Management",
+    "origen": "FCEE",
+    "vinculo": "Colaborador"
+  },
+  "Iván Díaz-Molina": {
+    "nombre": "Iván Díaz-Molina",
+    "nombre_visual": "Iván Díaz-Molina",
+    "nombres": "Iván",
+    "apellido_paterno": "Díaz-Molina",
+    "apellido_materno": "",
+    "rut": "00000000-0",
+    "linea": "Management",
+    "origen": "ESE",
+    "vinculo": "Colaborador"
   }
 }

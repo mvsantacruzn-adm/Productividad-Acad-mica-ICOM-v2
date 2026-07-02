@@ -827,6 +827,36 @@ function toggleTodosProfesores() {
     actualizarFiltros();
 }
 
+function toggleClaustro() {
+    const checkboxClaustro = document.getElementById('checkbox-claustro');
+    const checkboxesProfesores = document.querySelectorAll('#lista-profesores input[type="checkbox"]');
+    
+    checkboxesProfesores.forEach(cb => {
+        const nombre = cb.getAttribute('data-profesor');
+        const profesor = datosBase[nombre];
+        if (profesor && profesor.vinculo === 'Claustro') {
+            cb.checked = checkboxClaustro.checked;
+        }
+    });
+    
+    actualizarFiltros();
+}
+
+function toggleColaboradores() {
+    const checkboxColaboradores = document.getElementById('checkbox-colaboradores');
+    const checkboxesProfesores = document.querySelectorAll('#lista-profesores input[type="checkbox"]');
+    
+    checkboxesProfesores.forEach(cb => {
+        const nombre = cb.getAttribute('data-profesor');
+        const profesor = datosBase[nombre];
+        if (profesor && profesor.vinculo === 'Colaborador') {
+            cb.checked = checkboxColaboradores.checked;
+        }
+    });
+    
+    actualizarFiltros();
+}
+
 function actualizarFiltros() {
     // Recopilar profesores seleccionados
     const checkboxesProfesores = document.querySelectorAll('#lista-profesores input[type="checkbox"]:checked');

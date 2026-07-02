@@ -7507,5 +7507,1157 @@
         "filas": []
       }
     }
+  },
+  "Cristian Cuevas": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Alfredo Mendoza": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "María Eugenia Delfino": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Juan Pedro Ronconi": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Marcela Mello": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Isabela Munevar": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Wei Xiong": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Alfredo Enrione": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Guillermo Armelini": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Javier Boncompte": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Ignacio Inostroza": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
+  },
+  "Iván Díaz-Molina": {
+    "secciones": {
+      "publicaciones_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título",
+          "Nombre revista",
+          "Estado",
+          "ISSN",
+          "Indicador",
+          "Indexación",
+          "Link de verificación electrónica",
+          "Cuartil Scimago",
+          "Cuartil WoS"
+        ],
+        "filas": []
+      },
+      "publicaciones_no_indexadas": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Nombre revista",
+          "Estado"
+        ],
+        "filas": []
+      },
+      "libros": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título"
+        ],
+        "filas": []
+      },
+      "capitulos": {
+        "headers": [
+          "N°",
+          "Autor(es)",
+          "Año",
+          "Título del capítulo",
+          "Libro"
+        ],
+        "filas": []
+      },
+      "proyectos": {
+        "headers": [
+          "N°",
+          "Título",
+          "Año",
+          "Término",
+          "Fuente de financiamiento"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_doctorado_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_guia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      },
+      "tesis_magister_coguia": {
+        "headers": [
+          "N°",
+          "Estudiante",
+          "Tema tesis",
+          "Año término"
+        ],
+        "filas": []
+      }
+    }
   }
 }
